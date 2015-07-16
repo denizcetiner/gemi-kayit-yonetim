@@ -1,0 +1,35 @@
+C:\Users\stajer\Desktop\gemi\gemi.Entities\bin\Debug\gemi.Entities.dll
+C:\Users\stajer\Desktop\gemi\gemi.Entities\bin\Debug\gemi.Entities.pdb
+C:\Users\stajer\Desktop\gemi\gemi.Entities\obj\Debug\gemi.Entities.dll
+C:\Users\stajer\Desktop\gemi\gemi.Entities\obj\Debug\gemi.Entities.pdb
+C:\Users\stajer\Desktop\gemi_9\gemi.Entities\bin\Debug\gemi.Entities.dll
+C:\Users\stajer\Desktop\gemi_9\gemi.Entities\bin\Debug\gemi.Entities.pdb
+C:\Users\stajer\Desktop\gemi_9\gemi.Entities\obj\Debug\gemi.Entities.dll
+C:\Users\stajer\Desktop\gemi_9\gemi.Entities\obj\Debug\gemi.Entities.pdb
+C:\Users\stajer\Desktop\gemi_10\gemi.Entities\bin\Debug\gemi.Entities.dll
+C:\Users\stajer\Desktop\gemi_10\gemi.Entities\bin\Debug\gemi.Entities.pdb
+C:\Users\stajer\Desktop\gemi_10\gemi.Entities\obj\Debug\gemi.Entities.dll
+C:\Users\stajer\Desktop\gemi_10\gemi.Entities\obj\Debug\gemi.Entities.pdb
+C:\Users\denizc\Desktop\gemi_11\gemi.Entities\obj\Debug\gemi.Entities.csprojResolveAssemblyReference.cache
+C:\Users\denizc\Desktop\gemi_11\gemi.Entities\obj\Debug\gemi.Entities.dll
+C:\Users\denizc\Desktop\gemi_11\gemi.Entities\obj\Debug\gemi.Entities.pdb
+C:\Users\denizc\Desktop\gemi_11\gemi.Entities\bin\Debug\gemi.Entities.dll
+C:\Users\denizc\Desktop\gemi_11\gemi.Entities\bin\Debug\gemi.Entities.pdb
+C:\Users\stajer\Desktop\gemi_11\gemi.Entities\bin\Debug\gemi.Entities.dll
+C:\Users\stajer\Desktop\gemi_11\gemi.Entities\bin\Debug\gemi.Entities.pdb
+C:\Users\stajer\Desktop\gemi_11\gemi.Entities\obj\Debug\gemi.Entities.dll
+C:\Users\stajer\Desktop\gemi_11\gemi.Entities\obj\Debug\gemi.Entities.pdb
+C:\Users\denizc\Desktop\gemi_11 - Cookies\gemi.Entities\bin\Debug\gemi.Entities.dll
+C:\Users\denizc\Desktop\gemi_11 - Cookies\gemi.Entities\bin\Debug\gemi.Entities.pdb
+C:\Users\denizc\Desktop\gemi_11 - Cookies\gemi.Entities\obj\Debug\gemi.Entities.csprojResolveAssemblyReference.cache
+C:\Users\denizc\Desktop\gemi_11 - Cookies\gemi.Entities\obj\Debug\gemi.Entities.dll
+C:\Users\denizc\Desktop\gemi_11 - Cookies\gemi.Entities\obj\Debug\gemi.Entities.pdb
+E:\gemi_12\gemi.Entities\bin\Debug\gemi.Entities.dll
+E:\gemi_12\gemi.Entities\bin\Debug\gemi.Entities.pdb
+E:\gemi_12\gemi.Entities\obj\Debug\gemi.Entities.csprojResolveAssemblyReference.cache
+E:\gemi_12\gemi.Entities\obj\Debug\gemi.Entities.dll
+E:\gemi_12\gemi.Entities\obj\Debug\gemi.Entities.pdb
+C:\Users\stajer\Desktop\gemi_13\gemi.Entities\bin\Debug\gemi.Entities.dll
+C:\Users\stajer\Desktop\gemi_13\gemi.Entities\bin\Debug\gemi.Entities.pdb
+C:\Users\stajer\Desktop\gemi_13\gemi.Entities\obj\Debug\gemi.Entities.dll
+C:\Users\stajer\Desktop\gemi_13\gemi.Entities\obj\Debug\gemi.Entities.pdb

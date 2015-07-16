@@ -1,0 +1,105 @@
+﻿@{
+    ViewBag.Title = "UserPanel";
+}
+
+<h2>UserPanel</h2>
+
+<script>
+    $(document).ready(function () {
+        $("#newuser").html("<button onclick='NewUser(this)'>Yeni kullanıcı ekle:</button>");
+
+    });
+
+    
+</script>
+
+
+
+<script>
+    /*function EditUser(object) {
+
+        $("<form method='post' action='/Admin/EditUser'>").insertBefore($(object).parent().siblings("div:eq(0)"));
+        $("<div><input value='Yeni kullanıcı adı:' type='text' onclick='ClickToEmpty(this)'/></div>").insertAfter($(object).parent().siblings("div:eq(0)"));
+        $("<div><input value='Yeni kullanıcı şifresi' type='text' onclick='ClickToEmptyPass(this)'/></div>").insertAfter($(object).parent().siblings("div:eq(1)"));
+        $("<div><input value='Yeni kullanıcı rolü' type='text' onclick='ClickToEmpty(this)'/>").insertAfter($(object).parent().siblings("div:eq(3)"));
+        $("<div><input type='submit' onclick='ValidateEditUser(this)' /></div>").insertAfter($(object).parent().siblings("div:eq(4)"));
+        $("</form>").insertAfter($(object).parent().siblings("div:eq(5)"));
+        $(object).parent().remove();
+        return false;
+    }*/
+
+    function EditUser(object)
+    {
+        var userdiv = $(object).parent().parent();
+        var username = userdiv.data("user");
+        userdiv.html("<form method='post' action='/Admin/EditUser'>" +
+            "<div>" + userdiv.data("user") + "</div>" +
+            "<div><input value='Yeni kullanıcı adı:' type='text' onfocus='ClickToEmpty(this)'  onclick='ClickToEmpty(this)' name='newname'/></div>" +
+            "<div><input value='Yeni kullanıcı şifresi' type='text' onfocus='ClickToEmptyPass(this)'  onclick='ClickToEmptyPass(this)' name='password'/></div>" +
+            "<div>" + userdiv.data("role") + "</div>" +
+            "<div><input value='Yeni kullanıcı rolü' onfocus='ClickToEmpty(this)'  name='role' type='text' onclick='ClickToEmpty(this)'/></div>" +
+            "<div><input type='submit' onclick='ValidateEditUser(this)'/><div>" +
+            "<input type='hidden' value='"+ username +"' name='oldname'/>"+
+            "</form>");
+        return false;
+    }
+
+    function ValidateEditUser(object)
+    {
+        var frm = $(object).parent().parent();
+        var username = frm.find("input:eq(0)");
+        var password = frm.find("input:eq(0)");
+        var role = frm.find("input:eq(0)");
+        var result = true;
+        if (username.val() == "") {
+            CannotBeEmpty(username);
+            result = false;
+        }
+        else if (username.val().length > 20) {
+            TooLong(username, 20);
+            result = false;
+        }
+        if (password.val() == "") {
+            CannotBeEmpty(password);
+            result = false;
+        }
+        else if (password.val().length > 20) {
+            TooLong(password, 20);
+            result = false;
+        }
+        if (role.val() == "") {
+            CannotBeEmpty(role);
+            result = false;
+        }
+        else if (role.val().length > 20) {
+            TooLong(role, 20);
+            result = false;
+        }
+        return result;
+    }
+</script>
+
+<div id="newuser"><p>Yeni kullanıcı ekle:</p>
+<form method="post" action="/Admin/AddUser">
+    isim:<input type="text" name="username"/>
+    şifre:<input type="text" name="password"/>
+    rol:<input type="text" name="role"/>
+    <input type="submit" />
+</form></div>
+
+
+<div class="Users">
+@foreach(gemi.Entities.Roles role in (List<gemi.Entities.Roles>)ViewBag.roles)
+{
+    if (role.role != "admin")
+    {
+    <div data-user="@role.username" data-role ="@role.role">
+        <label>@role.username</label>
+        <label>@role.role</label>
+        <label><a id="a-@role.username" onclick="return EditUser(this)" href="~/Admin/EditUser?username=@role.username">Düzenle</a></label><label>
+        <a href="~/Admin/RemoveUser?username=@role.username">Sil</a></label>
+        <!--<td><a href="~/Admin/RemoveUser?username=@role.username">Sil</a></td>-->
+    </div>
+    }
+}
+</div>

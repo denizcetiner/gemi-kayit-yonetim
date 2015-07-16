@@ -1,0 +1,186 @@
+﻿body {
+    font-size: .85em;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    color: #232323;
+    background-color: #fff;
+}
+
+header, footer, nav, section {
+    display: block;
+}
+
+
+/* Styles for basic forms
+-----------------------------------------------------------*/
+fieldset {
+    border: 1px solid #ddd;
+    padding: 0 1.4em 1.4em 1.4em;
+    margin: 0 0 1.5em 0;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+textarea {
+    min-height: 75px;
+}
+
+.editor-label {
+    margin: 1em 0 0 0;
+}
+
+.editor-field {
+    margin: 0.5em 0 0 0;
+}
+
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error {
+    color: #f00;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid #f00;
+    background-color: #fee;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #f00;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+/*buradan sonrası*/
+#EditShipTable
+{
+    margin:auto;
+    background:yellow;
+    border:solid greenyellow 1px;
+}
+
+#EditShipTable tr
+{
+    width:50%;
+}
+
+#EditShipTable th,#EditShipTable td
+{
+    border:solid greenyellow 1px;
+    text-align:center;
+}
+
+input[type="text"]
+{
+    font-size:18px;
+    border-radius:5px;
+}
+
+textarea
+{
+    font-size:16px;
+}
+
+.currency table
+{
+    margin:10px auto;
+}
+.Actions
+{
+    line-height:12px;
+}
+        
+.Actions input
+{
+    border-radius:5px;
+    width:100%;
+}
+        
+.Actions div
+{
+    display:inline-block;
+}
+        
+.Actions a
+{
+    margin:auto;
+    text-align:center;
+    height:15px;
+    display:block;
+    width:85%;
+    text-decoration:none;
+    background-color:Yellow;
+    border:solid green 2px;
+    border-radius:15px;
+    padding:3px;
+}
+.context
+{
+    display:inline-block;
+    vertical-align:top;
+}
+.footer
+{
+    height:100px;
+            
+}
+#EditShipTable
+{
+    width:70%;
+    background-color:Yellow;
+}
+.ships div
+{
+    display:inline-block;
+}
+input[type="password"]
+{
+    font-size:18px;
+}
+textarea
+{
+    border-radius:7px 7px 0 7px;
+}
+
+.datepick
+{
+    width:150px;
+}
+
+#datepicker
+{
+    width:150px;
+}
+
+option
+{
+    font-size:18px;
+}
+select
+{
+    font-size:18px;
+}
+
+.profile input[type="text"], .profile input[type="password"]
+{
+    font-size:16px;
+}
+
+#uploadtable
+{
+    background-color:Yellow;
+    border:solid greenyellow 1px;
+}
+#uploadtable th, #uploadtable td
+{
+    border:solid greenyellow 1px;
+}

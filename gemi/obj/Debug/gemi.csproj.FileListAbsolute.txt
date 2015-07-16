@@ -1,0 +1,536 @@
+C:\Users\stajer\Desktop\gemi\gemi\obj\Debug\gemi.csprojResolveAssemblyReference.cache
+C:\Users\stajer\Desktop\gemi\gemi\bin\gemi.dll
+C:\Users\stajer\Desktop\gemi\gemi\bin\gemi.pdb
+C:\Users\stajer\Desktop\gemi\gemi\bin\Antlr3.Runtime.dll
+C:\Users\stajer\Desktop\gemi\gemi\bin\EntityFramework.dll
+C:\Users\stajer\Desktop\gemi\gemi\bin\gemi.data.dll
+C:\Users\stajer\Desktop\gemi\gemi\bin\gemi.Entities.dll
+C:\Users\stajer\Desktop\gemi\gemi\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\stajer\Desktop\gemi\gemi\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\stajer\Desktop\gemi\gemi\bin\Newtonsoft.Json.dll
+C:\Users\stajer\Desktop\gemi\gemi\bin\System.Net.Http.dll
+C:\Users\stajer\Desktop\gemi\gemi\bin\System.Net.Http.Formatting.dll
+C:\Users\stajer\Desktop\gemi\gemi\bin\System.Net.Http.WebRequest.dll
+C:\Users\stajer\Desktop\gemi\gemi\bin\System.Web.Http.dll
+C:\Users\stajer\Desktop\gemi\gemi\bin\System.Web.Http.WebHost.dll
+C:\Users\stajer\Desktop\gemi\gemi\bin\System.Web.Mvc.dll
+C:\Users\stajer\Desktop\gemi\gemi\bin\System.Web.Optimization.dll
+C:\Users\stajer\Desktop\gemi\gemi\bin\System.Web.Providers.dll
+C:\Users\stajer\Desktop\gemi\gemi\bin\System.Web.Razor.dll
+C:\Users\stajer\Desktop\gemi\gemi\bin\System.Web.WebPages.Deployment.dll
+C:\Users\stajer\Desktop\gemi\gemi\bin\System.Web.WebPages.dll
+C:\Users\stajer\Desktop\gemi\gemi\bin\System.Web.WebPages.Razor.dll
+C:\Users\stajer\Desktop\gemi\gemi\bin\WebGrease.dll
+C:\Users\stajer\Desktop\gemi\gemi\bin\MySql.Data.dll
+C:\Users\stajer\Desktop\gemi\gemi\bin\gemi.data.pdb
+C:\Users\stajer\Desktop\gemi\gemi\bin\gemi.Entities.pdb
+C:\Users\stajer\Desktop\gemi\gemi\bin\EntityFramework.xml
+C:\Users\stajer\Desktop\gemi\gemi\bin\Newtonsoft.Json.xml
+C:\Users\stajer\Desktop\gemi\gemi\bin\System.Net.Http.xml
+C:\Users\stajer\Desktop\gemi\gemi\bin\System.Net.Http.Formatting.xml
+C:\Users\stajer\Desktop\gemi\gemi\bin\System.Net.Http.WebRequest.xml
+C:\Users\stajer\Desktop\gemi\gemi\bin\System.Web.Http.xml
+C:\Users\stajer\Desktop\gemi\gemi\bin\System.Web.Http.WebHost.xml
+C:\Users\stajer\Desktop\gemi\gemi\bin\System.Web.Mvc.xml
+C:\Users\stajer\Desktop\gemi\gemi\bin\System.Web.Razor.xml
+C:\Users\stajer\Desktop\gemi\gemi\bin\System.Web.WebPages.xml
+C:\Users\stajer\Desktop\gemi\gemi\bin\System.Web.WebPages.Deployment.xml
+C:\Users\stajer\Desktop\gemi\gemi\bin\System.Web.WebPages.Razor.xml
+C:\Users\stajer\Desktop\gemi\gemi\obj\Debug\gemi.dll
+C:\Users\stajer\Desktop\gemi\gemi\obj\Debug\gemi.pdb
+C:\Users\stajer\Desktop\gemi_9\gemi\bin\gemi.dll
+C:\Users\stajer\Desktop\gemi_9\gemi\bin\gemi.pdb
+C:\Users\stajer\Desktop\gemi_9\gemi\bin\Antlr3.Runtime.dll
+C:\Users\stajer\Desktop\gemi_9\gemi\bin\EntityFramework.dll
+C:\Users\stajer\Desktop\gemi_9\gemi\bin\gemi.data.dll
+C:\Users\stajer\Desktop\gemi_9\gemi\bin\gemi.Entities.dll
+C:\Users\stajer\Desktop\gemi_9\gemi\bin\gemi.Helpers.dll
+C:\Users\stajer\Desktop\gemi_9\gemi\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\stajer\Desktop\gemi_9\gemi\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\stajer\Desktop\gemi_9\gemi\bin\Newtonsoft.Json.dll
+C:\Users\stajer\Desktop\gemi_9\gemi\bin\System.Web.Mvc.dll
+C:\Users\stajer\Desktop\gemi_9\gemi\bin\System.Web.Optimization.dll
+C:\Users\stajer\Desktop\gemi_9\gemi\bin\System.Web.Providers.dll
+C:\Users\stajer\Desktop\gemi_9\gemi\bin\System.Web.Razor.dll
+C:\Users\stajer\Desktop\gemi_9\gemi\bin\System.Web.WebPages.Deployment.dll
+C:\Users\stajer\Desktop\gemi_9\gemi\bin\System.Web.WebPages.dll
+C:\Users\stajer\Desktop\gemi_9\gemi\bin\System.Web.WebPages.Razor.dll
+C:\Users\stajer\Desktop\gemi_9\gemi\bin\WebGrease.dll
+C:\Users\stajer\Desktop\gemi_9\gemi\bin\MySql.Data.dll
+C:\Users\stajer\Desktop\gemi_9\gemi\bin\gemi.data.pdb
+C:\Users\stajer\Desktop\gemi_9\gemi\bin\gemi.Entities.pdb
+C:\Users\stajer\Desktop\gemi_9\gemi\bin\gemi.Helpers.pdb
+C:\Users\stajer\Desktop\gemi_9\gemi\bin\EntityFramework.xml
+C:\Users\stajer\Desktop\gemi_9\gemi\bin\Newtonsoft.Json.xml
+C:\Users\stajer\Desktop\gemi_9\gemi\bin\System.Web.Mvc.xml
+C:\Users\stajer\Desktop\gemi_9\gemi\bin\System.Web.Razor.xml
+C:\Users\stajer\Desktop\gemi_9\gemi\bin\System.Web.WebPages.xml
+C:\Users\stajer\Desktop\gemi_9\gemi\bin\System.Web.WebPages.Deployment.xml
+C:\Users\stajer\Desktop\gemi_9\gemi\bin\System.Web.WebPages.Razor.xml
+C:\Users\stajer\Desktop\gemi_9\gemi\obj\Debug\gemi.csprojResolveAssemblyReference.cache
+C:\Users\stajer\Desktop\gemi_9\gemi\obj\Debug\gemi.dll
+C:\Users\stajer\Desktop\gemi_9\gemi\obj\Debug\gemi.pdb
+C:\Users\stajer\Desktop\gemi_10\gemi\obj\Debug\gemi.csprojResolveAssemblyReference.cache
+C:\Users\stajer\Desktop\gemi_10\gemi\bin\gemi.dll
+C:\Users\stajer\Desktop\gemi_10\gemi\bin\gemi.pdb
+C:\Users\stajer\Desktop\gemi_10\gemi\bin\Antlr3.Runtime.dll
+C:\Users\stajer\Desktop\gemi_10\gemi\bin\EntityFramework.dll
+C:\Users\stajer\Desktop\gemi_10\gemi\bin\gemi.data.dll
+C:\Users\stajer\Desktop\gemi_10\gemi\bin\gemi.Entities.dll
+C:\Users\stajer\Desktop\gemi_10\gemi\bin\gemi.Helpers.dll
+C:\Users\stajer\Desktop\gemi_10\gemi\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\stajer\Desktop\gemi_10\gemi\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\stajer\Desktop\gemi_10\gemi\bin\Newtonsoft.Json.dll
+C:\Users\stajer\Desktop\gemi_10\gemi\bin\System.Web.Mvc.dll
+C:\Users\stajer\Desktop\gemi_10\gemi\bin\System.Web.Optimization.dll
+C:\Users\stajer\Desktop\gemi_10\gemi\bin\System.Web.Providers.dll
+C:\Users\stajer\Desktop\gemi_10\gemi\bin\System.Web.Razor.dll
+C:\Users\stajer\Desktop\gemi_10\gemi\bin\System.Web.WebPages.Deployment.dll
+C:\Users\stajer\Desktop\gemi_10\gemi\bin\System.Web.WebPages.dll
+C:\Users\stajer\Desktop\gemi_10\gemi\bin\System.Web.WebPages.Razor.dll
+C:\Users\stajer\Desktop\gemi_10\gemi\bin\WebGrease.dll
+C:\Users\stajer\Desktop\gemi_10\gemi\bin\MySql.Data.dll
+C:\Users\stajer\Desktop\gemi_10\gemi\bin\gemi.data.pdb
+C:\Users\stajer\Desktop\gemi_10\gemi\bin\gemi.Entities.pdb
+C:\Users\stajer\Desktop\gemi_10\gemi\bin\gemi.Helpers.pdb
+C:\Users\stajer\Desktop\gemi_10\gemi\bin\EntityFramework.xml
+C:\Users\stajer\Desktop\gemi_10\gemi\bin\Newtonsoft.Json.xml
+C:\Users\stajer\Desktop\gemi_10\gemi\bin\System.Web.Razor.xml
+C:\Users\stajer\Desktop\gemi_10\gemi\bin\System.Web.WebPages.xml
+C:\Users\stajer\Desktop\gemi_10\gemi\bin\System.Web.WebPages.Deployment.xml
+C:\Users\stajer\Desktop\gemi_10\gemi\bin\System.Web.WebPages.Razor.xml
+C:\Users\stajer\Desktop\gemi_10\gemi\obj\Debug\gemi.dll
+C:\Users\stajer\Desktop\gemi_10\gemi\obj\Debug\gemi.pdb
+C:\Users\denizc\Desktop\gemi_11\gemi\bin\gemi.dll
+C:\Users\denizc\Desktop\gemi_11\gemi\bin\gemi.pdb
+C:\Users\denizc\Desktop\gemi_11\gemi\bin\Antlr3.Runtime.dll
+C:\Users\denizc\Desktop\gemi_11\gemi\bin\EntityFramework.dll
+C:\Users\denizc\Desktop\gemi_11\gemi\bin\gemi.data.dll
+C:\Users\denizc\Desktop\gemi_11\gemi\bin\gemi.Entities.dll
+C:\Users\denizc\Desktop\gemi_11\gemi\bin\gemi.Helpers.dll
+C:\Users\denizc\Desktop\gemi_11\gemi\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\denizc\Desktop\gemi_11\gemi\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\denizc\Desktop\gemi_11\gemi\bin\Newtonsoft.Json.dll
+C:\Users\denizc\Desktop\gemi_11\gemi\bin\System.Web.Mvc.dll
+C:\Users\denizc\Desktop\gemi_11\gemi\bin\System.Web.Optimization.dll
+C:\Users\denizc\Desktop\gemi_11\gemi\bin\System.Web.Providers.dll
+C:\Users\denizc\Desktop\gemi_11\gemi\bin\System.Web.Razor.dll
+C:\Users\denizc\Desktop\gemi_11\gemi\bin\System.Web.WebPages.Deployment.dll
+C:\Users\denizc\Desktop\gemi_11\gemi\bin\System.Web.WebPages.dll
+C:\Users\denizc\Desktop\gemi_11\gemi\bin\System.Web.WebPages.Razor.dll
+C:\Users\denizc\Desktop\gemi_11\gemi\bin\WebGrease.dll
+C:\Users\denizc\Desktop\gemi_11\gemi\bin\MySql.Data.dll
+C:\Users\denizc\Desktop\gemi_11\gemi\bin\gemi.data.pdb
+C:\Users\denizc\Desktop\gemi_11\gemi\bin\gemi.Entities.pdb
+C:\Users\denizc\Desktop\gemi_11\gemi\bin\gemi.Helpers.pdb
+C:\Users\denizc\Desktop\gemi_11\gemi\bin\EntityFramework.xml
+C:\Users\denizc\Desktop\gemi_11\gemi\bin\Newtonsoft.Json.xml
+C:\Users\denizc\Desktop\gemi_11\gemi\bin\System.Web.Razor.xml
+C:\Users\denizc\Desktop\gemi_11\gemi\bin\System.Web.WebPages.xml
+C:\Users\denizc\Desktop\gemi_11\gemi\bin\System.Web.WebPages.Deployment.xml
+C:\Users\denizc\Desktop\gemi_11\gemi\bin\System.Web.WebPages.Razor.xml
+C:\Users\denizc\Desktop\gemi_11\gemi\obj\Debug\gemi.csprojResolveAssemblyReference.cache
+C:\Users\denizc\Desktop\gemi_11\gemi\obj\Debug\gemi.dll
+C:\Users\denizc\Desktop\gemi_11\gemi\obj\Debug\gemi.pdb
+C:\Users\stajer\Desktop\gemi_11\gemi\bin\gemi.dll
+C:\Users\stajer\Desktop\gemi_11\gemi\bin\gemi.pdb
+C:\Users\stajer\Desktop\gemi_11\gemi\bin\Antlr3.Runtime.dll
+C:\Users\stajer\Desktop\gemi_11\gemi\bin\EntityFramework.dll
+C:\Users\stajer\Desktop\gemi_11\gemi\bin\gemi.data.dll
+C:\Users\stajer\Desktop\gemi_11\gemi\bin\gemi.Entities.dll
+C:\Users\stajer\Desktop\gemi_11\gemi\bin\gemi.Helpers.dll
+C:\Users\stajer\Desktop\gemi_11\gemi\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\stajer\Desktop\gemi_11\gemi\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\stajer\Desktop\gemi_11\gemi\bin\Newtonsoft.Json.dll
+C:\Users\stajer\Desktop\gemi_11\gemi\bin\System.Web.Mvc.dll
+C:\Users\stajer\Desktop\gemi_11\gemi\bin\System.Web.Optimization.dll
+C:\Users\stajer\Desktop\gemi_11\gemi\bin\System.Web.Providers.dll
+C:\Users\stajer\Desktop\gemi_11\gemi\bin\System.Web.Razor.dll
+C:\Users\stajer\Desktop\gemi_11\gemi\bin\System.Web.WebPages.Deployment.dll
+C:\Users\stajer\Desktop\gemi_11\gemi\bin\System.Web.WebPages.dll
+C:\Users\stajer\Desktop\gemi_11\gemi\bin\System.Web.WebPages.Razor.dll
+C:\Users\stajer\Desktop\gemi_11\gemi\bin\WebGrease.dll
+C:\Users\stajer\Desktop\gemi_11\gemi\bin\MySql.Data.dll
+C:\Users\stajer\Desktop\gemi_11\gemi\bin\gemi.data.pdb
+C:\Users\stajer\Desktop\gemi_11\gemi\bin\gemi.Entities.pdb
+C:\Users\stajer\Desktop\gemi_11\gemi\bin\gemi.Helpers.pdb
+C:\Users\stajer\Desktop\gemi_11\gemi\bin\EntityFramework.xml
+C:\Users\stajer\Desktop\gemi_11\gemi\bin\Newtonsoft.Json.xml
+C:\Users\stajer\Desktop\gemi_11\gemi\bin\System.Web.Razor.xml
+C:\Users\stajer\Desktop\gemi_11\gemi\bin\System.Web.WebPages.xml
+C:\Users\stajer\Desktop\gemi_11\gemi\bin\System.Web.WebPages.Deployment.xml
+C:\Users\stajer\Desktop\gemi_11\gemi\bin\System.Web.WebPages.Razor.xml
+C:\Users\stajer\Desktop\gemi_11\gemi\obj\Debug\gemi.csprojResolveAssemblyReference.cache
+C:\Users\stajer\Desktop\gemi_11\gemi\obj\Debug\gemi.dll
+C:\Users\stajer\Desktop\gemi_11\gemi\obj\Debug\gemi.pdb
+C:\Users\denizc\Desktop\gemi_11 - Cookies\gemi\bin\gemi.dll
+C:\Users\denizc\Desktop\gemi_11 - Cookies\gemi\bin\gemi.pdb
+C:\Users\denizc\Desktop\gemi_11 - Cookies\gemi\bin\Antlr3.Runtime.dll
+C:\Users\denizc\Desktop\gemi_11 - Cookies\gemi\bin\EntityFramework.dll
+C:\Users\denizc\Desktop\gemi_11 - Cookies\gemi\bin\gemi.data.dll
+C:\Users\denizc\Desktop\gemi_11 - Cookies\gemi\bin\gemi.Entities.dll
+C:\Users\denizc\Desktop\gemi_11 - Cookies\gemi\bin\gemi.Helpers.dll
+C:\Users\denizc\Desktop\gemi_11 - Cookies\gemi\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\denizc\Desktop\gemi_11 - Cookies\gemi\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\denizc\Desktop\gemi_11 - Cookies\gemi\bin\Newtonsoft.Json.dll
+C:\Users\denizc\Desktop\gemi_11 - Cookies\gemi\bin\System.Web.Mvc.dll
+C:\Users\denizc\Desktop\gemi_11 - Cookies\gemi\bin\System.Web.Optimization.dll
+C:\Users\denizc\Desktop\gemi_11 - Cookies\gemi\bin\System.Web.Providers.dll
+C:\Users\denizc\Desktop\gemi_11 - Cookies\gemi\bin\System.Web.Razor.dll
+C:\Users\denizc\Desktop\gemi_11 - Cookies\gemi\bin\System.Web.WebPages.Deployment.dll
+C:\Users\denizc\Desktop\gemi_11 - Cookies\gemi\bin\System.Web.WebPages.dll
+C:\Users\denizc\Desktop\gemi_11 - Cookies\gemi\bin\System.Web.WebPages.Razor.dll
+C:\Users\denizc\Desktop\gemi_11 - Cookies\gemi\bin\WebGrease.dll
+C:\Users\denizc\Desktop\gemi_11 - Cookies\gemi\bin\MySql.Data.dll
+C:\Users\denizc\Desktop\gemi_11 - Cookies\gemi\bin\gemi.data.pdb
+C:\Users\denizc\Desktop\gemi_11 - Cookies\gemi\bin\gemi.Entities.pdb
+C:\Users\denizc\Desktop\gemi_11 - Cookies\gemi\bin\gemi.Helpers.pdb
+C:\Users\denizc\Desktop\gemi_11 - Cookies\gemi\bin\EntityFramework.xml
+C:\Users\denizc\Desktop\gemi_11 - Cookies\gemi\bin\Newtonsoft.Json.xml
+C:\Users\denizc\Desktop\gemi_11 - Cookies\gemi\bin\System.Web.Razor.xml
+C:\Users\denizc\Desktop\gemi_11 - Cookies\gemi\bin\System.Web.WebPages.xml
+C:\Users\denizc\Desktop\gemi_11 - Cookies\gemi\bin\System.Web.WebPages.Deployment.xml
+C:\Users\denizc\Desktop\gemi_11 - Cookies\gemi\bin\System.Web.WebPages.Razor.xml
+C:\Users\denizc\Desktop\gemi_11 - Cookies\gemi\obj\Debug\gemi.csprojResolveAssemblyReference.cache
+C:\Users\denizc\Desktop\gemi_11 - Cookies\gemi\obj\Debug\gemi.dll
+C:\Users\denizc\Desktop\gemi_11 - Cookies\gemi\obj\Debug\gemi.pdb
+C:\Users\denizc\Desktop\gemi_12\gemi\bin\gemi.dll
+C:\Users\denizc\Desktop\gemi_12\gemi\bin\gemi.pdb
+C:\Users\denizc\Desktop\gemi_12\gemi\bin\Antlr3.Runtime.dll
+C:\Users\denizc\Desktop\gemi_12\gemi\bin\EntityFramework.dll
+C:\Users\denizc\Desktop\gemi_12\gemi\bin\gemi.data.dll
+C:\Users\denizc\Desktop\gemi_12\gemi\bin\gemi.Entities.dll
+C:\Users\denizc\Desktop\gemi_12\gemi\bin\gemi.Helpers.dll
+C:\Users\denizc\Desktop\gemi_12\gemi\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\denizc\Desktop\gemi_12\gemi\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\denizc\Desktop\gemi_12\gemi\bin\Newtonsoft.Json.dll
+C:\Users\denizc\Desktop\gemi_12\gemi\bin\System.Web.Mvc.dll
+C:\Users\denizc\Desktop\gemi_12\gemi\bin\System.Web.Optimization.dll
+C:\Users\denizc\Desktop\gemi_12\gemi\bin\System.Web.Providers.dll
+C:\Users\denizc\Desktop\gemi_12\gemi\bin\System.Web.Razor.dll
+C:\Users\denizc\Desktop\gemi_12\gemi\bin\System.Web.WebPages.Deployment.dll
+C:\Users\denizc\Desktop\gemi_12\gemi\bin\System.Web.WebPages.dll
+C:\Users\denizc\Desktop\gemi_12\gemi\bin\System.Web.WebPages.Razor.dll
+C:\Users\denizc\Desktop\gemi_12\gemi\bin\WebGrease.dll
+C:\Users\denizc\Desktop\gemi_12\gemi\bin\MySql.Data.dll
+C:\Users\denizc\Desktop\gemi_12\gemi\bin\gemi.data.pdb
+C:\Users\denizc\Desktop\gemi_12\gemi\bin\gemi.Entities.pdb
+C:\Users\denizc\Desktop\gemi_12\gemi\bin\gemi.Helpers.pdb
+C:\Users\denizc\Desktop\gemi_12\gemi\bin\EntityFramework.xml
+C:\Users\denizc\Desktop\gemi_12\gemi\bin\Newtonsoft.Json.xml
+C:\Users\denizc\Desktop\gemi_12\gemi\bin\System.Web.Razor.xml
+C:\Users\denizc\Desktop\gemi_12\gemi\bin\System.Web.WebPages.xml
+C:\Users\denizc\Desktop\gemi_12\gemi\bin\System.Web.WebPages.Deployment.xml
+C:\Users\denizc\Desktop\gemi_12\gemi\bin\System.Web.WebPages.Razor.xml
+C:\Users\denizc\Desktop\gemi_12\gemi\obj\Debug\gemi.csprojResolveAssemblyReference.cache
+C:\Users\denizc\Desktop\gemi_12\gemi\obj\Debug\gemi.dll
+C:\Users\denizc\Desktop\gemi_12\gemi\obj\Debug\gemi.pdb
+E:\gemi_12\gemi\bin\gemi.dll
+E:\gemi_12\gemi\bin\gemi.pdb
+E:\gemi_12\gemi\bin\Antlr3.Runtime.dll
+E:\gemi_12\gemi\bin\EntityFramework.dll
+E:\gemi_12\gemi\bin\gemi.data.dll
+E:\gemi_12\gemi\bin\gemi.Entities.dll
+E:\gemi_12\gemi\bin\gemi.Helpers.dll
+E:\gemi_12\gemi\bin\Microsoft.Web.Infrastructure.dll
+E:\gemi_12\gemi\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+E:\gemi_12\gemi\bin\Newtonsoft.Json.dll
+E:\gemi_12\gemi\bin\System.Web.Mvc.dll
+E:\gemi_12\gemi\bin\System.Web.Optimization.dll
+E:\gemi_12\gemi\bin\System.Web.Providers.dll
+E:\gemi_12\gemi\bin\System.Web.Razor.dll
+E:\gemi_12\gemi\bin\System.Web.WebPages.Deployment.dll
+E:\gemi_12\gemi\bin\System.Web.WebPages.dll
+E:\gemi_12\gemi\bin\System.Web.WebPages.Razor.dll
+E:\gemi_12\gemi\bin\WebGrease.dll
+E:\gemi_12\gemi\bin\gemi.data.pdb
+E:\gemi_12\gemi\bin\gemi.Entities.pdb
+E:\gemi_12\gemi\bin\gemi.Helpers.pdb
+E:\gemi_12\gemi\bin\EntityFramework.xml
+E:\gemi_12\gemi\bin\Newtonsoft.Json.xml
+E:\gemi_12\gemi\bin\System.Web.Razor.xml
+E:\gemi_12\gemi\bin\System.Web.WebPages.xml
+E:\gemi_12\gemi\bin\System.Web.WebPages.Deployment.xml
+E:\gemi_12\gemi\bin\System.Web.WebPages.Razor.xml
+E:\gemi_12\gemi\obj\Debug\gemi.csprojResolveAssemblyReference.cache
+E:\gemi_12\gemi\obj\Debug\gemi.dll
+E:\gemi_12\gemi\obj\Debug\gemi.pdb
+C:\Users\stajer\Desktop\gemi_13\gemi\bin\gemi.dll
+C:\Users\stajer\Desktop\gemi_13\gemi\bin\gemi.pdb
+C:\Users\stajer\Desktop\gemi_13\gemi\bin\Antlr3.Runtime.dll
+C:\Users\stajer\Desktop\gemi_13\gemi\bin\EntityFramework.dll
+C:\Users\stajer\Desktop\gemi_13\gemi\bin\gemi.data.dll
+C:\Users\stajer\Desktop\gemi_13\gemi\bin\gemi.Entities.dll
+C:\Users\stajer\Desktop\gemi_13\gemi\bin\gemi.Helpers.dll
+C:\Users\stajer\Desktop\gemi_13\gemi\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\stajer\Desktop\gemi_13\gemi\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\stajer\Desktop\gemi_13\gemi\bin\Newtonsoft.Json.dll
+C:\Users\stajer\Desktop\gemi_13\gemi\bin\System.Web.Mvc.dll
+C:\Users\stajer\Desktop\gemi_13\gemi\bin\System.Web.Optimization.dll
+C:\Users\stajer\Desktop\gemi_13\gemi\bin\System.Web.Providers.dll
+C:\Users\stajer\Desktop\gemi_13\gemi\bin\System.Web.Razor.dll
+C:\Users\stajer\Desktop\gemi_13\gemi\bin\System.Web.WebPages.Deployment.dll
+C:\Users\stajer\Desktop\gemi_13\gemi\bin\System.Web.WebPages.dll
+C:\Users\stajer\Desktop\gemi_13\gemi\bin\System.Web.WebPages.Razor.dll
+C:\Users\stajer\Desktop\gemi_13\gemi\bin\WebGrease.dll
+C:\Users\stajer\Desktop\gemi_13\gemi\bin\gemi.data.pdb
+C:\Users\stajer\Desktop\gemi_13\gemi\bin\gemi.Entities.pdb
+C:\Users\stajer\Desktop\gemi_13\gemi\bin\gemi.Helpers.pdb
+C:\Users\stajer\Desktop\gemi_13\gemi\bin\EntityFramework.xml
+C:\Users\stajer\Desktop\gemi_13\gemi\bin\Newtonsoft.Json.xml
+C:\Users\stajer\Desktop\gemi_13\gemi\bin\System.Web.Razor.xml
+C:\Users\stajer\Desktop\gemi_13\gemi\bin\System.Web.WebPages.xml
+C:\Users\stajer\Desktop\gemi_13\gemi\bin\System.Web.WebPages.Deployment.xml
+C:\Users\stajer\Desktop\gemi_13\gemi\bin\System.Web.WebPages.Razor.xml
+C:\Users\stajer\Desktop\gemi_13\gemi\obj\Debug\gemi.csprojResolveAssemblyReference.cache
+C:\Users\stajer\Desktop\gemi_13\gemi\obj\Debug\gemi.dll
+C:\Users\stajer\Desktop\gemi_13\gemi\obj\Debug\gemi.pdb
+C:\Users\stajer\Desktop\gemi_13\gemi\bin\MySql.Data.dll
+C:\Users\stajer\Desktop\gemi_13 - Kopya\gemi\bin\gemi.dll
+C:\Users\stajer\Desktop\gemi_13 - Kopya\gemi\bin\gemi.pdb
+C:\Users\stajer\Desktop\gemi_13 - Kopya\gemi\bin\Antlr3.Runtime.dll
+C:\Users\stajer\Desktop\gemi_13 - Kopya\gemi\bin\EntityFramework.dll
+C:\Users\stajer\Desktop\gemi_13 - Kopya\gemi\bin\gemi.data.dll
+C:\Users\stajer\Desktop\gemi_13 - Kopya\gemi\bin\gemi.Entities.dll
+C:\Users\stajer\Desktop\gemi_13 - Kopya\gemi\bin\gemi.Helpers.dll
+C:\Users\stajer\Desktop\gemi_13 - Kopya\gemi\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\stajer\Desktop\gemi_13 - Kopya\gemi\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\stajer\Desktop\gemi_13 - Kopya\gemi\bin\Newtonsoft.Json.dll
+C:\Users\stajer\Desktop\gemi_13 - Kopya\gemi\bin\System.Web.Mvc.dll
+C:\Users\stajer\Desktop\gemi_13 - Kopya\gemi\bin\System.Web.Optimization.dll
+C:\Users\stajer\Desktop\gemi_13 - Kopya\gemi\bin\System.Web.Providers.dll
+C:\Users\stajer\Desktop\gemi_13 - Kopya\gemi\bin\System.Web.Razor.dll
+C:\Users\stajer\Desktop\gemi_13 - Kopya\gemi\bin\System.Web.WebPages.Deployment.dll
+C:\Users\stajer\Desktop\gemi_13 - Kopya\gemi\bin\System.Web.WebPages.dll
+C:\Users\stajer\Desktop\gemi_13 - Kopya\gemi\bin\System.Web.WebPages.Razor.dll
+C:\Users\stajer\Desktop\gemi_13 - Kopya\gemi\bin\WebGrease.dll
+C:\Users\stajer\Desktop\gemi_13 - Kopya\gemi\bin\MySql.Data.dll
+C:\Users\stajer\Desktop\gemi_13 - Kopya\gemi\bin\gemi.data.pdb
+C:\Users\stajer\Desktop\gemi_13 - Kopya\gemi\bin\gemi.Entities.pdb
+C:\Users\stajer\Desktop\gemi_13 - Kopya\gemi\bin\gemi.Helpers.pdb
+C:\Users\stajer\Desktop\gemi_13 - Kopya\gemi\bin\EntityFramework.xml
+C:\Users\stajer\Desktop\gemi_13 - Kopya\gemi\bin\Newtonsoft.Json.xml
+C:\Users\stajer\Desktop\gemi_13 - Kopya\gemi\bin\System.Web.Razor.xml
+C:\Users\stajer\Desktop\gemi_13 - Kopya\gemi\bin\System.Web.WebPages.xml
+C:\Users\stajer\Desktop\gemi_13 - Kopya\gemi\bin\System.Web.WebPages.Deployment.xml
+C:\Users\stajer\Desktop\gemi_13 - Kopya\gemi\bin\System.Web.WebPages.Razor.xml
+C:\Users\stajer\Desktop\gemi_13 - Kopya\gemi\obj\Debug\gemi.csprojResolveAssemblyReference.cache
+C:\Users\stajer\Desktop\gemi_13 - Kopya\gemi\obj\Debug\gemi.dll
+C:\Users\stajer\Desktop\gemi_13 - Kopya\gemi\obj\Debug\gemi.pdb
+E:\gemi_13_1\gemi\bin\gemi.dll
+E:\gemi_13_1\gemi\bin\gemi.pdb
+E:\gemi_13_1\gemi\bin\Antlr3.Runtime.dll
+E:\gemi_13_1\gemi\bin\EntityFramework.dll
+E:\gemi_13_1\gemi\bin\gemi.data.dll
+E:\gemi_13_1\gemi\bin\gemi.Entities.dll
+E:\gemi_13_1\gemi\bin\gemi.Helpers.dll
+E:\gemi_13_1\gemi\bin\Microsoft.Web.Infrastructure.dll
+E:\gemi_13_1\gemi\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+E:\gemi_13_1\gemi\bin\Newtonsoft.Json.dll
+E:\gemi_13_1\gemi\bin\System.Web.Mvc.dll
+E:\gemi_13_1\gemi\bin\System.Web.Optimization.dll
+E:\gemi_13_1\gemi\bin\System.Web.Providers.dll
+E:\gemi_13_1\gemi\bin\System.Web.Razor.dll
+E:\gemi_13_1\gemi\bin\System.Web.WebPages.Deployment.dll
+E:\gemi_13_1\gemi\bin\System.Web.WebPages.dll
+E:\gemi_13_1\gemi\bin\System.Web.WebPages.Razor.dll
+E:\gemi_13_1\gemi\bin\WebGrease.dll
+E:\gemi_13_1\gemi\bin\MySql.Data.dll
+E:\gemi_13_1\gemi\bin\gemi.data.pdb
+E:\gemi_13_1\gemi\bin\gemi.Entities.pdb
+E:\gemi_13_1\gemi\bin\gemi.Helpers.pdb
+E:\gemi_13_1\gemi\bin\EntityFramework.xml
+E:\gemi_13_1\gemi\bin\Newtonsoft.Json.xml
+E:\gemi_13_1\gemi\bin\System.Web.Razor.xml
+E:\gemi_13_1\gemi\bin\System.Web.WebPages.xml
+E:\gemi_13_1\gemi\bin\System.Web.WebPages.Deployment.xml
+E:\gemi_13_1\gemi\bin\System.Web.WebPages.Razor.xml
+E:\gemi_13_1\gemi\obj\Debug\gemi.csprojResolveAssemblyReference.cache
+E:\gemi_13_1\gemi\obj\Debug\gemi.dll
+E:\gemi_13_1\gemi\obj\Debug\gemi.pdb
+C:\Users\denizc\Desktop\gemi_13_1\gemi\bin\gemi.dll
+C:\Users\denizc\Desktop\gemi_13_1\gemi\bin\gemi.pdb
+C:\Users\denizc\Desktop\gemi_13_1\gemi\bin\Antlr3.Runtime.dll
+C:\Users\denizc\Desktop\gemi_13_1\gemi\bin\EntityFramework.dll
+C:\Users\denizc\Desktop\gemi_13_1\gemi\bin\gemi.data.dll
+C:\Users\denizc\Desktop\gemi_13_1\gemi\bin\gemi.Entities.dll
+C:\Users\denizc\Desktop\gemi_13_1\gemi\bin\gemi.Helpers.dll
+C:\Users\denizc\Desktop\gemi_13_1\gemi\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\denizc\Desktop\gemi_13_1\gemi\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\denizc\Desktop\gemi_13_1\gemi\bin\Newtonsoft.Json.dll
+C:\Users\denizc\Desktop\gemi_13_1\gemi\bin\System.Web.Mvc.dll
+C:\Users\denizc\Desktop\gemi_13_1\gemi\bin\System.Web.Optimization.dll
+C:\Users\denizc\Desktop\gemi_13_1\gemi\bin\System.Web.Providers.dll
+C:\Users\denizc\Desktop\gemi_13_1\gemi\bin\System.Web.Razor.dll
+C:\Users\denizc\Desktop\gemi_13_1\gemi\bin\System.Web.WebPages.Deployment.dll
+C:\Users\denizc\Desktop\gemi_13_1\gemi\bin\System.Web.WebPages.dll
+C:\Users\denizc\Desktop\gemi_13_1\gemi\bin\System.Web.WebPages.Razor.dll
+C:\Users\denizc\Desktop\gemi_13_1\gemi\bin\WebGrease.dll
+C:\Users\denizc\Desktop\gemi_13_1\gemi\bin\MySql.Data.dll
+C:\Users\denizc\Desktop\gemi_13_1\gemi\bin\gemi.data.pdb
+C:\Users\denizc\Desktop\gemi_13_1\gemi\bin\gemi.Entities.pdb
+C:\Users\denizc\Desktop\gemi_13_1\gemi\bin\gemi.Helpers.pdb
+C:\Users\denizc\Desktop\gemi_13_1\gemi\bin\EntityFramework.xml
+C:\Users\denizc\Desktop\gemi_13_1\gemi\bin\Newtonsoft.Json.xml
+C:\Users\denizc\Desktop\gemi_13_1\gemi\bin\System.Web.Razor.xml
+C:\Users\denizc\Desktop\gemi_13_1\gemi\bin\System.Web.WebPages.xml
+C:\Users\denizc\Desktop\gemi_13_1\gemi\bin\System.Web.WebPages.Deployment.xml
+C:\Users\denizc\Desktop\gemi_13_1\gemi\bin\System.Web.WebPages.Razor.xml
+C:\Users\denizc\Desktop\gemi_13_1\gemi\obj\Debug\gemi.csprojResolveAssemblyReference.cache
+C:\Users\denizc\Desktop\gemi_13_1\gemi\obj\Debug\gemi.dll
+C:\Users\denizc\Desktop\gemi_13_1\gemi\obj\Debug\gemi.pdb
+C:\Users\stajer\Desktop\gemi_14\gemi\bin\gemi.dll
+C:\Users\stajer\Desktop\gemi_14\gemi\bin\gemi.pdb
+C:\Users\stajer\Desktop\gemi_14\gemi\bin\Antlr3.Runtime.dll
+C:\Users\stajer\Desktop\gemi_14\gemi\bin\EntityFramework.dll
+C:\Users\stajer\Desktop\gemi_14\gemi\bin\gemi.data.dll
+C:\Users\stajer\Desktop\gemi_14\gemi\bin\gemi.Entities.dll
+C:\Users\stajer\Desktop\gemi_14\gemi\bin\gemi.Helpers.dll
+C:\Users\stajer\Desktop\gemi_14\gemi\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\stajer\Desktop\gemi_14\gemi\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\stajer\Desktop\gemi_14\gemi\bin\Newtonsoft.Json.dll
+C:\Users\stajer\Desktop\gemi_14\gemi\bin\System.Web.Mvc.dll
+C:\Users\stajer\Desktop\gemi_14\gemi\bin\System.Web.Optimization.dll
+C:\Users\stajer\Desktop\gemi_14\gemi\bin\System.Web.Providers.dll
+C:\Users\stajer\Desktop\gemi_14\gemi\bin\System.Web.Razor.dll
+C:\Users\stajer\Desktop\gemi_14\gemi\bin\System.Web.WebPages.Deployment.dll
+C:\Users\stajer\Desktop\gemi_14\gemi\bin\System.Web.WebPages.dll
+C:\Users\stajer\Desktop\gemi_14\gemi\bin\System.Web.WebPages.Razor.dll
+C:\Users\stajer\Desktop\gemi_14\gemi\bin\WebGrease.dll
+C:\Users\stajer\Desktop\gemi_14\gemi\bin\MySql.Data.dll
+C:\Users\stajer\Desktop\gemi_14\gemi\bin\gemi.data.pdb
+C:\Users\stajer\Desktop\gemi_14\gemi\bin\gemi.Entities.pdb
+C:\Users\stajer\Desktop\gemi_14\gemi\bin\gemi.Helpers.pdb
+C:\Users\stajer\Desktop\gemi_14\gemi\bin\EntityFramework.xml
+C:\Users\stajer\Desktop\gemi_14\gemi\bin\Newtonsoft.Json.xml
+C:\Users\stajer\Desktop\gemi_14\gemi\bin\System.Web.Razor.xml
+C:\Users\stajer\Desktop\gemi_14\gemi\bin\System.Web.WebPages.xml
+C:\Users\stajer\Desktop\gemi_14\gemi\bin\System.Web.WebPages.Deployment.xml
+C:\Users\stajer\Desktop\gemi_14\gemi\bin\System.Web.WebPages.Razor.xml
+C:\Users\stajer\Desktop\gemi_14\gemi\obj\Debug\gemi.csprojResolveAssemblyReference.cache
+C:\Users\stajer\Desktop\gemi_14\gemi\obj\Debug\gemi.dll
+C:\Users\stajer\Desktop\gemi_14\gemi\obj\Debug\gemi.pdb
+C:\Users\denizc\Desktop\gemi_15\gemi\bin\gemi.dll
+C:\Users\denizc\Desktop\gemi_15\gemi\bin\gemi.pdb
+C:\Users\denizc\Desktop\gemi_15\gemi\bin\Antlr3.Runtime.dll
+C:\Users\denizc\Desktop\gemi_15\gemi\bin\EntityFramework.dll
+C:\Users\denizc\Desktop\gemi_15\gemi\bin\gemi.data.dll
+C:\Users\denizc\Desktop\gemi_15\gemi\bin\gemi.Entities.dll
+C:\Users\denizc\Desktop\gemi_15\gemi\bin\gemi.Helpers.dll
+C:\Users\denizc\Desktop\gemi_15\gemi\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\denizc\Desktop\gemi_15\gemi\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\denizc\Desktop\gemi_15\gemi\bin\Newtonsoft.Json.dll
+C:\Users\denizc\Desktop\gemi_15\gemi\bin\System.Web.Mvc.dll
+C:\Users\denizc\Desktop\gemi_15\gemi\bin\System.Web.Optimization.dll
+C:\Users\denizc\Desktop\gemi_15\gemi\bin\System.Web.Providers.dll
+C:\Users\denizc\Desktop\gemi_15\gemi\bin\System.Web.Razor.dll
+C:\Users\denizc\Desktop\gemi_15\gemi\bin\System.Web.WebPages.Deployment.dll
+C:\Users\denizc\Desktop\gemi_15\gemi\bin\System.Web.WebPages.dll
+C:\Users\denizc\Desktop\gemi_15\gemi\bin\System.Web.WebPages.Razor.dll
+C:\Users\denizc\Desktop\gemi_15\gemi\bin\WebGrease.dll
+C:\Users\denizc\Desktop\gemi_15\gemi\bin\MySql.Data.dll
+C:\Users\denizc\Desktop\gemi_15\gemi\bin\gemi.data.pdb
+C:\Users\denizc\Desktop\gemi_15\gemi\bin\gemi.Entities.pdb
+C:\Users\denizc\Desktop\gemi_15\gemi\bin\gemi.Helpers.pdb
+C:\Users\denizc\Desktop\gemi_15\gemi\bin\EntityFramework.xml
+C:\Users\denizc\Desktop\gemi_15\gemi\bin\Newtonsoft.Json.xml
+C:\Users\denizc\Desktop\gemi_15\gemi\bin\System.Web.Razor.xml
+C:\Users\denizc\Desktop\gemi_15\gemi\bin\System.Web.WebPages.xml
+C:\Users\denizc\Desktop\gemi_15\gemi\bin\System.Web.WebPages.Deployment.xml
+C:\Users\denizc\Desktop\gemi_15\gemi\bin\System.Web.WebPages.Razor.xml
+C:\Users\denizc\Desktop\gemi_15\gemi\obj\Debug\gemi.csprojResolveAssemblyReference.cache
+C:\Users\denizc\Desktop\gemi_15\gemi\obj\Debug\gemi.dll
+C:\Users\denizc\Desktop\gemi_15\gemi\obj\Debug\gemi.pdb
+C:\Users\stajer\Desktop\gemi_15_1\gemi\bin\gemi.dll
+C:\Users\stajer\Desktop\gemi_15_1\gemi\bin\gemi.pdb
+C:\Users\stajer\Desktop\gemi_15_1\gemi\bin\Antlr3.Runtime.dll
+C:\Users\stajer\Desktop\gemi_15_1\gemi\bin\EntityFramework.dll
+C:\Users\stajer\Desktop\gemi_15_1\gemi\bin\gemi.data.dll
+C:\Users\stajer\Desktop\gemi_15_1\gemi\bin\gemi.Entities.dll
+C:\Users\stajer\Desktop\gemi_15_1\gemi\bin\gemi.Helpers.dll
+C:\Users\stajer\Desktop\gemi_15_1\gemi\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\stajer\Desktop\gemi_15_1\gemi\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\stajer\Desktop\gemi_15_1\gemi\bin\Newtonsoft.Json.dll
+C:\Users\stajer\Desktop\gemi_15_1\gemi\bin\System.Web.Mvc.dll
+C:\Users\stajer\Desktop\gemi_15_1\gemi\bin\System.Web.Optimization.dll
+C:\Users\stajer\Desktop\gemi_15_1\gemi\bin\System.Web.Providers.dll
+C:\Users\stajer\Desktop\gemi_15_1\gemi\bin\System.Web.Razor.dll
+C:\Users\stajer\Desktop\gemi_15_1\gemi\bin\System.Web.WebPages.Deployment.dll
+C:\Users\stajer\Desktop\gemi_15_1\gemi\bin\System.Web.WebPages.dll
+C:\Users\stajer\Desktop\gemi_15_1\gemi\bin\System.Web.WebPages.Razor.dll
+C:\Users\stajer\Desktop\gemi_15_1\gemi\bin\WebGrease.dll
+C:\Users\stajer\Desktop\gemi_15_1\gemi\bin\MySql.Data.dll
+C:\Users\stajer\Desktop\gemi_15_1\gemi\bin\gemi.data.pdb
+C:\Users\stajer\Desktop\gemi_15_1\gemi\bin\gemi.Entities.pdb
+C:\Users\stajer\Desktop\gemi_15_1\gemi\bin\gemi.Helpers.pdb
+C:\Users\stajer\Desktop\gemi_15_1\gemi\bin\EntityFramework.xml
+C:\Users\stajer\Desktop\gemi_15_1\gemi\bin\Newtonsoft.Json.xml
+C:\Users\stajer\Desktop\gemi_15_1\gemi\bin\System.Web.Razor.xml
+C:\Users\stajer\Desktop\gemi_15_1\gemi\bin\System.Web.WebPages.xml
+C:\Users\stajer\Desktop\gemi_15_1\gemi\bin\System.Web.WebPages.Deployment.xml
+C:\Users\stajer\Desktop\gemi_15_1\gemi\bin\System.Web.WebPages.Razor.xml
+C:\Users\stajer\Desktop\gemi_15_1\gemi\obj\Debug\gemi.csprojResolveAssemblyReference.cache
+C:\Users\stajer\Desktop\gemi_15_1\gemi\obj\Debug\gemi.dll
+C:\Users\stajer\Desktop\gemi_15_1\gemi\obj\Debug\gemi.pdb
+C:\Users\stajer\Desktop\gemi_15_2\gemi\bin\gemi.dll
+C:\Users\stajer\Desktop\gemi_15_2\gemi\bin\gemi.pdb
+C:\Users\stajer\Desktop\gemi_15_2\gemi\bin\Antlr3.Runtime.dll
+C:\Users\stajer\Desktop\gemi_15_2\gemi\bin\EntityFramework.dll
+C:\Users\stajer\Desktop\gemi_15_2\gemi\bin\gemi.data.dll
+C:\Users\stajer\Desktop\gemi_15_2\gemi\bin\gemi.Entities.dll
+C:\Users\stajer\Desktop\gemi_15_2\gemi\bin\gemi.Helpers.dll
+C:\Users\stajer\Desktop\gemi_15_2\gemi\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\stajer\Desktop\gemi_15_2\gemi\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\stajer\Desktop\gemi_15_2\gemi\bin\Newtonsoft.Json.dll
+C:\Users\stajer\Desktop\gemi_15_2\gemi\bin\System.Web.Mvc.dll
+C:\Users\stajer\Desktop\gemi_15_2\gemi\bin\System.Web.Optimization.dll
+C:\Users\stajer\Desktop\gemi_15_2\gemi\bin\System.Web.Providers.dll
+C:\Users\stajer\Desktop\gemi_15_2\gemi\bin\System.Web.Razor.dll
+C:\Users\stajer\Desktop\gemi_15_2\gemi\bin\System.Web.WebPages.Deployment.dll
+C:\Users\stajer\Desktop\gemi_15_2\gemi\bin\System.Web.WebPages.dll
+C:\Users\stajer\Desktop\gemi_15_2\gemi\bin\System.Web.WebPages.Razor.dll
+C:\Users\stajer\Desktop\gemi_15_2\gemi\bin\WebGrease.dll
+C:\Users\stajer\Desktop\gemi_15_2\gemi\bin\MySql.Data.dll
+C:\Users\stajer\Desktop\gemi_15_2\gemi\bin\gemi.data.pdb
+C:\Users\stajer\Desktop\gemi_15_2\gemi\bin\gemi.Entities.pdb
+C:\Users\stajer\Desktop\gemi_15_2\gemi\bin\gemi.Helpers.pdb
+C:\Users\stajer\Desktop\gemi_15_2\gemi\bin\EntityFramework.xml
+C:\Users\stajer\Desktop\gemi_15_2\gemi\bin\Newtonsoft.Json.xml
+C:\Users\stajer\Desktop\gemi_15_2\gemi\bin\System.Web.Razor.xml
+C:\Users\stajer\Desktop\gemi_15_2\gemi\bin\System.Web.WebPages.xml
+C:\Users\stajer\Desktop\gemi_15_2\gemi\bin\System.Web.WebPages.Deployment.xml
+C:\Users\stajer\Desktop\gemi_15_2\gemi\bin\System.Web.WebPages.Razor.xml
+C:\Users\stajer\Desktop\gemi_15_2\gemi\obj\Debug\gemi.csprojResolveAssemblyReference.cache
+C:\Users\stajer\Desktop\gemi_15_2\gemi\obj\Debug\gemi.dll
+C:\Users\stajer\Desktop\gemi_15_2\gemi\obj\Debug\gemi.pdb
+C:\Users\stajer\Desktop\gemi_15_3\gemi\bin\gemi.dll
+C:\Users\stajer\Desktop\gemi_15_3\gemi\bin\gemi.pdb
+C:\Users\stajer\Desktop\gemi_15_3\gemi\bin\Antlr3.Runtime.dll
+C:\Users\stajer\Desktop\gemi_15_3\gemi\bin\EntityFramework.dll
+C:\Users\stajer\Desktop\gemi_15_3\gemi\bin\gemi.data.dll
+C:\Users\stajer\Desktop\gemi_15_3\gemi\bin\gemi.Entities.dll
+C:\Users\stajer\Desktop\gemi_15_3\gemi\bin\gemi.Helpers.dll
+C:\Users\stajer\Desktop\gemi_15_3\gemi\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\stajer\Desktop\gemi_15_3\gemi\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\stajer\Desktop\gemi_15_3\gemi\bin\Newtonsoft.Json.dll
+C:\Users\stajer\Desktop\gemi_15_3\gemi\bin\System.Web.Mvc.dll
+C:\Users\stajer\Desktop\gemi_15_3\gemi\bin\System.Web.Optimization.dll
+C:\Users\stajer\Desktop\gemi_15_3\gemi\bin\System.Web.Providers.dll
+C:\Users\stajer\Desktop\gemi_15_3\gemi\bin\System.Web.Razor.dll
+C:\Users\stajer\Desktop\gemi_15_3\gemi\bin\System.Web.WebPages.Deployment.dll
+C:\Users\stajer\Desktop\gemi_15_3\gemi\bin\System.Web.WebPages.dll
+C:\Users\stajer\Desktop\gemi_15_3\gemi\bin\System.Web.WebPages.Razor.dll
+C:\Users\stajer\Desktop\gemi_15_3\gemi\bin\WebGrease.dll
+C:\Users\stajer\Desktop\gemi_15_3\gemi\bin\MySql.Data.dll
+C:\Users\stajer\Desktop\gemi_15_3\gemi\bin\gemi.data.pdb
+C:\Users\stajer\Desktop\gemi_15_3\gemi\bin\gemi.Entities.pdb
+C:\Users\stajer\Desktop\gemi_15_3\gemi\bin\gemi.Helpers.pdb
+C:\Users\stajer\Desktop\gemi_15_3\gemi\bin\EntityFramework.xml
+C:\Users\stajer\Desktop\gemi_15_3\gemi\bin\Newtonsoft.Json.xml
+C:\Users\stajer\Desktop\gemi_15_3\gemi\bin\System.Web.Razor.xml
+C:\Users\stajer\Desktop\gemi_15_3\gemi\bin\System.Web.WebPages.xml
+C:\Users\stajer\Desktop\gemi_15_3\gemi\bin\System.Web.WebPages.Deployment.xml
+C:\Users\stajer\Desktop\gemi_15_3\gemi\bin\System.Web.WebPages.Razor.xml
+C:\Users\stajer\Desktop\gemi_15_3\gemi\obj\Debug\gemi.csprojResolveAssemblyReference.cache
+C:\Users\stajer\Desktop\gemi_15_3\gemi\obj\Debug\gemi.dll
+C:\Users\stajer\Desktop\gemi_15_3\gemi\obj\Debug\gemi.pdb

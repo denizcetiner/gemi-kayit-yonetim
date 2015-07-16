@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html style="height:100%">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    <link href="../../Content/lightbox.css" rel="stylesheet" type="text/css" />
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="~/Scripts/datepicker-tr.js"></script>
+    <script src="../../Scripts/myscripts.js" type="text/javascript"></script>
+    <script src="../../Scripts/lightbox.js" type="text/javascript"></script>
+    <style>
+        #ui-datepicker-div
+        {
+            background-color:gray;
+            z-index:5;
+        }
+        
+        .header
+        {
+            font-size:20px;
+        }
+        
+        .header input
+        {
+            border-radius:5px;
+        }
+        
+        .header div
+        {
+            display:inline-block;
+            vertical-align:top;
+        }
+        
+        .body
+        {
+            font-size:20px;
+            min-height:100%;
+            padding-bottom:100px;
+        }
+        
+        
+    </style>
+
+</head>
+<body>
+<div class="container">
+<div class="header">
+    <div class="banner" style="width:40%;background:cyan;height:152px;display:inline-block">
+        <img src="../../Content/src/KAPTAN.jpg" />
+    </div>
+    <div style="width:18%;background-color:cyan;height:152px;display:inline-block" class="currency">
+        @{
+            gemi.Helpers.XMLMethods xml = new gemi.Helpers.XMLMethods();
+            Dictionary<string, string> dc = xml.GetCurrencies();
+            <table>
+                @foreach(var i in dc)
+                {
+                    <tr><td>@i.Key</td><td>@i.Value</td></tr>
+                }
+            </table>
+        }
+    </div>
+    <div style="width:17%;background-color:cyan;height:152px;display:inline-block" class="forecast">
+        @{
+            dc = xml.GetForecast();
+            <table>
+                <tr><td>Şehir:</td><td>@dc["Sehir"]</td></tr>
+                <tr><td>Hava:</td><td>@dc["Hava"]</td></tr>
+                <tr><td>Sıcaklık:</td><td>@dc["Sıcaklık"]</td></tr>
+                <tr><td>Güncel:</td><td>@dc["Zaman"]</td></tr>
+            </table>
+        }
+    </div>
+    <div style="width:22%;background-color:cyan;height:152px;display:inline-block" class="profile">
+            
+            @if (!Request.IsAuthenticated)
+            {
+                <form action="/Home/Login" method="post">
+                <fieldset>
+                    <legend>Giriş</legend>
+                    <input type="text" name="username" value="Kullanıcı adınız:" style="width:120px" onfocus="ClickToEmpty(this)" onclick="ClickToEmpty(this)"/>
+                    <input type="text" name="password" value="Şifreniz:" style="width:120px" onfocus="ClickToEmptyPass(this)" onclick="ClickToEmptyPass(this)"/>
+                    <input type="submit" onclick="return ValidateLogin(this)" id="testsubmit"/><br />
+                    <p class="validationmessage"></p>
+                </fieldset>
+                </form>
+            }
+            else
+            {
+                <div>Hoşgediniz , @User.Identity.Name !</div><br /><br /><br />
+                <div><a style="text-decoration:none" href="/Home/ChangePassword">Şifre değiştirme</a></div>
+            }
+    </div>
+    </div>
+    
+    <div style="clear:both"></div>
+    
+    <div class="body">
+    <div class="Actions" style="width:15%;border:solid black 1px;background-color:cyan;display:inline-block">
+        <a href="~/Home/Search">Arama</a>
+        <!--<form id="search-form" action="/Gemi/GetShip" method="get">
+            <div>Gemi Arama:</div><br /><br />
+            <div style="margin:0 5% 0 5%">
+            <div style="width:70%"><input type="text" name="ref_id" class="required-search"/></div>
+            <div style="width:25%"><input type="submit" onclick="return ValidateSearch(this);"/></div>
+            </div>
+        </form>-->
+        <br />
+        
+            <a href="~/Home/Index">Ana Sayfa</a><br />
+            <p id="search-error" style="display:none">Gemi arama alanı boş bırakılamaz</p>
+            @if (Request.IsAuthenticated)
+            {
+                <a href="~/Gemi/Records">Girilen kayıtlar</a><br />
+                <a href="~/Gemi/">Gemi işlemleri</a><br />
+                if (User.IsInRole("admin"))
+                {
+                    <!--<li><a href="~/Name">Tanımlar</a><br /></li>-->
+                    <a href="~/Admin">Yönetici Paneli</a><br />
+                }  
+                <a href="~/Home/Logout">Çıkış</a><br />
+            }
+    </div>
+    <div class="context" style="width:80%;display:inline-block;margin-left:0px;border:solid black 1px;padding:0;background-color:cyan">
+        @RenderBody()
+    </div>
+    </div>
+
+    <!--<div class="footer" style="clear:both;background-color:cyan;bottom:0">
+        <div>Footer
+        </div>
+    </div>-->
+    
+    
+    @RenderSection("scripts", required: false)
+    </div>
+</body>
+</html>

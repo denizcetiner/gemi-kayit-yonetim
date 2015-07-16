@@ -1,0 +1,53 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<script>
+    function DeleteName(e)
+    {
+        var answer = confirm("Bir gemi ismini sildiğinizde gemi ismiyle birlikte, gemiye ait kayıtlar ve resimler de silinecektir.Devam etmek istediğinize emin misiniz?");
+        if (answer)
+        {
+            $.ajax(
+                {
+                    url: "/Name/Continue",
+                    type: "post",
+                    cache: false,
+                    async: false,
+                    data:
+                        {
+                            tanim_id:$(e).data("id")
+                        },
+                    success: function(result)
+                        {
+                        if (result)
+                        {
+                            alert("Kayıtlar başarıyla silindi");
+                            $(e).parent().parent().parent().remove();
+                        }
+                        else
+                        {
+                            alert("Kayıt silinemedi");
+                        }
+                    }
+
+                });
+        }
+        return false;
+    }
+</script>
+
+<h2>Index</h2>
+
+<table id="name_table" style="background-color:yellow">
+<tr><td>Id</td><td>Tanım</td><td></td></tr>
+@foreach (gemi.Entities.Tanimlar tanim in ViewBag.tanimlar)
+{
+    <tr id="row-@tanim.tanimId">
+        <td style="border:solid black 1px">@tanim.tanimId</td>
+        <td style="border:solid black 1px">@tanim.tanim</td>
+        <td><form action="/Name/Continue" method="get"><input type="hidden" name="tanim_id" value="@tanim.tanimId"/><input value="Sil" data-id="@tanim.tanimId" id="input-@tanim.tanimId" onclick="return DeleteName(this)"/></form></td>
+    </tr>
+}
+</table>
+<a href="~/Name/NewName">Yeni tanım ekle</a><br />

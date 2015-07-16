@@ -1,0 +1,70 @@
+@{
+    ViewBag.Title = "Upload";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Upload</h2>
+
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="../../Scripts/datepicker-tr.js"></script>
+
+<script>
+    function ValidateShipUpload(object) {
+        $("#uploaderror").css("display", "none");
+        $("#descerror").css("display","none");
+        var result = true ;
+        var table = $(object).siblings("table");
+        var ref_id = table.find("tr:eq(0)").find("td:eq(1)").find("input");
+        var description = table.find("textarea:eq(0)");
+        var ship_id = table.find("tr:eq(1)").find("td:eq(1)").find("select");
+        var files = table.find("tr:eq(3)").find("td:eq(1)").find("input");
+        var date = table.find("tr:eq(4)").find("td:eq(1)").find("input");
+        if (ref_id.val() == "") {
+            CannotBeEmpty(ref_id);
+            result = false;
+        }
+        if (ship_id.val() < 0)
+        {
+            ship_id.val("-2");
+            result = false;
+        }
+        if (description.val().length > 30) {
+            $("descerror").css("display", "block");
+            result = false;
+        }
+        if (files.prop("files").length == 0) {
+            $("#uploaderror").css("display", "block");
+            result = false;
+        }
+        if (date.val() == "") {
+            date.val("Bir tarih seçmek için týklayýn");
+            result = false;
+        }
+        return result;
+    }
+
+</script>
+
+<form action="/Gemi/Upload" method="post" enctype="multipart/form-data">
+	<table id="uploadtable">
+	<tr><td><span>Referans numarasýný giriniz:</span></td><td><input type="text" name="ref_id"/></td></tr>
+    <tr><td><span>Gemi adýný seçiniz:</span></td>
+    <td><select name= "ship_id">
+        <option selected value="-1">Bir gemi seçiniz</option>
+        <option  value="-2">Boþ Býrakýlamaz</option>
+    
+    @foreach (KeyValuePair<int,string> i in ViewBag.Tanimlar)
+    {
+        <option value="@i.Key">@i.Value</option>
+    }
+    </select></td></tr>
+    <tr><td><span>Açýklama giriniz:</span></td>
+    <td><textarea name="description"></textarea></td></tr>
+	<tr><td>Dosya seçin:</td><td><input type="file" name="files" multiple accept="/image/*" /></td></tr>
+    <tr><td><span>Tarih giriniz:</span></td><td><input type="text" id="datepicker" name="time"/></td></tr>
+	
+    </table>
+    <input type="submit" onclick="return ValidateShipUpload(this)"/><br />
+    <p id="uploaderror" style="color:Red;border:solid red 1px;display:none;">Fotoðraf yüklemeniz gerekmektedir</p>
+    <p id="descerror" style="color:Red;border:solid red 1px;display:none">Açýklama 300 karakterden uzun olamaz</p>
+</form>

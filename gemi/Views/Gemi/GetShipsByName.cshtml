@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "GetShipsByName";
+}
+
+<h2>GetShipsByName</h2>
+
+@model List<gemi.Entities.Ship>
+<div class="ships">
+
+
+<label> Gemi adı </label> Geliş tarihi <label></label><label> Referans no </label><br />
+@if(Model.Count==0)
+{
+    <div>Kayıt bulunamadı.</div>
+}
+else
+{
+    foreach(var i in Model)
+    {
+        <label> @ViewBag.tanimlar[i.shipId] </label> @i.time.ToString().Remove(10) <label><a href="~/Gemi/GetShip?ref_id=@i.refId">@i.refId</a></label><br />
+    }
+
+}
+</div>

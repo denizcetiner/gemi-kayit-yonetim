@@ -1,0 +1,42 @@
+﻿@model List<gemi.Entities.Ship>
+
+@{
+    ViewBag.Title = "Records";
+}
+
+<h2>Records</h2>
+
+<style>
+    p {
+        background-color: yellow;
+        border-style: groove;
+        display: inline-block;
+    }
+    
+    .record
+    {
+        border:dotted black 1px;
+        border-radius:25px;
+    }
+    
+    .record-content
+    {
+        margin-left:20px;
+        margin-bottom:10px;
+    }
+    
+    a
+    {
+        padding-bottom:15px;
+    }
+</style>
+
+@foreach (gemi.Entities.Ship i in Model)
+{
+    <div class="record">
+    <p class="record-content">Referans no: @i.refId , Gemi adı: @i.shipId , Hareket zamanı: @i.time.ToString().Remove(10) </p><br />
+    <p class="record-content">@i.description</p><br />
+    <a style="margin-left:30px" href="/Gemi/GetShip?ref_id=@i.refId">Gör </a>
+    <a class="record-content" href="/Gemi/EditShip?ref_id=@i.refId" > Düzenle</a><br />
+    </div>
+}

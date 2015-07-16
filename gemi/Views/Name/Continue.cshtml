@@ -1,0 +1,10 @@
+﻿@{
+    ViewBag.Title = "Continue";
+}
+@model string
+<h2>Continue</h2>
+
+<p>Bir gemi adını silmek üzeresiniz.Devam ederseniz bu gemi adı kayıtlardan silinecek,gemi adına sahip olan kayıtlar ve fotoğrafları da silinecek</p>
+<form action="/Name/Continue" method="post">
+    <input type="hidden" value="@Model" name="tanim_id" />
+</form>

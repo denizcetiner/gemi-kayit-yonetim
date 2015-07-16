@@ -1,0 +1,50 @@
+﻿@{
+    ViewBag.Title = "EditUser";
+}
+<script src="../../Scripts/jquery-1.8.2.js" type="text/javascript"></script>
+<script>
+    function ValidatePasswordChange(object)
+    {
+        var result = true;
+        var obj = $(object).parent().parent().parent();
+        if (obj.find(".required-password").val() == null) {
+            obj.find(".required-password").css("border", "solid red 1px");
+            result = false;
+        }
+        if (obj.find(".required-role").val() == null) {
+            obj.find(".required-role").css("border", "solid red 1px");
+            result = false;
+        }
+        else {
+            return result;
+        }
+    };
+    function Append(object)
+    {
+
+    };
+    function DeAppend(string) {
+    }
+
+    
+</script>
+
+<h2>EditUser</h2>
+<form id="usereditform" method="post" action="/Admin/EditUser">
+<table>
+    <tr>
+        <th>Eski değerler</th><th>Yeni değerler</th>
+    </tr>
+    <tr>
+        <td>@ViewBag.username</td><td>@ViewBag.username</td>
+    </tr>
+    <tr>
+        <td>Şifre değiştirme:</td><td><input type="text" name ="password" class="required-password"/></td>
+    </tr>
+    <tr>
+        <td>@ViewBag.role</td><td><input type="text" name="role" value="yeni rolü giriniz" class="required-role"/></td>
+    </tr>
+</table>
+    <input value="@ViewBag.username" name="username" type="hidden"/>
+    <input type="submit" class="submit" />
+</form>

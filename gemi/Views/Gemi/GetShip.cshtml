@@ -1,0 +1,46 @@
+﻿@{
+    ViewBag.Title = "GetShip";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="../../Scripts/lightbox.js" type="text/javascript"></script>
+<style>
+    .photos
+    {
+        display:inline-block;
+        border:1px solid gray;
+    }
+
+    .info {
+        background-color:yellow;
+        margin-bottom:15px;
+    }
+
+</style>
+
+<h2>GetShip</h2>
+
+    <div>
+        <div>
+            <table class="info">
+            <tr><td><label>Referans id:</label></td><td><label>@ViewBag.Ship.refId</label></td></tr>
+            <tr><td><label>Gemi adı:</label></td><td><label>@ViewBag.Ship.shipId</label></td></tr>
+            <tr><td><label>Geliş tarihi:</label></td><td><label>@ViewBag.Ship.time</label></td></tr>
+            <tr><td><label>Açıklama:</label></td><td><label>@ViewBag.Ship.description</label></td></tr>
+            </table>
+        </div>
+
+        @foreach (gemi.Entities.ShipUrl image in (List<gemi.Entities.ShipUrl>)ViewBag.Photos)
+        {
+            <div class="photos">
+            @{string imageSrc;
+
+              string imageBase64 = Convert.ToBase64String(image.preview);
+              imageSrc = string.Format("data:image/jpeg;base64,{0}", imageBase64);
+              string serverPath = Server.MapPath("..");
+              string relativePath = image.imageUrl.Substring(serverPath.Length, image.imageUrl.Length - serverPath.Length);
+        }
+            <!--<div>@serverPath</div>-->
+            <div><a data-lightbox="image-@image.id" style="z-index:6" target="_blank" href="@(relativePath)" ><img src="@imageSrc" alt="dosya alınamadı"/></a></div>
+            </div>
+        }
+        </div>

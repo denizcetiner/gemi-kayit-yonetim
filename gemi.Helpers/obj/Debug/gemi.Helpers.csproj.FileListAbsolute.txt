@@ -1,0 +1,37 @@
+C:\Users\stajer\Desktop\gemi_9\gemi.Helpers\bin\Debug\gemi.Helpers.dll
+C:\Users\stajer\Desktop\gemi_9\gemi.Helpers\bin\Debug\gemi.Helpers.pdb
+C:\Users\stajer\Desktop\gemi_9\gemi.Helpers\obj\Debug\gemi.Helpers.dll
+C:\Users\stajer\Desktop\gemi_9\gemi.Helpers\obj\Debug\gemi.Helpers.pdb
+C:\Users\stajer\Desktop\gemi_10\gemi.Helpers\bin\Debug\gemi.Helpers.dll
+C:\Users\stajer\Desktop\gemi_10\gemi.Helpers\bin\Debug\gemi.Helpers.pdb
+C:\Users\stajer\Desktop\gemi_10\gemi.Helpers\obj\Debug\gemi.Helpers.dll
+C:\Users\stajer\Desktop\gemi_10\gemi.Helpers\obj\Debug\gemi.Helpers.pdb
+C:\Users\stajer\Desktop\gemi_10\gemi.Helpers\obj\Debug\gemi.Helpers.csprojResolveAssemblyReference.cache
+C:\Users\stajer\Desktop\gemi_11\gemi.Helpers\bin\Debug\gemi.Helpers.dll
+C:\Users\stajer\Desktop\gemi_11\gemi.Helpers\bin\Debug\gemi.Helpers.pdb
+C:\Users\stajer\Desktop\gemi_11\gemi.Helpers\obj\Debug\gemi.Helpers.dll
+C:\Users\stajer\Desktop\gemi_11\gemi.Helpers\obj\Debug\gemi.Helpers.pdb
+C:\Users\denizc\Desktop\gemi_11\gemi.Helpers\obj\Debug\gemi.Helpers.dll
+C:\Users\denizc\Desktop\gemi_11\gemi.Helpers\bin\Debug\gemi.Helpers.dll
+C:\Users\denizc\Desktop\gemi_11\gemi.Helpers\bin\Debug\gemi.Helpers.pdb
+C:\Users\denizc\Desktop\gemi_11\gemi.Helpers\obj\Debug\gemi.Helpers.pdb
+C:\Users\denizc\Desktop\gemi_11 - Cookies\gemi.Helpers\bin\Debug\gemi.Helpers.dll
+C:\Users\denizc\Desktop\gemi_11 - Cookies\gemi.Helpers\bin\Debug\gemi.Helpers.pdb
+C:\Users\denizc\Desktop\gemi_11 - Cookies\gemi.Helpers\obj\Debug\gemi.Helpers.dll
+C:\Users\denizc\Desktop\gemi_11 - Cookies\gemi.Helpers\obj\Debug\gemi.Helpers.pdb
+E:\gemi_12\gemi.Helpers\bin\Debug\gemi.Helpers.dll
+E:\gemi_12\gemi.Helpers\bin\Debug\gemi.Helpers.pdb
+E:\gemi_12\gemi.Helpers\obj\Debug\gemi.Helpers.dll
+E:\gemi_12\gemi.Helpers\obj\Debug\gemi.Helpers.pdb
+C:\Users\stajer\Desktop\gemi_13\gemi.Helpers\bin\Debug\gemi.Helpers.dll
+C:\Users\stajer\Desktop\gemi_13\gemi.Helpers\bin\Debug\gemi.Helpers.pdb
+C:\Users\stajer\Desktop\gemi_13\gemi.Helpers\obj\Debug\gemi.Helpers.dll
+C:\Users\stajer\Desktop\gemi_13\gemi.Helpers\obj\Debug\gemi.Helpers.pdb
+C:\Users\stajer\Desktop\gemi_13 - Kopya\gemi.Helpers\bin\Debug\gemi.Helpers.dll
+C:\Users\stajer\Desktop\gemi_13 - Kopya\gemi.Helpers\bin\Debug\gemi.Helpers.pdb
+C:\Users\stajer\Desktop\gemi_13 - Kopya\gemi.Helpers\obj\Debug\gemi.Helpers.dll
+C:\Users\stajer\Desktop\gemi_13 - Kopya\gemi.Helpers\obj\Debug\gemi.Helpers.pdb
+C:\Users\stajer\Desktop\gemi_15_1\gemi.Helpers\bin\Debug\gemi.Helpers.dll
+C:\Users\stajer\Desktop\gemi_15_1\gemi.Helpers\bin\Debug\gemi.Helpers.pdb
+C:\Users\stajer\Desktop\gemi_15_1\gemi.Helpers\obj\Debug\gemi.Helpers.dll
+C:\Users\stajer\Desktop\gemi_15_1\gemi.Helpers\obj\Debug\gemi.Helpers.pdb

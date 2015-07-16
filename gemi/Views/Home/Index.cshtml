@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+@if (ViewBag.Message != null)
+{
+    <div>@ViewBag.Message</div>
+}
+@if (Request.IsAuthenticated)
+{
+    
+}  
+
+@if (ViewBag.redirect != null)
+{
+    <a href="@ViewBag.redirect">Güncellediğiniz gemiye dönmek için tıklayın:</a>
+}
