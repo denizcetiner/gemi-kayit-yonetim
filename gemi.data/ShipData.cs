@@ -10,10 +10,14 @@ namespace gemi.data
 {
     public class ShipData : gemi.data.Data
     {
-        public int AddGemi(gemi.Entities.Ship ship)
-        {
-            int last_id;
 
+        /// <summary>
+        /// Gemi kayıtları veritabanına yeni bir kayıt ekler.
+        /// </summary>
+        /// <param name="ship">Ship sınıfından bir nesne</param>
+        /// <returns></returns>
+        public void AddGemi(gemi.Entities.Ship ship)
+        {
             string query = "insert into ship (ref_id,ship_id,date_time,description,created_by,created_pc,created_datetime) values (@ref_id,@ship_id,@date_time,@description,@created_by,@created_pc,@created_datetime)";
 
             MySqlCommand cmd = new MySqlCommand(query, con);
@@ -27,12 +31,14 @@ namespace gemi.data
 
             Open();
             cmd.ExecuteNonQuery();
-            last_id = (Int32)cmd.LastInsertedId;
             Close();
-
-            return last_id;
         }
 
+        /// <summary>
+        /// Gemi veritabanından, Referans ID'si verilen bir geminin istenen özelliklerini, Ship sınıfından bir nesneye atar.
+        /// </summary>
+        /// <param name="ref_id"></param>
+        /// <returns>İstenen özelliklerle birlikte bir Ship nesnesi döndürür.</returns>
         public Ship GetShip(string ref_id)
         {
             Ship ship = new Ship();
@@ -57,6 +63,12 @@ namespace gemi.data
             return ship;
         }
 
+
+        /// <summary>
+        /// Bir kullanıcının girdiği tüm gemi kayıtlarını çeker.
+        /// </summary>
+        /// <param name="username"></param>
+        /// <returns>Ship listesi döndürür.</returns>
         public List<Ship> GetRecords(string username)
         {
             string query = "select ref_id,ship_id,date_time,description from ship where created_by=@created_by";
@@ -82,7 +94,12 @@ namespace gemi.data
             return records;
         }
 
-        public bool UpdateShip(Ship ship)
+        /// <summary>
+        /// Bir gemi kaydına ait bilgileri günceller.
+        /// </summary>
+        /// <param name="ship"></param>
+        /// <returns></returns>
+        public void UpdateShip(Ship ship)
         {
             string query = "update ship set ship_id=@ship_id,date_time=@date_time,description=@description,updated_by=@updated_by,updated_pc=@updated_pc,updated_datetime=@updated_datetime where ref_id=@ref_id";
 
@@ -98,9 +115,13 @@ namespace gemi.data
             Open();
             cmd.ExecuteNonQuery();
             Close();
-
-            return true;
         }
+
+        /// <summary>
+        /// Referans id'si verilen bir gemi kaydının kimin tarafından yapıldığını döndürür.
+        /// </summary>
+        /// <param name="ref_id"></param>
+        /// <returns>Kullanıcı adını döndürür.</returns>
         public string GetCreatedBy(string ref_id)
         {
             string query = "select created_by from ship where ref_id=@ref_id";
@@ -115,7 +136,12 @@ namespace gemi.data
             return result;
         }
 
-        public bool DeleteShips(int ship_id)
+        /// <summary>
+        /// Gemi tanımı ID'sine sahip olan gemileri siler.
+        /// </summary>
+        /// <param name="ship_id"></param>
+        /// <returns></returns>
+        public void DeleteShips(int ship_id)
         {
             string query = "delete from ship where ship_id=@ship_id";
             MySqlCommand cmd = new MySqlCommand(query, con);
@@ -124,10 +150,13 @@ namespace gemi.data
             Open();
             cmd.ExecuteNonQuery();
             Close();
-
-            return true;
         }
 
+        /// <summary>
+        /// Bir gemi tanımı ID'sine sahip gemilerin referanslarını çeker.
+        /// </summary>
+        /// <param name="ship_id"></param>
+        /// <returns>Gemi referans ID'lerini string listesi olarak döndürür.</returns>
         public List<string> GetShipReferencesOfName(int ship_id)
         {
             List<string> references = new List<string>();
@@ -150,6 +179,11 @@ namespace gemi.data
             return references;
         }
 
+        /// <summary>
+        /// Database'de verilen referans ID'sine sahip bir satırın olup olmadığını döndürür.
+        /// </summary>
+        /// <param name="ref_id"></param>
+        /// <returns>Satır varsa true, yok ise false döndürür.</returns>
         public bool CheckIfExists(string ref_id)
         {
             string query = "select count(*) from ship where ref_id=@ref_id";
@@ -164,6 +198,12 @@ namespace gemi.data
             return result;
         }
 
+
+        /// <summary>
+        /// Bir tanım ID'sine sahip gemileri döndürür.
+        /// </summary>
+        /// <param name="ship_id"></param>
+        /// <returns>Ship sınıfından nesnelerin listesini döndürür.</returns>
         public List<Ship> GetShipsByName(int ship_id)
         {
             List<Ship> ships = new List<Ship>();
@@ -186,6 +226,12 @@ namespace gemi.data
             return ships;
         }
 
+        /// <summary>
+        /// Başlangıç ve bitiş tarihi verilen gemi kayıtlarını döndürür.
+        /// </summary>
+        /// <param name="begin"></param>
+        /// <param name="end"></param>
+        /// <returns>Ship sınıfından nesnelerin listesini döndürür.</returns>
         public List<Ship> GetShipsBetweenDate(DateTime begin, DateTime end)
         {
             List<Ship> ships = new List<Ship>();
@@ -209,6 +255,14 @@ namespace gemi.data
             Close();
             return ships;
         }
+
+        /// <summary>
+        /// Bir tarih aralığı ve tanım ID'si verilen gemilerin listesini döndürür.
+        /// </summary>
+        /// <param name="ship_id"></param>
+        /// <param name="begin"></param>
+        /// <param name="end"></param>
+        /// <returns>Ship sınıfından nesneler döndürür.</returns>
         public List<Ship> GetShipsByDateAndName(int ship_id, DateTime begin, DateTime end)
         {
             List<Ship> ships = new List<Ship>();

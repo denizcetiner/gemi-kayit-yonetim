@@ -9,12 +9,18 @@ namespace gemi.data
 {
     public class RolesData : Data
     {
+
+        /// <summary>
+        /// Kullanıcı rollerinin tutulduğu veritabanından, parametre olarak gönderilmiş kullanıcı adına
+        /// ait rolü çeker.
+        /// </summary>
+        /// <param name="username"></param>
+        /// <returns>Kullanıcının sahip olduğu rolü geri döndürür.</returns>
         public string GetRole(string username)
         {
             string query = "select role from roles where username=@username";
             MySqlCommand cmd = new MySqlCommand(query,con);
             cmd.Parameters.AddWithValue("@username",username);
-
             Open();
             string result = Convert.ToString(cmd.ExecuteScalar());
             Close();
@@ -22,6 +28,10 @@ namespace gemi.data
             return result;
         }
 
+        /// <summary>
+        /// Roller veritabanına bağlanarak kullanıcı adlarını ve rollerini alır.
+        /// </summary>
+        /// <returns>Rollerin tam listesini geri döndürür.</returns>
         public List<Roles> GetRoles()
         {
             List<Roles> roles = new List<Roles>();
@@ -44,7 +54,13 @@ namespace gemi.data
             return roles;
         }
 
-        public bool SetRole(string username,string role)
+        /// <summary>
+        /// Parametre olarak yollanan kullanıcı adına, parametre olarak yollanan rolü atar.
+        /// </summary>
+        /// <param name="username">Kullanıcı adı.</param>
+        /// <param name="role">Kullanıcıya verilecek yeni rol.</param>
+        /// <returns></returns>
+        public void SetRole(string username,string role)
         {
             string query = "update roles set role=@role where username=@username";
             MySqlCommand cmd = new MySqlCommand(query, con);
@@ -54,10 +70,14 @@ namespace gemi.data
             Open();
             cmd.ExecuteNonQuery();
             Close();
-
-            return true;
         }
 
+        /// <summary>
+        /// Bir kullanıcı adının, verilen rollerden bir veya birden fazlasına sahip olup olmadığını kontrol eder.
+        /// </summary>
+        /// <param name="username">Kullanıcı adı</param>
+        /// <param name="roles">Kullanıcı rolleri</param>
+        /// <returns></returns>
         public bool CheckRole(string username, string[] roles)
         {
             string query = "select role from roles where username=@username";
@@ -79,6 +99,11 @@ namespace gemi.data
             return result;
         }
 
+        /// <summary>
+        /// Kullanıcıyı roller veritabanından siler
+        /// </summary>
+        /// <param name="username">Kullanıcı adı</param>
+        /// <returns></returns>
         public bool RemoveUser(string username)
         {
             string query = "delete from roles where username=@username";
@@ -93,6 +118,12 @@ namespace gemi.data
             return true;
         }
 
+        /// <summary>
+        /// Roller veritabanına yeni bir kullanıcı ve rolünü ekler
+        /// </summary>
+        /// <param name="username"></param>
+        /// <param name="role"></param>
+        /// <returns></returns>
         public bool AddUser(string username, string role)
         {
             string query = "insert into roles (username,role) values(@username,@role)";
@@ -108,6 +139,12 @@ namespace gemi.data
             return true;
         }
 
+        /// <summary>
+        /// Roller veritabanında bir kullanıcının kullanıcı adını değiştirir.
+        /// </summary>
+        /// <param name="oldname"></param>
+        /// <param name="newname"></param>
+        /// <returns></returns>
         public bool ChangeUserName(string oldname, string newname)
         {
             string query = "update roles set username=@newname where username=@oldname";

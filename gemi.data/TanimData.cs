@@ -9,6 +9,11 @@ namespace gemi.data
 {
     public class TanimData : gemi.data.Data
     {
+
+        /// <summary>
+        /// Tanımları, ID'leri ile birlikte bir sözlük olarak döndürür.
+        /// </summary>
+        /// <returns>Dictionary int string, int=tanimID,string=tanim</returns>
         public Dictionary<int,string> GetTanimlar()
         {
             Dictionary<int, string> tanimlar = new Dictionary<int, string>();
@@ -28,7 +33,12 @@ namespace gemi.data
             return tanimlar;
         }
 
-        public bool TanimEkle(string tanim)
+        /// <summary>
+        /// Bir tanım ekler.
+        /// </summary>
+        /// <param name="tanim"></param>
+        /// <returns></returns>
+        public void TanimEkle(string tanim)
         {
             string query = "insert into tanimlar (tanim) values (@tanim)";
 
@@ -38,11 +48,13 @@ namespace gemi.data
             Open();
             cmd.ExecuteNonQuery();
             Close();
-
-            return true;
         }
 
-        public bool DeleteTanim(string tanim)
+        /// <summary>
+        /// Bir gemi tanımını siler.
+        /// </summary>
+        /// <param name="tanim"></param>
+        public void DeleteTanim(string tanim)
         {
             string query = "delete from tanimlar where tanim=@tanim";
             MySqlCommand cmd = new MySqlCommand(query, con);
@@ -52,9 +64,13 @@ namespace gemi.data
             cmd.ExecuteNonQuery();
             Close();
 
-            return true;
         }
 
+        /// <summary>
+        /// Tanımın ID'sini döndürür.
+        /// </summary>
+        /// <param name="tanim"></param>
+        /// <returns></returns>
         public int getTanimId(string tanim)
         {
             string query = "select tanim_id from tanimlar where tanim=@tanim";
@@ -68,6 +84,11 @@ namespace gemi.data
             return tanimId;
         }
 
+        /// <summary>
+        /// Bir ID'nin tanımını döndürür.
+        /// </summary>
+        /// <param name="tanim_id"></param>
+        /// <returns></returns>
         public string getTanim(int tanim_id)
         {
             string query = "select tanim from tanimlar where tanim_id=@tanim_id";
@@ -81,7 +102,11 @@ namespace gemi.data
             return tanim;
         }
 
-        public bool DeleteTanimById(int tanim_id)
+        /// <summary>
+        /// ID'si verilen kayıt silinir.
+        /// </summary>
+        /// <param name="tanim_id"></param>
+        public void DeleteTanimById(int tanim_id)
         {
             string query = "delete from tanimlar where tanim_id=@tanim_id";
             MySqlCommand cmd = new MySqlCommand(query, con);
@@ -90,10 +115,12 @@ namespace gemi.data
             Open();
             cmd.ExecuteNonQuery();
             Close();
-
-            return true;
         }
 
+        /// <summary>
+        /// Veritabanındaki tüm tanımları Tanimlar listesi halinde döndürür.
+        /// </summary>
+        /// <returns></returns>
         public List<Tanimlar> GetAllTanimlar()
         {
             List<Tanimlar> tanimlar = new List<Tanimlar>();

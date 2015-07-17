@@ -24,6 +24,11 @@ namespace gemi.data
             return result;
         }*/
 
+        /// <summary>
+        /// Kullanıcının şifre ve kullanıcı adının eşleşip eşleşmediğini kontrol eder.
+        /// </summary>
+        /// <param name="user"></param>
+        /// <returns>Bilgiler eşleşiyorsa 'true', eşleşmiyorsa 'false' döndürür.</returns>
         public bool LoginUser(User user)
         {
             string query = "select password from user where username=@username";
@@ -38,7 +43,12 @@ namespace gemi.data
             return result;
         }
 
-        public bool AddUser(User user)
+        /// <summary>
+        /// Yeni kullanıcı ekler.
+        /// </summary>
+        /// <param name="user"></param>
+        /// <returns></returns>
+        public void AddUser(User user)
         {
             string query = "insert into user (username,password) values (@username,@password)";
 
@@ -49,10 +59,12 @@ namespace gemi.data
             Open();
             cmd.ExecuteNonQuery();
             Close();
-
-            return true;
         }
 
+        /// <summary>
+        /// Tüm kullanıcı adlarını veritabanından çeker.
+        /// </summary>
+        /// <returns></returns>
         public List<User> GetUsers()
         {
             string query = "select * from user";
@@ -67,7 +79,7 @@ namespace gemi.data
             {
                 User user = new User();
                 user.username = Convert.ToString(reader["username"]);
-                user.password = Convert.ToString(reader["password"]);
+                //user.password = Convert.ToString(reader["password"]);
                 users.Add(user);
             }
             Close();
@@ -75,7 +87,13 @@ namespace gemi.data
             return users;
         }
 
-        public bool ChangePassword(string username, string password)
+        /// <summary>
+        /// Bir kullanıcının şifresini değiştirir.
+        /// </summary>
+        /// <param name="username"></param>
+        /// <param name="password"></param>
+        /// <returns></returns>
+        public void ChangePassword(string username, string password)
         {
             string query = "update user set password=@password where username=@username";
 
@@ -86,11 +104,13 @@ namespace gemi.data
             Open();
             cmd.ExecuteNonQuery();
             Close();
-
-            return true;
         }
 
-        public bool RemoveUser(string username)
+        /// <summary>
+        /// Bir kullanıcıyı veritabanından siler.
+        /// </summary>
+        /// <param name="username">Silinecek olan kullanıcı adı</param>
+        public void RemoveUser(string username)
         {
             string query = "delete from user where username=@username";
 
@@ -100,11 +120,15 @@ namespace gemi.data
             Open();
             cmd.ExecuteNonQuery();
             Close();
-
-            return true;
         }
 
-        public bool ChangeName(string oldname, string newname)
+        /// <summary>
+        /// Bir kullanıcının kullanıcı adını değiştirir.
+        /// </summary>
+        /// <param name="oldname">Şu anki kullanıcı adı</param>
+        /// <param name="newname">Yeni kullanıcı adı</param>
+        /// <returns></returns>
+        public void ChangeName(string oldname, string newname)
         {
             string query = "update user set username=@newname where username=@oldname";
 
@@ -115,8 +139,6 @@ namespace gemi.data
             Open();
             cmd.ExecuteNonQuery();
             Close();
-
-            return true;
         }
         
 

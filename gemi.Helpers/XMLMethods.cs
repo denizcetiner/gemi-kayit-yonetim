@@ -9,6 +9,10 @@ namespace gemi.Helpers
 {
     public class XMLMethods
     {
+        /// <summary>
+        /// Her gün güncellenen bir xml dosyasından para değerlerini çeker.
+        /// </summary>
+        /// <returns></returns>
         public Dictionary<string, string> GetCurrencies()
         {
             Dictionary<string, string> currencies = new Dictionary<string, string>();
@@ -25,6 +29,10 @@ namespace gemi.Helpers
             return currencies;
         }
 
+        /// <summary>
+        /// Her gün güncellenen bir xml dosyasından Tekirdağ'ın hava durumunu çeker.
+        /// </summary>
+        /// <returns></returns>
         public Dictionary<string, string> GetForecast()
         {
             Dictionary<string, string> forecast = new Dictionary<string, string>();
