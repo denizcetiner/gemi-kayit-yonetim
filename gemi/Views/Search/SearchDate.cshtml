@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "GetShipsByDate";
+}
+
+<h2>GetShipsByDate</h2>
+
+<script>
+    function CannotBeEmptyDate(object)
+    {
+        $(object).val("Boş bırakılamaz");
+        $(object).attr("onclick", "OnClickEmptyDate(this)");
+    }
+    function OnClickEmptyDate(object)
+    {
+        $(object).val("");
+    }
+</script>
+
+<fieldset>
+<legend>Tarih aralığı ile arama</legend>
+<form action="/Search/GetShipsByDate" method="post">
+    <input class="datepick" type="text" name="begin" readonly="readonly" value="Başlangıç tarihi" onclick="OnClickEmptyDate(this)"/>
+    <input class="datepick" type="text" name="end" readonly="readonly" value="Bitiş tarihi" onclick="OnClickEmptyDate(this)"/>
+    <input type="submit" onclick="return ValidateDates(this)"/>
+</form>
+</fieldset>

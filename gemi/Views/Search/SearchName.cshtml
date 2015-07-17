@@ -1,0 +1,13 @@
+﻿@{
+    ViewBag.Title = "GetShipsByName";
+}
+
+<h2>GetShipsByName</h2>
+
+<fieldset>
+<legend>Gemi adı ile arama</legend>
+<form action="/Search/GetShipsByName" method="post">
+    <input type="text" name="ship_name" value="Gemi adı giriniz" onclick="ClickToEmpty(this)"/>
+    <input type="submit" onclick="return ValidateSearchString(this)"/>
+</form>
+</fieldset>

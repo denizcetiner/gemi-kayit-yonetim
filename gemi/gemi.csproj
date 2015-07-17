@@ -132,6 +132,7 @@
     <Compile Include="Controllers\GemiController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\NameController.cs" />
+    <Compile Include="Controllers\SearchController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -215,6 +216,8 @@
     <Content Include="Scripts\lightbox.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\myscripts.js" />
+    <Content Include="Scripts\validation_checkers.js" />
+    <Content Include="Scripts\validation_dom_change.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -239,11 +242,18 @@
     <Content Include="Views\Name\Continue.cshtml" />
     <Content Include="Views\Admin\UserPanel.cshtml" />
     <Content Include="Views\Admin\EditUser.cshtml" />
-    <Content Include="Views\Home\ShowCurrency.cshtml" />
     <Content Include="Views\Home\ChangePassword.cshtml" />
-    <Content Include="Views\Gemi\GetShipsByName.cshtml" />
-    <Content Include="Views\Gemi\GetShipsByDate.cshtml" />
-    <Content Include="Views\Home\Search.cshtml" />
+    <Content Include="Views\Search\GetShipsByDate.cshtml" />
+    <Content Include="Views\Search\Index.cshtml" />
+    <Content Include="Views\Search\SearchName.cshtml" />
+    <Content Include="Views\Search\SearchDate.cshtml" />
+    <Content Include="Views\Search\SearchRef.cshtml" />
+    <Content Include="Views\Search\_ShipInfo.cshtml" />
+    <Content Include="Views\Search\SearchResults.cshtml" />
+    <Content Include="Views\Search\GetShipsByName.cshtml" />
+    <Content Include="Views\Shared\_Currency.cshtml" />
+    <Content Include="Views\Shared\_Forecast.cshtml" />
+    <Content Include="Views\Shared\_Sidebar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

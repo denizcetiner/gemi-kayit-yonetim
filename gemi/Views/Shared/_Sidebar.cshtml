@@ -1,0 +1,23 @@
+﻿<a href="~/Search">Arama</a>
+        <!--<form id="search-form" action="/Gemi/GetShip" method="get">
+            <div>Gemi Arama:</div><br /><br />
+            <div style="margin:0 5% 0 5%">
+            <div style="width:70%"><input type="text" name="ref_id" class="required-search"/></div>
+            <div style="width:25%"><input type="submit" onclick="return ValidateSearch(this);"/></div>
+            </div>
+        </form>-->
+        <br />
+        
+<a href="~/Home/Index">Ana Sayfa</a><br />
+<p id="search-error" style="display:none">Gemi arama alanı boş bırakılamaz</p>
+@if (Request.IsAuthenticated)
+{
+    <a href="~/Gemi/Records">Girilen kayıtlar</a><br />
+    <a href="~/Gemi/">Gemi işlemleri</a><br />
+    if (User.IsInRole("admin"))
+    {
+        <!--<li><a href="~/Name">Tanımlar</a><br /></li>-->
+        <a href="~/Admin">Yönetici Paneli</a><br />
+    }  
+    <a href="~/Home/Logout">Çıkış</a><br />
+}
