@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "GetShipsByDate";
+}
+
+<h2>GetShipsByDate</h2>
+
+@model List<gemi.Entities.Ship>
+<div class="ships">
+
+@if(Model.Count==0)
+{
+    <div>Kayıt bulunamadı.</div>
+}
+else
+{
+    <div>Gemi adı</div><div>Geliş tarihi</div><div>Referans no</div><br />
+    foreach(var i in Model)
+    {
+        Html.RenderPartial("_ShipInfo", i);
+    }
+
+}
+
+</div>

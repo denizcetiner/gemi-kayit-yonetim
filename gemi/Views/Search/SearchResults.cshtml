@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "SearchResults";
+}
+
+<h2>SearchResults</h2>
+<div class="ships">
+@if(Model.Count==0)
+{
+    <div>Kayıt bulunamadı.</div>
+}
+else
+{
+    <div>Gemi adı</div><div>Geliş tarihi</div><div>Referans no</div><br />
+    foreach(gemi.Entities.Ship i in Model)
+    {
+        Html.RenderPartial("_ShipInfo", i);
+    }
+}
+</div>

@@ -29,12 +29,6 @@ namespace gemi.Controllers
             return View("Index");
         }
 
-        [HttpGet]
-        public ActionResult Search()
-        {
-            return View();
-        }
-
         [HttpPost]
         public ActionResult Login(string username, string password)
         {
@@ -148,12 +142,19 @@ namespace gemi.Controllers
                 return RedirectToAction("Index");
             }
         }
-
+        [OutputCache(Duration=3600)]
         public ActionResult ShowCurrency()
         {
             XMLMethods xml = new XMLMethods();
             Dictionary<string, string> currency = xml.GetCurrencies();
-            return View(currency);
+            return PartialView("_Currency", currency);
+        }
+        [OutputCache(Duration=3600)]
+        public ActionResult ShowForecast()
+        {
+            XMLMethods xml = new XMLMethods();
+            Dictionary<string, string> forecast = xml.GetForecast();
+            return PartialView("_Forecast", forecast);
         }
     }
 }
