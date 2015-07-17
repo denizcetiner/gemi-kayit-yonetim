@@ -54,12 +54,12 @@
     </div>
     <div style="width:18%;background-color:cyan;height:152px;display:inline-block" class="currency">
         @{
-            gemi.Helpers.XMLMethods xml = new gemi.Helpers.XMLMethods();
+            gemi.OtherMethods.XMLMethods xml = new gemi.OtherMethods.XMLMethods();
             Dictionary<string, string> dc = xml.GetCurrencies();
             <table>
                 @foreach(var i in dc)
                 {
-                    <tr><td>@i.Key</td><td>@i.Value</td></tr>
+                    <tr><td>@i.Key</td><td>@i.Value TL</td></tr>
                 }
             </table>
         }

@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using gemi.data;
+using gemi.DAL;
 using gemi.Entities;
-using gemi.Helpers;
+using gemi.OtherMethods;
 
 namespace gemi.Controllers
 {

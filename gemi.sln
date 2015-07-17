@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gemi", "gemi\gemi.csproj", "{FD211858-1261-43FF-8F81-C8B217334B61}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gemi.DAL", "gemi.data\gemi.DAL.csproj", "{E507E931-6EF8-41F9-BE98-A18C31CE4342}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gemi.DAL", "gemi.DAL\gemi.DAL.csproj", "{E507E931-6EF8-41F9-BE98-A18C31CE4342}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gemi.Models", "gemi.Entities\gemi.Models.csproj", "{A80AA875-C2EC-4A2C-90CC-77BA08D99D1B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gemi.Entities", "gemi.Entities\gemi.Entities.csproj", "{A80AA875-C2EC-4A2C-90CC-77BA08D99D1B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gemi.Methods", "gemi.Helpers\gemi.Methods.csproj", "{8E010A16-175B-4831-9EF4-9DC26D37FC90}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gemi.OtherMethods", "gemi.OtherMethods\gemi.OtherMethods.csproj", "{8E010A16-175B-4831-9EF4-9DC26D37FC90}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

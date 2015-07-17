@@ -4,8 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using gemi.Entities;
-using gemi.data;
-using gemi.Helpers;
+using gemi.DAL;
+using gemi.OtherMethods;
 using System.Web.Security;
 
 namespace gemi.Controllers

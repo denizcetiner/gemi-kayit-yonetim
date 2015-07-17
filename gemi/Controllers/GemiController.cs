@@ -4,8 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using gemi.Entities;
-using gemi.data;
-using gemi.Helpers;
+using gemi.DAL;
+using gemi.OtherMethods;
 
 namespace gemi.Controllers
 {
@@ -202,10 +202,8 @@ namespace gemi.Controllers
                     }
                 }*/ //başına ref_id eklendiğinden kullanımına gerek kalmadı
 
-                if (filer.SaveFile(photo, "", filename)) //filename'e zaten dosya adından öncesi eklendi 
-                {
-                    shipUrl.imageUrl = filename;
-                }
+                filer.SaveFile(photo, "", filename); //filename'e zaten dosya adından öncesi eklendi 
+                shipUrl.imageUrl = filename;
 
                 shipUrlData.AddShipUrl(shipUrl);
                 photo.Dispose();
@@ -228,8 +226,8 @@ namespace gemi.Controllers
                 filer.DeleteFile(shipUrlData.GetFilePath(photo_id));
 
 
-                bool result = shipUrlData.DeletePicture(photo_id);
-
+                shipUrlData.DeletePicture(photo_id);
+                bool result = true;
                 if (Request.IsAjaxRequest())
                 {
                     return Json(result);

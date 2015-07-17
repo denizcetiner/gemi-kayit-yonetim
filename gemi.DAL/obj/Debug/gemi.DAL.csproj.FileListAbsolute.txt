@@ -1,0 +1,8 @@
+C:\Users\denizc\Desktop\gemi-kayit-yonetim\gemi.DAL\bin\Debug\gemi.Entities.dll
+C:\Users\denizc\Desktop\gemi-kayit-yonetim\gemi.DAL\bin\Debug\MySql.Data.dll
+C:\Users\denizc\Desktop\gemi-kayit-yonetim\gemi.DAL\bin\Debug\gemi.Entities.pdb
+C:\Users\denizc\Desktop\gemi-kayit-yonetim\gemi.DAL\obj\Debug\gemi.DAL.csprojResolveAssemblyReference.cache
+C:\Users\denizc\Desktop\gemi-kayit-yonetim\gemi.DAL\bin\Debug\gemi.DAL.dll
+C:\Users\denizc\Desktop\gemi-kayit-yonetim\gemi.DAL\bin\Debug\gemi.DAL.pdb
+C:\Users\denizc\Desktop\gemi-kayit-yonetim\gemi.DAL\obj\Debug\gemi.DAL.dll
+C:\Users\denizc\Desktop\gemi-kayit-yonetim\gemi.DAL\obj\Debug\gemi.DAL.pdb

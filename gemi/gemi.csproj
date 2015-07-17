@@ -253,17 +253,17 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\gemi.data\gemi.DAL.csproj">
+    <ProjectReference Include="..\gemi.DAL\gemi.DAL.csproj">
       <Project>{e507e931-6ef8-41f9-be98-a18c31ce4342}</Project>
       <Name>gemi.DAL</Name>
     </ProjectReference>
-    <ProjectReference Include="..\gemi.Entities\gemi.Models.csproj">
+    <ProjectReference Include="..\gemi.Entities\gemi.Entities.csproj">
       <Project>{a80aa875-c2ec-4a2c-90cc-77ba08d99d1b}</Project>
-      <Name>gemi.Models</Name>
+      <Name>gemi.Entities</Name>
     </ProjectReference>
-    <ProjectReference Include="..\gemi.Helpers\gemi.Methods.csproj">
-      <Project>{8E010A16-175B-4831-9EF4-9DC26D37FC90}</Project>
-      <Name>gemi.Methods</Name>
+    <ProjectReference Include="..\gemi.OtherMethods\gemi.OtherMethods.csproj">
+      <Project>{8e010a16-175b-4831-9ef4-9dc26d37fc90}</Project>
+      <Name>gemi.OtherMethods</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
