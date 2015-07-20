@@ -30,7 +30,7 @@ namespace gemi.Controllers
         }
 
         [HttpPost]
-        public ActionResult Login(string username, string password)
+        public ActionResult Login(string username, string remember, string password)
         {
             User user = new User();
             user.username = username;
@@ -47,6 +47,22 @@ namespace gemi.Controllers
             {
                 if (userData.LoginUser(user))
                 {
+                    if (remember == "on")
+                    {
+                        HttpCookie hc = new HttpCookie("username");
+                        hc.Value = username;
+                        Response.Cookies.Add(hc);
+                    }
+                    else if (remember == null)
+                    {
+                        if (Request.Cookies["username"] != null)
+                        {
+                            HttpCookie hc = new HttpCookie("username");
+                            hc.Expires = DateTime.Now.AddDays(-1);
+                            Response.Cookies.Add(hc);
+                        }
+                    }
+
                     RolesData rolesData = new RolesData();
                     string role = rolesData.GetRole(user.username);
 
@@ -142,7 +158,7 @@ namespace gemi.Controllers
                 return RedirectToAction("Index");
             }
         }
-        [OutputCache(Duration=3600)]
+        [OutputCache(Duration=1200)]
         public ActionResult ShowCurrency()
         {
             XMLMethods xml = new XMLMethods();
@@ -155,6 +171,14 @@ namespace gemi.Controllers
             XMLMethods xml = new XMLMethods();
             Dictionary<string, string> forecast = xml.GetForecast();
             return PartialView("_Forecast", forecast);
+        }
+        public PartialViewResult SideBar()
+        {
+            return PartialView("_Sidebar");
+        }
+        public PartialViewResult Account()
+        {
+            return PartialView("_Profile");
         }
     }
 }

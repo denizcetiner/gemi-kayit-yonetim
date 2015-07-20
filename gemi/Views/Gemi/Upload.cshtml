@@ -43,27 +43,63 @@
         return result;
     }
 
+    function ShowPreview(object)
+    {
+        if (object.files && object.files[0])
+        {
+            $(".previews").empty();
+            /*$(".previews").append("<img id='imageprev" + 0 + "' >");
+            var reader = new FileReader();
+            reader.onload = function (e)
+            {
+                alert("asdf");
+                $('#imageprev' + 0).attr('src', e.target.result);
+            };
+            reader.readAsDataURL(object.files[0]);*/
+            for (i = 0; i < object.files.length; i++)
+            {
+                $(".previews").append("<div><img style='width:200px;height:200px' id='imageprev" + i + "' ><button>Vazgeç</button></div>");
+                setupReader(object.files[0],i)
+            }
+        }
+        function setupReader(file,i)
+        {
+            var name = file.name;
+            var reader = new FileReader();
+            reader.onload = function (e)
+            {
+                // get file content  
+                var text = e.target.result;
+                $('#imageprev' + i).attr("src", e.target.result);
+            }
+            reader.readAsDataURL(file);
+        }
+
+        
+    }
 </script>
 
-<form action="/Gemi/Upload" method="post" enctype="multipart/form-data">
+<form id="uploadform" action="/Gemi/Upload" method="post" enctype="multipart/form-data">
 	<table id="uploadtable">
-	<tr><td><span>Referans numarasýný giriniz:</span></td><td><input type="text" name="ref_id"/></td></tr>
-    <tr><td><span>Gemi adýný seçiniz:</span></td>
-    <td><select name= "ship_id">
-        <option selected value="-1">Bir gemi seçiniz</option>
-        <option  value="-2">Boþ Býrakýlamaz</option>
-    
-    @foreach (KeyValuePair<int,string> i in ViewBag.Tanimlar)
-    {
-        <option value="@i.Key">@i.Value</option>
-    }
-    </select></td></tr>
-    <tr><td><span>Açýklama giriniz:</span></td>
-    <td><textarea name="description"></textarea></td></tr>
-	<tr><td>Dosya seçin:</td><td><input type="file" name="files" multiple accept="/image/*" /></td></tr>
-    <tr><td><span>Tarih giriniz:</span></td><td><input type="text" id="datepicker" name="time"/></td></tr>
-	
+	    <tr><td><span>Referans numarasýný giriniz:</span></td><td><input type="text" name="ref_id"/></td></tr>
+        <tr><td><span>Gemi adýný seçiniz:</span></td>
+        <td><select name= "ship_id">
+            <option selected value="-1">Bir gemi seçiniz</option>
+            <option  value="-2">Boþ Býrakýlamaz</option>
+        
+        @foreach (KeyValuePair<int,string> i in ViewBag.Tanimlar)
+        {
+            <option value="@i.Key">@i.Value</option>
+        }
+        </select></td></tr>
+        <tr><td><span>Açýklama giriniz:</span></td>
+        <td><textarea name="description"></textarea></td></tr>
+	    <tr><td>Dosya seçin:</td><td><input type="file" id="files" name="files"  multiple accept="/image/*" /></td></tr><!--onchange="ShowPreview(this)"-->
+        <tr><td><span>Tarih giriniz:</span></td><td><input type="text" id="datepicker" name="time"/></td></tr>
     </table>
+
+    <div class="previews"></div>
+
     <input type="submit" onclick="return ValidateShipUpload(this)"/><br />
     <p id="uploaderror" style="color:Red;border:solid red 1px;display:none;">Fotoðraf yüklemeniz gerekmektedir</p>
     <p id="descerror" style="color:Red;border:solid red 1px;display:none">Açýklama 300 karakterden uzun olamaz</p>

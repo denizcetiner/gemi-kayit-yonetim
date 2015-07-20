@@ -14,7 +14,7 @@ namespace gemi.Controllers
     {
         //
         // GET: /Admin/
-
+        [OutputCache(NoStore = true, Duration = 0, VaryByParam = "*")]
         public ActionResult Index()
         {
             if(Request.IsAuthenticated)
@@ -36,7 +36,7 @@ namespace gemi.Controllers
                 return RedirectToAction("Index", "Home");
             }
         }
-
+        [OutputCache(NoStore = true, Duration = 0, VaryByParam = "*")]
         public ActionResult UserPanel()
         {
             RolesData rolesData = new RolesData();
@@ -66,6 +66,19 @@ namespace gemi.Controllers
             }
         }
 
+        [HttpGet]
+        public ActionResult AddUser()
+        {
+            if (Request.IsAuthenticated && User.IsInRole("admin"))
+            {
+                return View();
+            }
+            else
+            {
+                return RedirectToAction("Index","Home");
+            }
+        }
+
         [HttpPost]
         public ActionResult AddUser(string username, string password, string role)
         {
@@ -74,14 +87,23 @@ namespace gemi.Controllers
             {
                 if(User.IsInRole("admin"))
                 {
-                UserData userData = new UserData();
-                User user = new Entities.User();
-                user.username = username;
-                PasswordMethods pass = new PasswordMethods();
-                user.password = pass.Hash(password);
-                userData.AddUser(user);
-                rolesData.AddUser(username,role);
-                return View("Index");
+                    UserData userData = new UserData();
+                    if (!userData.CheckIfExists(username))
+                    {
+                        User user = new Entities.User();
+                        user.username = username;
+                        PasswordMethods pass = new PasswordMethods();
+                        user.password = pass.Hash(password);
+                        userData.AddUser(user);
+                        rolesData.AddUser(username, role);
+                        TempData["Message"] = "Kullanıcı başarıyla eklendi";
+                        return View("Index","Home");
+                    }
+                    else
+                    {
+                        TempData["Message"] = "Kullanıcı zaten var";
+                        return RedirectToAction("Index","Home");
+                    }
                 }
                 else
                 {
@@ -166,7 +188,7 @@ namespace gemi.Controllers
                 return RedirectToAction("Index", "Home");
             }
         }
-
+        [OutputCache(NoStore = true, Duration = 0, VaryByParam = "*")]
         [HttpGet]
         public ActionResult EditUser(string username)
         {

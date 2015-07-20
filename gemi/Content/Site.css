@@ -2,7 +2,6 @@
     font-size: .85em;
     font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
     color: #232323;
-    background-color: #fff;
 }
 
 header, footer, nav, section {
@@ -105,10 +104,6 @@ textarea
     width:100%;
 }
         
-.Actions div
-{
-    display:inline-block;
-}
         
 .Actions a
 {
@@ -183,4 +178,36 @@ select
 #uploadtable th, #uploadtable td
 {
     border:solid greenyellow 1px;
+}
+
+.option
+{
+    font-size:16px;
+}
+
+.options 
+{
+    display:none;
+    width:75%;
+    border:solid black;
+    border-width:0 0 1px 0;
+    border-radius:20px;
+    margin:auto;
+}
+
+.Actions a:hover
+{
+    background-color:lime;
+}
+
+.Users label
+{
+    display:inline-block;
+    width:120px;
+    text-align:center;
+}
+
+.body table
+{
+    margin:auto;
 }

@@ -13,7 +13,7 @@ namespace gemi.Controllers
     {
         //
         // GET: /Name/
-
+        [OutputCache(NoStore = true, Duration = 0, VaryByParam = "*")]
         public ActionResult Index()
         {
             if(Request.IsAuthenticated)
@@ -38,7 +38,7 @@ namespace gemi.Controllers
                 return RedirectToAction("Index","Home");
             }
         }
-
+        [OutputCache(NoStore = true, Duration = 0, VaryByParam = "*")]
         [HttpGet]
         public ActionResult NewName()
         {
@@ -72,9 +72,17 @@ namespace gemi.Controllers
                 if (User.IsInRole("admin"))
                 {
                     TanimData tanimData = new TanimData();
-                    tanimData.TanimEkle(shipname);
-                    TempData["Message"] = "Yeni gemi başarıyla eklendi";
-                    return RedirectToAction("NewName");
+                    if (!tanimData.CheckIfExists(shipname))
+                    {
+                        tanimData.TanimEkle(shipname);
+                        TempData["Message"] = "Yeni gemi başarıyla eklendi";
+                        return RedirectToAction("NewName");
+                    }
+                    else
+                    {
+                        TempData["Message"] = "Aynı isimde gemi var";
+                        return RedirectToAction("Index", "Home");
+                    }
                 }
                 else
                 {
@@ -88,7 +96,7 @@ namespace gemi.Controllers
                 return RedirectToAction("Index");
             }
         }
-
+        [OutputCache(NoStore = true, Duration = 0, VaryByParam = "*")]
         [HttpGet]
         public ActionResult DeleteName()
         {
@@ -135,7 +143,7 @@ namespace gemi.Controllers
                 return RedirectToAction("Index");
             }
         }
-
+        [OutputCache(NoStore = true, Duration = 0, VaryByParam = "*")]
         [HttpGet]
         public ActionResult Continue(int tanim_id)
         {
@@ -210,6 +218,45 @@ namespace gemi.Controllers
             {
                 TempData["Message"] = "Yetkiniz yok";
                 return RedirectToAction("Index");
+            }
+        }
+
+        [HttpGet]
+        public ActionResult EditName(int tanimId)
+        {
+            if (Request.IsAuthenticated && User.IsInRole("admin"))
+            {
+                TanimData tanimData = new TanimData();
+                Tanimlar tanim = new Tanimlar();
+                tanim.tanimId = tanimId;
+                tanim.tanim = tanimData.getTanim(tanimId);
+                return View(tanim);
+            }
+            else
+            {
+                return RedirectToAction("Index","Home");
+            }
+        }
+        [HttpPost]
+        public ActionResult EditName(int tanimId, string oldname, string newname)
+        {
+            if (Request.IsAuthenticated && User.IsInRole("admin"))
+            {
+                TanimData tanimData = new TanimData();
+                if (!tanimData.CheckIfExists(newname))
+                {
+                    tanimData.EditName(tanimId, oldname, newname);
+                    return RedirectToAction("Index", "Name");
+                }
+                else
+                {
+                    TempData["Message"] = "Bu isimde bir gemi var";
+                    return RedirectToAction("Index", "Home");
+                }
+            }
+            else
+            {
+                return RedirectToAction("Index", "Home");
             }
         }
     }

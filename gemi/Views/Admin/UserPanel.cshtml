@@ -88,6 +88,7 @@
 </form></div>
 
 <div class="Users">
+<label>Kullanıcı adı</label><label>Kullanıcı rolü</label><br /><br />
 @foreach(gemi.Entities.Roles role in (List<gemi.Entities.Roles>)ViewBag.roles)
 {
     if (role.role != "admin")
@@ -95,7 +96,7 @@
     <div data-user="@role.username" data-role ="@role.role">
         <label>@role.username</label>
         <label>@role.role</label>
-        <label><a id="a-@role.username" onclick="return EditUser(this)" href="~/Admin/EditUser?username=@role.username">Düzenle</a></label><label>
+        <label><a id="a-@role.username" href="~/Admin/EditUser?username=@role.username">Düzenle</a></label><label><!--onclick return edituser this-->
         <a href="~/Admin/RemoveUser?username=@role.username">Sil</a></label>
         <!--<td><a href="~/Admin/RemoveUser?username=@role.username">Sil</a></td>-->
     </div>

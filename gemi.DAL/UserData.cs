@@ -61,6 +61,20 @@ namespace gemi.DAL
             Close();
         }
 
+        public bool CheckIfExists(string username)
+        {
+            string query = "select count(*) from user where username = @username";
+
+            MySqlCommand cmd = new MySqlCommand(query, con);
+            cmd.Parameters.AddWithValue("@username", username);
+
+            Open();
+            bool result = (Convert.ToInt32(cmd.ExecuteScalar()) == 1);
+            Close();
+
+            return result;
+        }
+
         /// <summary>
         /// Tüm kullanıcı adlarını veritabanından çeker.
         /// </summary>

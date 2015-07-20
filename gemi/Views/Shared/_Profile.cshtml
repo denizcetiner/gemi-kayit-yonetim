@@ -1,0 +1,30 @@
+﻿@if (!Request.IsAuthenticated)
+{
+    var name = "";
+    if (Request.Cookies["username"] != null)
+    {
+        name = Request.Cookies["username"].Value;
+    }
+    <form action="/Home/Login" method="post">
+    <fieldset>
+        <legend>Giriş</legend>
+        @if (name != "")
+        {
+            <input type="text" name="username" value="@name" style="width:120px" />
+
+        }
+        else
+        {
+            <input type="text" name="username" value="Kullanıcı adınız:" style="width:120px" onfocus="ClickToEmpty(this)" onclick="ClickToEmpty(this)"/>
+        }
+        <input type="text" name="password" value="Şifreniz:" style="width:120px" onfocus="ClickToEmptyPass(this)" onclick="ClickToEmptyPass(this)"/>
+        <span>Adımı hatırla:</span><input type="checkbox" name="remember"/>
+        <input type="submit" onclick="return ValidateLogin(this)" id="testsubmit"/><br />
+    </fieldset>
+    </form>
+}
+else
+{
+    <div>Hoşgediniz , @User.Identity.Name !</div><br /><br /><br />
+    <div><a style="text-decoration:none" href="/Home/ChangePassword">Şifre değiştirme</a></div>
+}

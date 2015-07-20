@@ -3,3 +3,8 @@ C:\Users\denizc\Desktop\gemi-kayit-yonetim\gemi.OtherMethods\bin\Debug\gemi.Othe
 C:\Users\denizc\Desktop\gemi-kayit-yonetim\gemi.OtherMethods\obj\Debug\gemi.OtherMethods.csprojResolveAssemblyReference.cache
 C:\Users\denizc\Desktop\gemi-kayit-yonetim\gemi.OtherMethods\obj\Debug\gemi.OtherMethods.dll
 C:\Users\denizc\Desktop\gemi-kayit-yonetim\gemi.OtherMethods\obj\Debug\gemi.OtherMethods.pdb
+C:\Users\denizc\Documents\GitHub\gemi-kayit-yonetim\gemi.OtherMethods\bin\Debug\gemi.OtherMethods.dll
+C:\Users\denizc\Documents\GitHub\gemi-kayit-yonetim\gemi.OtherMethods\bin\Debug\gemi.OtherMethods.pdb
+C:\Users\denizc\Documents\GitHub\gemi-kayit-yonetim\gemi.OtherMethods\obj\Debug\gemi.OtherMethods.csprojResolveAssemblyReference.cache
+C:\Users\denizc\Documents\GitHub\gemi-kayit-yonetim\gemi.OtherMethods\obj\Debug\gemi.OtherMethods.dll
+C:\Users\denizc\Documents\GitHub\gemi-kayit-yonetim\gemi.OtherMethods\obj\Debug\gemi.OtherMethods.pdb

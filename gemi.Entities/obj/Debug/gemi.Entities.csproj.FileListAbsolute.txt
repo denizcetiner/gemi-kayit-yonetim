@@ -33,3 +33,8 @@ C:\Users\stajer\Desktop\gemi_13\gemi.Entities\bin\Debug\gemi.Entities.dll
 C:\Users\stajer\Desktop\gemi_13\gemi.Entities\bin\Debug\gemi.Entities.pdb
 C:\Users\stajer\Desktop\gemi_13\gemi.Entities\obj\Debug\gemi.Entities.dll
 C:\Users\stajer\Desktop\gemi_13\gemi.Entities\obj\Debug\gemi.Entities.pdb
+C:\Users\denizc\Documents\GitHub\gemi-kayit-yonetim\gemi.Entities\bin\Debug\gemi.Entities.dll
+C:\Users\denizc\Documents\GitHub\gemi-kayit-yonetim\gemi.Entities\bin\Debug\gemi.Entities.pdb
+C:\Users\denizc\Documents\GitHub\gemi-kayit-yonetim\gemi.Entities\obj\Debug\gemi.Entities.csprojResolveAssemblyReference.cache
+C:\Users\denizc\Documents\GitHub\gemi-kayit-yonetim\gemi.Entities\obj\Debug\gemi.Entities.dll
+C:\Users\denizc\Documents\GitHub\gemi-kayit-yonetim\gemi.Entities\obj\Debug\gemi.Entities.pdb

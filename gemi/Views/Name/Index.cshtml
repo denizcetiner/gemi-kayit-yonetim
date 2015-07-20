@@ -46,7 +46,8 @@
     <tr id="row-@tanim.tanimId">
         <td style="border:solid black 1px">@tanim.tanimId</td>
         <td style="border:solid black 1px">@tanim.tanim</td>
-        <td><form action="/Name/Continue" method="get"><input type="hidden" name="tanim_id" value="@tanim.tanimId"/><input value="Sil" data-id="@tanim.tanimId" id="input-@tanim.tanimId" onclick="return DeleteName(this)"/></form></td>
+        <td><a href="~/Name/EditName?tanimId=@tanim.tanimId">Düzenle</a></td>
+        <td><form action="/Name/Continue" method="get"><input type="hidden" name="tanim_id" value="@tanim.tanimId"/><input value="Sil" type="submit" data-id="@tanim.tanimId" id="input-@tanim.tanimId" onclick="return DeleteName(this)"/></form></td>
     </tr>
 }
 </table>

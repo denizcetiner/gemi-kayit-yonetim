@@ -47,7 +47,7 @@ namespace gemi.Controllers
                 return View();
             }
         }
-
+        [OutputCache(NoStore = true, Duration = 0, VaryByParam = "*")]
         [HttpGet]
         public ActionResult Upload()
         {
@@ -101,7 +101,7 @@ namespace gemi.Controllers
                 return RedirectToAction("Index", "Home");
             }
         }
-
+        [OutputCache(NoStore = true, Duration = 0, VaryByParam = "*")]
         [HttpGet]
         public ActionResult EditShip(string ref_id)
         {
@@ -243,17 +243,16 @@ namespace gemi.Controllers
                 return RedirectToAction("Index","Home");
             }
         }
-
+        [OutputCache(NoStore = true, Duration = 0, VaryByParam = "*")]
         [HttpGet]
         public ActionResult Records()
         {
             ShipData shipData = new ShipData();
             TanimData tanimData = new TanimData();
             Dictionary<int, string> tanimlar = tanimData.GetTanimlar();
+            ViewBag.tanimlar = tanimlar;
             List<Ship> Records = shipData.GetRecords(User.Identity.Name);
             return View(Records);
         }
-
-        
     }
 }

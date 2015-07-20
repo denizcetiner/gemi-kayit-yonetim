@@ -1,0 +1,20 @@
+﻿@model gemi.Entities.Tanimlar
+@{
+    ViewBag.Title = "EditName";
+}
+
+<h2>EditName</h2>
+
+<form method="post" action="/Name/EditName">
+<table>
+    <tr>
+        <td>Tanım Id:</td><td>@Model.tanimId</td>
+    </tr>
+    <tr>
+        <td>Şu anki ad:</td><td>@Model.tanim</td>
+    </tr>
+    <tr>
+        <td>Yeni ad:</td><td><input type="text" name="tanim"/></td>
+    </tr>
+</table>
+</form>
