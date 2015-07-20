@@ -9,7 +9,7 @@ namespace gemi.DAL
 {
     public class Data
     {
-        string CS = "server=localhost;user id=root;password=test;database=gemi_test";
+        string CS = "server=localhost;user id=root;password=groot;database=gemi_test";
         protected MySqlConnection con;
 
         public Data()

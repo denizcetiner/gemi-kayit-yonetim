@@ -25,13 +25,15 @@
             <tr><td><label>Referans id:</label></td><td><label>@ViewBag.Ship.refId</label></td></tr>
             <tr><td><label>Gemi adı:</label></td><td><label>@ViewBag.Ship.shipId</label></td></tr>
             <tr><td><label>Geliş tarihi:</label></td><td><label>@ViewBag.Ship.time</label></td></tr>
-            <tr><td><label>Açıklama:</label></td><td><label>@ViewBag.Ship.description</label></td></tr>
             </table>
-        </div>
+            <div>Açıklama:</div>
+            <div>@ViewBag.Ship.description</div>
 
+        </div>
+        <div class="photos">
         @foreach (gemi.Entities.ShipUrl image in (List<gemi.Entities.ShipUrl>)ViewBag.Photos)
         {
-            <div class="photos">
+            <div class="photo">
             @{string imageSrc;
 
               string imageBase64 = Convert.ToBase64String(image.preview);
@@ -43,4 +45,5 @@
             <div><a data-lightbox="image-@image.id" style="z-index:6" target="_blank" href="@(relativePath)" ><img src="@imageSrc" alt="dosya alınamadı"/></a></div>
             </div>
         }
+            </div>
         </div>

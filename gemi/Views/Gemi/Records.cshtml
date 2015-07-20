@@ -4,7 +4,7 @@
     ViewBag.Title = "Records";
 }
 
-<h2>Records</h2>
+<h2 style="text-decoration:underline">Kayıtlar</h2>
 
 <style>
     p {
@@ -13,17 +13,12 @@
         display: inline-block;
     }
     
-    .record
-    {
-        border:dotted black 1px;
-        border-radius:25px;
-    }
+
     
     .record-content
     {
         /*margin-left:20px;*/
         max-width:90%;
-        margin-bottom:10px;
     }
     
     a
@@ -38,11 +33,11 @@
     <p class="record-content">Referans no: @i.refId , Gemi adı: @ViewBag.tanimlar[i.shipId] , Hareket zamanı: @i.time.ToString().Remove(10) </p><br />
     @if (i.description != null)
     {
-        <div>Açıklama:</div>
+        /*<div class="desc">Açıklama:</div>*/
         <p class="record-content">@i.description</p><br />
     }
     
-    <a style="margin-left:30px" href="/Gemi/GetShip?ref_id=@i.refId">Gör </a>
-    <a class="record-content" href="/Gemi/EditShip?ref_id=@i.refId" > Düzenle</a><br />
+    <a class="record-content" href="/Gemi/GetShip?ref_id=@i.refId"><button>Gör </button></a>
+    <a class="record-content" href="/Gemi/EditShip?ref_id=@i.refId" ><button>Düzenle</button></a><br />
     </div>
 }

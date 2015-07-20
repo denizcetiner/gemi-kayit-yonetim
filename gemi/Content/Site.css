@@ -93,31 +93,7 @@ textarea
 {
     margin:10px auto;
 }
-.Actions
-{
-    line-height:12px;
-}
-        
-.Actions input
-{
-    border-radius:5px;
-    width:100%;
-}
-        
-        
-.Actions a
-{
-    margin:auto;
-    text-align:center;
-    height:15px;
-    display:block;
-    width:85%;
-    text-decoration:none;
-    background-color:Yellow;
-    border:solid green 2px;
-    border-radius:15px;
-    padding:3px;
-}
+
 .context
 {
     display:inline-block;
@@ -180,25 +156,6 @@ select
     border:solid greenyellow 1px;
 }
 
-.option
-{
-    font-size:16px;
-}
-
-.options 
-{
-    display:none;
-    width:75%;
-    border:solid black;
-    border-width:0 0 1px 0;
-    border-radius:20px;
-    margin:auto;
-}
-
-.Actions a:hover
-{
-    background-color:lime;
-}
 
 .Users label
 {
@@ -221,4 +178,109 @@ select
 .body
 {
     display:flex;
+    margin-top:19px;
+
+}
+
+.context 
+{
+    margin-left:19px;
+}
+
+.photo {
+    display:inline-block;
+}
+
+.photos {
+    margin-top:15px;
+}
+
+.banner, .currency, .forecast, .profile, .sidebar, .context {
+    background-color:rgba(0,255,255,0.80);
+}
+
+
+
+/*Record styles*/
+
+.desc {
+    background-color:rgb(236,127,209);
+    width:120px;
+    margin:auto;
+    border-radius:10px;
+    border-style:groove;
+}
+
+.record a {
+    text-decoration:none;
+    margin:0 15px 0 15px;
+}
+
+.record
+{
+    background-color:rgba(16,12,173,0.30);
+    border-radius:25px;
+    padding-bottom:10px;
+    margin-bottom:10px;
+}
+
+.record-content
+{
+    /*margin-left:20px;*/
+    max-width:90%;
+}
+
+.record button {
+    font-size: 20px;
+    background-color: rgb(255, 174, 0);
+    width: 100px;
+    border-radius: 7px;
+}
+
+/*Sidebar styles*/
+
+
+.option
+{
+    font-size:16px;
+}
+
+.options 
+{
+    display:none;
+    width:75%;
+    border:solid black;
+    border-width:0 0 1px 0;
+    border-radius:20px;
+    margin:auto;
+}
+
+.sidebar a:hover
+{
+    background-color:lime;
+}
+.sidebar
+{
+    line-height:12px;
+}
+        
+.sidebar input
+{
+    border-radius:5px;
+    width:100%;
+}
+        
+        
+.sidebar a
+{
+    margin:auto;
+    text-align:center;
+    height:15px;
+    display:block;
+    width:85%;
+    text-decoration:none;
+    background-color:Yellow;
+    border:solid green 2px;
+    border-radius:15px;
+    padding:3px;
 }
