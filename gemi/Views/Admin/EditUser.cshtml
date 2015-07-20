@@ -3,30 +3,30 @@
 }
 <script src="../../Scripts/jquery-1.8.2.js" type="text/javascript"></script>
 <script>
-    function ValidatePasswordChange(object)
+    /*function ValidatePasswordChange(object)
     {
         var result = true;
         var obj = $(object).parent().parent().parent();
-        if (obj.find(".required-password").val() == null) {
-            obj.find(".required-password").css("border", "solid red 1px");
+        if()
+        if (obj.find(".required-password").val() == "") {
+            CannotBeEmptyPass(obj.find(".required-password"));
             result = false;
         }
-        if (obj.find(".required-role").val() == null) {
-            obj.find(".required-role").css("border", "solid red 1px");
+        else if (obj.find(".required-password").val().length > 20) {
+            TooLongPass(obj.find(".required-password"), 20);
             result = false;
         }
-        else {
-            return result;
+        if (obj.find(".required-role").val() == "") {
+            CannotBeEmpty(obj.find(".required-role"));
+            result = false;
         }
-    };
-    function Append(object)
-    {
+        else if (obj.find(".required-role").val().length > 20) {
+            TooLong(obj.find(".required-role"), 20);
+            result = false;
+        }
+        return result;
+    }*/
 
-    };
-    function DeAppend(string) {
-    }
-
-    
 </script>
 
 <h2>EditUser</h2>
@@ -36,15 +36,16 @@
         <th>Eski değerler</th><th>Yeni değerler</th>
     </tr>
     <tr>
-        <td>@ViewBag.username</td><td>@ViewBag.username</td>
+        <td>@ViewBag.username</td><td><input type="text" name="username" /></td>
     </tr>
     <tr>
         <td>Şifre değiştirme:</td><td><input type="text" name ="password" class="required-password"/></td>
     </tr>
     <tr>
-        <td>@ViewBag.role</td><td><input type="text" name="role" value="yeni rolü giriniz" class="required-role"/></td>
+        <td>@ViewBag.role</td><td><input type="text" name="role" class="required-role"/></td>
     </tr>
 </table>
-    <input value="@ViewBag.username" name="username" type="hidden"/>
-    <input type="submit" class="submit" />
+<div>**Değiştirmek istemediğiniz değerleri boş bırakınız**</div>
+    <input value="@ViewBag.username" name="oldname" type="hidden"/>
+    <input type="submit" class="submit" onclick="ValidatePasswordChange(this)" />
 </form>

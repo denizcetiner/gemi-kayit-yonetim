@@ -5,9 +5,6 @@
     });
 });
 
-
-
-
 function NewUser(object) {
     $("#newuser").html("<div id='newuser'>" +
             "<p>Yeni kullanıcı ekle:</p>" +
@@ -19,8 +16,6 @@ function NewUser(object) {
             "</form>" +
             "</div>");
 }
-
-
 
 function DeletePicture(e) {
 

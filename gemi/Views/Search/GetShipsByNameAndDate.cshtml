@@ -1,0 +1,12 @@
+﻿@{
+    ViewBag.Title = "GetShipsByNameAndDate";
+}
+
+<h2>GetShipsByNameAndDate</h2>
+
+<form method="post" action="/Search/GetShipsByNameAndDate">
+    <input name="ship_name" />
+    <input name="begin" />
+    <input name="end" />
+    <input type="submit" onclick="return ValidateNameDate(this)" />
+</form>

@@ -211,3 +211,14 @@ select
 {
     margin:auto;
 }
+
+.context p
+{
+    padding:7px;
+    border-radius:10px;
+}
+
+.body
+{
+    display:flex;
+}

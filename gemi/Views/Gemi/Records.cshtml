@@ -21,7 +21,8 @@
     
     .record-content
     {
-        margin-left:20px;
+        /*margin-left:20px;*/
+        max-width:90%;
         margin-bottom:10px;
     }
     
@@ -35,7 +36,12 @@
 {
     <div class="record">
     <p class="record-content">Referans no: @i.refId , Gemi adı: @ViewBag.tanimlar[i.shipId] , Hareket zamanı: @i.time.ToString().Remove(10) </p><br />
-    <p class="record-content">@i.description</p><br />
+    @if (i.description != null)
+    {
+        <div>Açıklama:</div>
+        <p class="record-content">@i.description</p><br />
+    }
+    
     <a style="margin-left:30px" href="/Gemi/GetShip?ref_id=@i.refId">Gör </a>
     <a class="record-content" href="/Gemi/EditShip?ref_id=@i.refId" > Düzenle</a><br />
     </div>

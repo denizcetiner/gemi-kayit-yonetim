@@ -48,6 +48,12 @@ namespace gemi.Controllers
             return View("SearchDate");
         }
 
+        [HttpGet]
+        public ActionResult GetShipsByNameAndDate()
+        {
+            return View("SearchNameDate");
+        }
+
         [HttpPost]
         public ActionResult GetShipsByDate(string begin, string end)
         {

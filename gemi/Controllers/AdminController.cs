@@ -215,7 +215,7 @@ namespace gemi.Controllers
         }
 
         [HttpPost]
-        public ActionResult EditUser(string oldname, string newname,string password, string role)
+        public ActionResult EditUser(string oldname, string newname = "",string password = "", string role = "")
         {
             RolesData rolesData = new RolesData();
             if (Request.IsAuthenticated)
@@ -224,11 +224,28 @@ namespace gemi.Controllers
                 {
                     UserData userData = new UserData();
                     PasswordMethods pass = new PasswordMethods();
-                    password = pass.Hash(password);
-                    rolesData.ChangeUserName(oldname, newname);
-                    userData.ChangeName(oldname, newname);
-                    userData.ChangePassword(newname, password);
-                    rolesData.SetRole(newname, role);
+                    if (password != "")
+                    {
+                        password = pass.Hash(password);
+                        userData.ChangePassword(newname, password);
+                    }
+                    if (newname != "")
+                    {
+                        rolesData.ChangeUserName(oldname, newname);
+                        userData.ChangeName(oldname, newname);
+                    }
+                    if (role != "")
+                    {
+                        if (newname != "")
+                        {
+                            rolesData.SetRole(newname, role);
+                        }
+                        else
+                        {
+                            rolesData.SetRole(oldname, role);
+                        }
+                    }
+                    
                     return View("Index");
                 }
                 else

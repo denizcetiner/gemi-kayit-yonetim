@@ -24,7 +24,7 @@ namespace gemi.OtherMethods
             elements = from nm in xdoc.Descendants("Currency").Where(a => (string)a.Attribute("CurrencyCode") == "EUR") select nm.Element("ForexBuying").Value;
             currencies.Add("EUR €:", elements.ElementAt(0));
             elements = from nm in xdoc.Descendants("Currency").Where(a => (string)a.Attribute("CurrencyCode") == "GBP") select nm.Element("ForexBuying").Value;
-            currencies.Add("GBP £", elements.ElementAt(0));
+            currencies.Add("GBP £:", elements.ElementAt(0));
 
             return currencies;
         }

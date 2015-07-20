@@ -24,6 +24,35 @@
 
 }
 
+function ValidateAddUser(object) {
+    var result = true;
+    var frm = $(object).parent();
+    if (frm.find("input:eq(0)").val() == "") {
+        CannotBeEmpty(frm.find("input:eq(0)"));
+        result = false;
+    }
+    else if (frm.find("input:eq(0)").val().length > 20) {
+        TooLong(frm.find("input:eq(0)"), 20);
+        result = false;
+    }
+    if (frm.find("input:eq(1)").val() == "") {
+        CannotBeEmptyPass(frm.find("input:eq(1)"));
+        result = false;
+    }
+    else if (frm.find("input:eq(1)").val().length > 20) {
+        TooLongPass(frm.find("input:eq(1)"), 20);
+        result = false;
+    }
+    if (frm.find("input:eq(2)").val() == "") {
+        CannotBeEmpty(frm.find("input:eq(2)"));
+        result = false;
+    }
+    else if (frm.find("input:eq(2)").val().length > 20) {
+        TooLong(frm.find("input:eq(2)"), 20)
+    }
+    return result;
+}
+
 function ValidateSearchString(object)
 {
     var result;

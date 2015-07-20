@@ -1,6 +1,4 @@
-﻿
-
-@{
+﻿@{
     ViewBag.Title = "NewName";
 }
 
@@ -22,7 +20,7 @@
 
 <form method="post" action="/Name/NewName">
     <input type="text" name="shipname"/>
-    <input type="submit" value="Ekle" onclick="ValidateTanim(this)"/>
+    <input type="submit" value="Ekle" onclick="return ValidateTanim(this)"/>
 </form>
 
 <label>Veritabanında bulunan isimler:</label><br />

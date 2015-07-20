@@ -8,3 +8,8 @@ C:\Users\denizc\Documents\GitHub\gemi-kayit-yonetim\gemi.OtherMethods\bin\Debug\
 C:\Users\denizc\Documents\GitHub\gemi-kayit-yonetim\gemi.OtherMethods\obj\Debug\gemi.OtherMethods.csprojResolveAssemblyReference.cache
 C:\Users\denizc\Documents\GitHub\gemi-kayit-yonetim\gemi.OtherMethods\obj\Debug\gemi.OtherMethods.dll
 C:\Users\denizc\Documents\GitHub\gemi-kayit-yonetim\gemi.OtherMethods\obj\Debug\gemi.OtherMethods.pdb
+C:\Users\stajer\Documents\GitHub\gemi-kayit-yonetim\gemi.OtherMethods\bin\Debug\gemi.OtherMethods.dll
+C:\Users\stajer\Documents\GitHub\gemi-kayit-yonetim\gemi.OtherMethods\bin\Debug\gemi.OtherMethods.pdb
+C:\Users\stajer\Documents\GitHub\gemi-kayit-yonetim\gemi.OtherMethods\obj\Debug\gemi.OtherMethods.csprojResolveAssemblyReference.cache
+C:\Users\stajer\Documents\GitHub\gemi-kayit-yonetim\gemi.OtherMethods\obj\Debug\gemi.OtherMethods.dll
+C:\Users\stajer\Documents\GitHub\gemi-kayit-yonetim\gemi.OtherMethods\obj\Debug\gemi.OtherMethods.pdb

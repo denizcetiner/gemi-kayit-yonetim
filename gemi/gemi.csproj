@@ -262,6 +262,7 @@
     <Content Include="Views\Shared\_Profile.cshtml" />
     <Content Include="Views\Admin\AddUser.cshtml" />
     <Content Include="Views\Name\EditName.cshtml" />
+    <Content Include="Views\Search\GetShipsByNameAndDate.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

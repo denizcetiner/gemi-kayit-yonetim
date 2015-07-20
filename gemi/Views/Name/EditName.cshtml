@@ -3,6 +3,22 @@
     ViewBag.Title = "EditName";
 }
 
+<script>
+    function ValidateEditName(object) {
+        var result = true; ;
+        var frm = $(object).parent();
+        if (frm.find("input:eq(0)").val() == "") {
+            CannotBeEmpty(frm.find("input:eq(0)"));
+            result = false;
+        }
+        else if (frm.find("input:eq(0)").val().length > 20) {
+            TooLong(frm.find("input:eq(0)"), 20);
+            result = false;
+        }
+        return result;
+    }
+</script>
+
 <h2>EditName</h2>
 
 <form method="post" action="/Name/EditName">
@@ -14,7 +30,8 @@
         <td>Şu anki ad:</td><td>@Model.tanim</td>
     </tr>
     <tr>
-        <td>Yeni ad:</td><td><input type="text" name="tanim"/></td>
+        <td>Yeni ad:</td><td><input type="text" name="tanim" /></td>
     </tr>
 </table>
+<input type="submit" onclick="return ValidateEditName(this)"/>
 </form>
