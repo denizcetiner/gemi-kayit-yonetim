@@ -40,6 +40,9 @@ namespace gemi.Controllers
             }
             else
             {
+                TanimData tanimData = new TanimData();
+                Dictionary<int,string> tanimlar =  tanimData.GetTanimlar();
+                ViewBag.tanimlar = tanimlar;
                 ShipUrlData shipUrlData = new ShipUrlData();
                 List<ShipUrl> shipPhotos = shipUrlData.GetPhotos(ref_id);
                 ViewBag.Photos = shipPhotos;
@@ -178,7 +181,7 @@ namespace gemi.Controllers
                 if (file == null) { continue; }
                 if (shipUrlData.CheckDuplicateUrl(ref_id, file.FileName, Server.MapPath("~/Content/images/")))
                 {
-                    if (filer.CompareSizeOfFile(file, Server.MapPath("~/Content/images/" + file.FileName)))
+                    if (filer.CompareSizeOfFile(file, Server.MapPath("~/Content/images/" + ref_id + "_" + file.FileName)))
                     {
                         continue;
                     }
