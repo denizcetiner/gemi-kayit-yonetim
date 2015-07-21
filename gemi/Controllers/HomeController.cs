@@ -165,11 +165,11 @@ namespace gemi.Controllers
             Dictionary<string, string> currency = xml.GetCurrencies();
             return PartialView("_Currency", currency);
         }
-        [OutputCache(Duration=3600)]
+        //[OutputCache(Duration=3600)]
         public ActionResult ShowForecast()
         {
             XMLMethods xml = new XMLMethods();
-            Dictionary<string, string> forecast = xml.GetForecast();
+            Dictionary<string, string> forecast = xml.GetForecastYahoo();
             return PartialView("_Forecast", forecast);
         }
         public PartialViewResult SideBar()
