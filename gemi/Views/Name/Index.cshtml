@@ -41,14 +41,14 @@
 
 <a href="~/Name/NewName">Yeni tanım ekle</a><br />
 
-<table id="name_table" style="background-color:yellow">
-<tr><td>Id</td><td>Tanım</td><td></td></tr>
+<table id="name_table">
+<tr><td>Id</td><td>Tanım</td></tr>
 @foreach (gemi.Entities.Tanimlar tanim in ViewBag.tanimlar)
 {
     <tr id="row-@tanim.tanimId">
-        <td style="border:solid black 1px">@tanim.tanimId</td>
-        <td style="border:solid black 1px">@tanim.tanim</td>
-        <td><a href="~/Name/EditName?tanimId=@tanim.tanimId">Düzenle</a></td>
+        <td>@tanim.tanimId</td>
+        <td>@tanim.tanim</td>
+        <td><form action="/Name/EditName" method="get"><input type="hidden" name="tanim_id" value="@tanim.tanimId"/><input value="Düzenle" type="submit"/></form></td>
         <td><form action="/Name/Continue" method="get"><input type="hidden" name="tanim_id" value="@tanim.tanimId"/><input value="Sil" type="submit" data-id="@tanim.tanimId" id="input-@tanim.tanimId" onclick="return DeleteName(this)"/></form></td>
     </tr>
 }

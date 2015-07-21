@@ -30,8 +30,10 @@
         <td>Şu anki ad:</td><td>@Model.tanim</td>
     </tr>
     <tr>
-        <td>Yeni ad:</td><td><input type="text" name="tanim" /></td>
+        <td>Yeni ad:</td><td><input type="text" name="newname" /></td>
     </tr>
 </table>
+<input type="hidden" name="oldname" value="@Model.tanim"/>
+<input type="hidden" name="tanim_id" value="@Model.tanimId" />
 <input type="submit" onclick="return ValidateEditName(this)"/>
 </form>

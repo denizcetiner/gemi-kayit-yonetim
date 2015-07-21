@@ -1,0 +1,50 @@
+﻿.sidebar a:hover
+{
+    /*background-color:lime;*/
+    background-color:rgba(52, 53, 161, 0.7);
+}
+.sidebar
+{
+    width:15%;
+    /*border:solid black 1px;*/
+    display:inline-block;
+    min-height:500px;
+    line-height:12px;
+}
+        
+.sidebar input
+{
+    border-radius:5px;
+    width:100%;
+}
+        
+.sidebar a
+{
+    margin:auto;
+    text-align:center;
+    height:15px;
+    display:block;
+    width:85%;
+    text-decoration:none;
+    background-color:Yellow;
+    border:solid green 2px;
+    border-radius:15px;
+    padding:3px;
+}
+
+.option
+{
+    font-size:16px;
+}
+
+.options 
+{
+    display:none;
+    width:75%;
+    border:solid rgba(8, 58, 255, 0.43);
+    border-width:0 0 1px 0;
+    border-radius:20px;
+    margin:auto;
+}
+
+

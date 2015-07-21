@@ -23,12 +23,16 @@
             CannotBeEmpty(ref_id);
             result = false;
         }
+        else if (ref_id.val().length > 20) {
+            TooLong(ref_id, 20);
+            result = false;
+        }
         if (ship_id.val() < 0)
         {
             ship_id.val("-2");
             result = false;
         }
-        if (description.val().length > 30) {
+        if (description.val().length > 300) {
             $("descerror").css("display", "block");
             result = false;
         }
@@ -37,6 +41,10 @@
             result = false;
         }
         if (date.val() == "") {
+            date.val("Bir tarih seçmek için týklayýn");
+            result = false;
+        }
+        else if (date.val().length > 15) {
             date.val("Bir tarih seçmek için týklayýn");
             result = false;
         }

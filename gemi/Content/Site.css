@@ -60,23 +60,6 @@ textarea {
 }
 
 /*buradan sonrası*/
-#EditShipTable
-{
-    margin:auto;
-    background:yellow;
-    border:solid greenyellow 1px;
-}
-
-#EditShipTable tr
-{
-    width:50%;
-}
-
-#EditShipTable th,#EditShipTable td
-{
-    border:solid greenyellow 1px;
-    text-align:center;
-}
 
 input[type="text"]
 {
@@ -100,11 +83,7 @@ textarea
     height:100px;
             
 }
-#EditShipTable
-{
-    width:70%;
-    background-color:Yellow;
-}
+
 .ships div
 {
     display:inline-block;
@@ -112,6 +91,7 @@ textarea
 input[type="password"]
 {
     font-size:18px;
+    border-radius:5px;
 }
 textarea
 {
@@ -142,30 +122,12 @@ select
     font-size:16px;
 }
 
-#uploadtable
-{
-    background-color:Yellow;
-    border:solid greenyellow 1px;
-}
-#uploadtable th, #uploadtable td
-{
-    border:solid greenyellow 1px;
-}
 
 .Users label
 {
     display:inline-block;
     width:120px;
     text-align:center;
-}
-
-.photo {
-    display:inline-block;
-    margin-bottom:40px;
-}
-
-.photos {
-    margin-top:15px;
 }
 
 .banner, .currency, .forecast, .profile, .sidebar, .context {
@@ -210,57 +172,11 @@ select
 
 /*Sidebar styles*/
 
-.option
-{
-    font-size:16px;
-}
-
-.options 
-{
-    display:none;
-    width:75%;
-    border:solid black;
-    border-width:0 0 1px 0;
-    border-radius:20px;
-    margin:auto;
-}
-
-.sidebar a:hover
-{
-    background-color:lime;
-}
-.sidebar
-{
-    width:15%;
-    /*border:solid black 1px;*/
-    display:inline-block;
-    min-height:500px;
-    line-height:12px;
-}
-        
-.sidebar input
-{
-    border-radius:5px;
-    width:100%;
-}
-        
-.sidebar a
-{
-    margin:auto;
-    text-align:center;
-    height:15px;
-    display:block;
-    width:85%;
-    text-decoration:none;
-    background-color:Yellow;
-    border:solid green 2px;
-    border-radius:15px;
-    padding:3px;
-}
 
 .Users label 
 {
-    background-color:yellow;
+    /*background-color:yellow;*/
+    background-color:rgba(60, 98, 216, 0.62);
 }
 
 .Users 
@@ -274,10 +190,6 @@ select
     border-radius:5px;
 }
 
-.preview 
-{
-    display:inline-block;
-}
 
 .ui-datepicker-next 
 {
@@ -286,50 +198,13 @@ select
 
 /*Layout*/
 
-.body table
-{
-    margin:auto;
-}
 
-.context p
-{
-    padding:7px;
-    border-radius:10px;
-}
-
-.body
-{
-    display:flex;
-    margin-top:19px;
-    font-size:20px;
-    min-height:100%;
-    /*padding-bottom:100px;*/
-}
-
-.context 
-{
-    width:83%;
-    display:inline-block;
-    /*border:solid black 1px;*/
-    padding:0;
-    text-align:center;
-    min-height:600px;
-    margin-left:19px;
-    vertical-align:top;
-}
-
-html
-{
-    height:100%;
-    background-image:url(/Content/wana_bhum-9308663-container_ship-8-140842.jpg);
-    background-size:auto;
-    background-attachment:fixed;
-}
 
 .Users label
 {
     height:30px;
     vertical-align:bottom;
+    border:1px solid cyan;
 }
 
 .Users .h
@@ -337,7 +212,32 @@ html
     font-weight:bold;
 }
 
-.info td
+
+
+.ships div
 {
-    width:50%;
+    background-color:rgba(52, 53, 161, 0.6);
+    min-width:10%;
+}
+
+#changepass div
+{
+    display:inline-block;
+    width:200px;
+}
+
+#changepass input[type="input"], #changepass input[type="password"]
+{
+    width:200px;
+}
+
+#editship
+{
+    background-color: Yellow;
+    border:solid green 2px;
+    border-radius:10px;
+    padding:3px;
+    text-decoration:none;
+    margin-bottom:10px;
+    display:inline-block;
 }

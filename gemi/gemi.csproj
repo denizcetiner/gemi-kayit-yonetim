@@ -131,6 +131,9 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="Content\layout.css" />
+    <Content Include="Content\photos.css" />
+    <Content Include="Content\sidebar.css" />
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\GemiController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -144,6 +147,8 @@
   <ItemGroup>
     <Content Include="Content\mystyle.css" />
     <Content Include="Content\src\KAPTAN.jpg" />
+    <Content Include="Content\context.css" />
+    <Content Include="Content\tables.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />

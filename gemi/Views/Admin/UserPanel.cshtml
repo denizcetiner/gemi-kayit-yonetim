@@ -77,8 +77,8 @@
     <div data-user="@role.username" data-role ="@role.role">
         <label>@role.username</label><!--
         --><label>@role.role</label><!--
-        --><label><form method="get" action="/Admin/EditUser"><input type="hidden" value="@role.username" /><input type="submit" value="Düzenle"/></form></label><!--onclick return edituser this--><!--
-        --><label><form method="post" action="/Admin/RemoveUser"><input type="hidden" value="@role.username"/><input type="submit" value="Sil"/></form></label>
+        --><label><form method="get" action="/Admin/EditUser"><input type="hidden" name="username" value="@role.username" /><input type="submit" value="Düzenle"/></form></label><!--onclick return edituser this--><!--
+        --><label><form method="post" action="/Admin/RemoveUser"><input type="hidden" name="username" value="@role.username"/><input type="submit" value="Sil"/></form></label>
         <!--<td><a href="~/Admin/RemoveUser?username=@role.username">Sil</a></td>-->
     </div>
     }

@@ -56,7 +56,8 @@ namespace gemi.DAL
                 ship.refId = Convert.ToString(reader["ref_id"]);
                 ship.shipId = Convert.ToInt32(reader["ship_id"]);
                 ship.time = Convert.ToDateTime(reader["date_time"]);
-                ship.description = Convert.ToString(reader["description"]); 
+                ship.description = Convert.ToString(reader["description"]);
+                ship.createdBy = Convert.ToString(reader["created_by"]);
             }
             Close();
 

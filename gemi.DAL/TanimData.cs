@@ -160,7 +160,7 @@ namespace gemi.DAL
 
         public void EditName(int tanimId,string oldname, string name)
         {
-            string query = "update tanim set tanim=@tanim where tanim_id = @tanim_id and tanim=@eski";
+            string query = "update tanimlar set tanim=@tanim where tanim_id = @tanim_id and tanim=@eski";
 
             MySqlCommand cmd = new MySqlCommand(query, con);
             cmd.Parameters.AddWithValue("@eski", oldname);

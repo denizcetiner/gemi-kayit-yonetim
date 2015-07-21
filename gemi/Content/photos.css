@@ -1,0 +1,14 @@
+﻿.preview 
+{
+    display:inline-block;
+    margin:3px;
+}
+
+.photo {
+    display:inline-block;
+    margin-bottom:40px;
+}
+
+.photos {
+    margin-top:15px;
+}

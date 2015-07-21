@@ -97,7 +97,7 @@ namespace gemi.Controllers
                         userData.AddUser(user);
                         rolesData.AddUser(username, role);
                         TempData["Message"] = "Kullanıcı başarıyla eklendi";
-                        return View("Index","Home");
+                        return RedirectToAction("Index","Home");
                     }
                     else
                     {

@@ -1,0 +1,31 @@
+﻿.context 
+{
+    width:83%;
+    display:inline-block;
+    /*border:solid black 1px;*/
+    padding:0;
+    text-align:center;
+    min-height:600px;
+    margin-left:19px;
+    vertical-align:top;
+}
+.body
+{
+    display:flex;
+    margin-top:19px;
+    font-size:20px;
+    min-height:100%;
+    /*padding-bottom:100px;*/
+}
+
+.context p
+{
+    padding:7px;
+    border-radius:10px;
+}
+
+.body table
+{
+    margin:auto;
+}
+

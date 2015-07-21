@@ -222,14 +222,14 @@ namespace gemi.Controllers
         }
 
         [HttpGet]
-        public ActionResult EditName(int tanimId)
+        public ActionResult EditName(int tanim_id)
         {
             if (Request.IsAuthenticated && User.IsInRole("admin"))
             {
                 TanimData tanimData = new TanimData();
                 Tanimlar tanim = new Tanimlar();
-                tanim.tanimId = tanimId;
-                tanim.tanim = tanimData.getTanim(tanimId);
+                tanim.tanimId = tanim_id;
+                tanim.tanim = tanimData.getTanim(tanim_id);
                 return View(tanim);
             }
             else
@@ -238,14 +238,14 @@ namespace gemi.Controllers
             }
         }
         [HttpPost]
-        public ActionResult EditName(int tanimId, string oldname, string newname)
+        public ActionResult EditName(int tanim_id, string oldname, string newname)
         {
             if (Request.IsAuthenticated && User.IsInRole("admin"))
             {
                 TanimData tanimData = new TanimData();
                 if (!tanimData.CheckIfExists(newname))
                 {
-                    tanimData.EditName(tanimId, oldname, newname);
+                    tanimData.EditName(tanim_id, oldname, newname);
                     return RedirectToAction("Index", "Name");
                 }
                 else
