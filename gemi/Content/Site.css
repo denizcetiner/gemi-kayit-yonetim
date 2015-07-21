@@ -207,7 +207,7 @@ select
     background-color:rgb(236,127,209);
     width:120px;
     margin:auto;
-    border-radius:10px;
+    border-radius:8px;
     border-style:groove;
 }
 
@@ -283,4 +283,30 @@ select
     border:solid green 2px;
     border-radius:15px;
     padding:3px;
+}
+
+.Users label 
+{
+    background-color:yellow;
+}
+
+.Users 
+{
+    margin-top:15px;
+}
+
+.Users input 
+{
+    font-size:18px;
+    border-radius:5px;
+}
+
+.preview 
+{
+    display:inline-block;
+}
+
+.ui-datepicker-next 
+{
+    float:right;
 }

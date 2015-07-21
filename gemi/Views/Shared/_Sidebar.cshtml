@@ -1,15 +1,15 @@
 ﻿<script>
-    function DivToggle(id)
+    function DivToggle(id,speed)
     {
         $(id).removeClass("options");
-        $(".options").hide(1000);
+        $(".options").hide(speed);
         $(id).addClass("options");
-        $(id).slideToggle(1000, function () { });
+        $(id).slideToggle(speed, function () { });
         return false;
     }
 </script>
 
-<a style="margin-top:15px;" onclick="return DivToggle('#searchoptions')" href="~/Search">Arama</a>
+<a style="margin-top:15px;" onclick="return DivToggle('#searchoptions',1000)" href="~/Search">Arama</a>
         <!--<form id="search-form" action="/Gemi/GetShip" method="get">
             <div>Gemi Arama:</div><br /><br />
             <div style="margin:0 5% 0 5%">
@@ -22,7 +22,7 @@
     <a href="~/Search/GetShipsByRef" class="option">Referans ile</a><br />
     <a href="~/Search/GetShipsByName" class="option">İsim ile</a><br />
     <a href="~/Search/GetShipsByDate" class="option">Tarih ile</a><br />
-    <a class="option">Tarih ve isim</a><br />
+    <!--<a href="~/Search/GetShipsByNameAndDate" class="option">Tarih ve isim</a><br />-->
 </div>
         
 <a href="~/Home/Index">Ana Sayfa</a><br />
@@ -31,14 +31,14 @@
 @if (Request.IsAuthenticated)
 {
     <a href="~/Gemi/Records">Girilen kayıtlar</a><br />
-    <a onclick="return DivToggle('#shipoptions')" href="~/Gemi/">Gemi işlemleri</a><br />
+    <a onclick="return DivToggle('#shipoptions',1000)" href="~/Gemi/">Gemi işlemleri</a><br />
     <div class="options" id="shipoptions">
         <a href="~/Gemi/Upload" class="option">Gemi kaydı ekle</a><br />
     </div>
     if (User.IsInRole("admin"))
     {
         <!--<li><a href="~/Name">Tanımlar</a><br /></li>-->
-        <a onclick="return DivToggle('#adminoptions')" href="~/Admin">Yönetici Paneli</a><br />
+        <a onclick="return DivToggle('#adminoptions',1000)" href="~/Admin">Yönetici Paneli</a><br />
         <div class="options" id="adminoptions">
             <a class="option" href="~/Admin/UserPanel">Kullanıcılar</a><br />
             <a class="option" href="~/Name/Index">Tanımlar</a><br />

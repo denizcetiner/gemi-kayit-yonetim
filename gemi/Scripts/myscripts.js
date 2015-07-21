@@ -41,3 +41,27 @@ function DeletePicture(e) {
     return false;
 }
 
+function ShowPreview(object)
+{
+    if (object.files && object.files[0])
+    {
+        $(".previews").empty();
+        for (i = 0; i < object.files.length; i++)
+        {
+            $(".previews").append("<div class='preview'><img style='width:200px;height:200px' id='imageprev" + i + "' ></div>");
+            setupReader(object.files[i], i)
+        }
+    }
+    function setupReader(file, i)
+    {
+        var name = file.name;
+        var reader = new FileReader();
+        reader.onload = function (e)
+        {
+            // get file content  
+            var text = e.target.result;
+            $('#imageprev' + i).attr("src", e.target.result);
+        }
+        reader.readAsDataURL(file);
+    }
+}

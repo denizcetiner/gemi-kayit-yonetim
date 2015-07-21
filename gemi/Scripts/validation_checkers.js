@@ -24,32 +24,44 @@
 
 }
 
+function EmptyOrLong(object, length)
+{
+    var result = true;
+    if (object.val() == "")
+    {
+        CannotBeEmpty(object);
+        result = false;
+    }
+    else if (object.val().length > 20)
+    {
+        TooLong(object, 20);
+        result = false;
+    }
+    return result;
+}
+
+function EmptyOrLongPass(object, length)
+{
+    var result = true;
+    if (object.val() == "")
+    {
+        CannotBeEmptyPass(object);
+        result = false;
+    }
+    else if (object.val().length > 20)
+    {
+        TooLongPass(object, 20);
+        result = false;
+    }
+    return result;
+}
+
 function ValidateAddUser(object) {
     var result = true;
     var frm = $(object).parent();
-    if (frm.find("input:eq(0)").val() == "") {
-        CannotBeEmpty(frm.find("input:eq(0)"));
-        result = false;
-    }
-    else if (frm.find("input:eq(0)").val().length > 20) {
-        TooLong(frm.find("input:eq(0)"), 20);
-        result = false;
-    }
-    if (frm.find("input:eq(1)").val() == "") {
-        CannotBeEmptyPass(frm.find("input:eq(1)"));
-        result = false;
-    }
-    else if (frm.find("input:eq(1)").val().length > 20) {
-        TooLongPass(frm.find("input:eq(1)"), 20);
-        result = false;
-    }
-    if (frm.find("input:eq(2)").val() == "") {
-        CannotBeEmpty(frm.find("input:eq(2)"));
-        result = false;
-    }
-    else if (frm.find("input:eq(2)").val().length > 20) {
-        TooLong(frm.find("input:eq(2)"), 20)
-    }
+    result = EmptyOrLong(frm.find("input:eq(0)"), 20);
+    result = EmptyOrLongPass(frm.find("input:eq(1)"), 20);
+    result = EmptyOrLong(frm.find("input:eq(2)"), 20);
     return result;
 }
 
@@ -57,16 +69,7 @@ function ValidateSearchString(object)
 {
     var result;
     var frm = $(object).parent().parent();
-    if (frm.find("input:eq(0)").val() == "")
-    {
-        CannotBeEmpty(frm.find("input:eq(0)"));
-        result = false;
-    }
-    else if (frm.find("input:eq(0)").val() == "")
-    {
-        TooLong(frm.find("input:eq(0)"), 10);
-        result = false;
-    }
+    result = EmptyOrLong(frm.find("input:eq(0)"), 10);
     return result;
 }
 
@@ -96,36 +99,9 @@ function ValidateNewUser(object)
 {
     var result = true;
     var frm = $(object).parent();
-    if (frm.find("input:eq(0)").val() == "")
-    {
-        CannotBeEmpty(frm.find("input:eq(0)"));
-        result = false;
-    }
-    else if (frm.find("input:eq(0)").val().length > 20)
-    {
-        TooLong(frm.find("input:eq(0)"), 20);
-        result = false;
-    }
-    if (frm.find("input:eq(1)").val() == "")
-    {
-        CannotBeEmpty(frm.find("input:eq(1)"));
-        result = false;
-    }
-    else if (frm.find("input:eq(1)").val().length > 20)
-    {
-        TooLongPass(frm.find("input:eq(1)"), 20);
-        result = false;
-    }
-    if (frm.find("input:eq(2)").val() == "")
-    {
-        CannotBeEmpty(frm.find("input:eq(2)"));
-        result = false;
-    }
-    else if (frm.find("input:eq(2)").val().length > 20)
-    {
-        TooLong(frm.find("input:eq(2)"), 20);
-        result = false;
-    }
+    result = EmptyOrLong(frm.find("input:eq(0)"), 20);
+    result = EmptyOrLongPass(frm.find("input:eq(1)"), 20);
+    result = EmptyOrLong(frm.find("input:eq(2)"), 20);
     return result;
 }
 

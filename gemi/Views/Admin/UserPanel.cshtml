@@ -2,13 +2,13 @@
     ViewBag.Title = "UserPanel";
 }
 
-<h2>UserPanel</h2>
+<h2>Kullanıcı paneli</h2>
 
 <script>
-    $(document).ready(function () {
+    /*$(document).ready(function () {
         $("#newuser").html("<button onclick='NewUser(this)'>Yeni kullanıcı ekle:</button>");
 
-    });
+    });*/
 
     
 </script>
@@ -51,53 +51,34 @@
         var password = frm.find("input:eq(0)");
         var role = frm.find("input:eq(0)");
         var result = true;
-        if (username.val() == "") {
-            CannotBeEmpty(username);
-            result = false;
-        }
-        else if (username.val().length > 20) {
-            TooLong(username, 20);
-            result = false;
-        }
-        if (password.val() == "") {
-            CannotBeEmpty(password);
-            result = false;
-        }
-        else if (password.val().length > 20) {
-            TooLong(password, 20);
-            result = false;
-        }
-        if (role.val() == "") {
-            CannotBeEmpty(role);
-            result = false;
-        }
-        else if (role.val().length > 20) {
-            TooLong(role, 20);
-            result = false;
-        }
+        result = EmptyOrLong(username, 20);
+        result = EmptyOrLongPass(password, 20);
+        result = EmptyOrLong(role, 20);
         return result;
     }
 </script>
 
-<div id="newuser"><p>Yeni kullanıcı ekle:</p>
+<!--<div id="newuser"><p>Yeni kullanıcı ekle:</p>
 <form method="post" action="/Admin/AddUser">
     isim:<input type="text" name="username"/>
     şifre:<input type="text" name="password"/>
     rol:<input type="text" name="role"/>
     <input type="submit" />
-</form></div>
+</form></div>-->
+
+<a href="~/Admin/AddUser">Yeni kullanıcı ekle</a><br />
 
 <div class="Users">
-<label>Kullanıcı adı</label><label>Kullanıcı rolü</label><br /><br />
+<label>Kullanıcı adı</label><label>Kullanıcı rolü</label><label></label><label></label>
 @foreach(gemi.Entities.Roles role in (List<gemi.Entities.Roles>)ViewBag.roles)
 {
     if (role.role != "admin")
     {
     <div data-user="@role.username" data-role ="@role.role">
-        <label>@role.username</label>
-        <label>@role.role</label>
-        <label><a id="a-@role.username" href="~/Admin/EditUser?username=@role.username">Düzenle</a></label><label><!--onclick return edituser this-->
-        <a href="~/Admin/RemoveUser?username=@role.username">Sil</a></label>
+        <label>@role.username</label><!--
+        --><label>@role.role</label><!--
+        --><label><form method="get" action="/Admin/EditUser"><input type="hidden" value="@role.username" /><input type="submit" value="Düzenle"/></form></label><!--onclick return edituser this--><!--
+        --><label><form method="post" action="/Admin/RemoveUser"><input type="hidden" value="@role.username"/><input type="submit" value="Sil"/></form></label>
         <!--<td><a href="~/Admin/RemoveUser?username=@role.username">Sil</a></td>-->
     </div>
     }

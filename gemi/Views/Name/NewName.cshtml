@@ -6,14 +6,7 @@
     function ValidateTanim(object) {
         var result = true;
         var frm = $(object).parent();
-        if (frm.find("input:eq(0)").val() == "") {
-            CannotBeEmpty(frm.find("input:eq(0)"));
-            result = false;
-        }
-        else if (frm.find("input:eq(0)").val().length > 20) {
-            TooLong(frm.find("input:eq(0)"), 20);
-            result = false;
-        }
+        result = EmptyOrLong(frm.find("input:eq(0)"), 20);
         return result;
     }
 </script>
@@ -26,5 +19,5 @@
 <label>Veritabanında bulunan isimler:</label><br />
 @foreach (KeyValuePair<int,string> pair in ViewBag.tanimlar)
 {
-    <p>@pair.Value</p>
+    <div style="display:inline-block;margin-right:10px;">@pair.Value,</div>
 }
