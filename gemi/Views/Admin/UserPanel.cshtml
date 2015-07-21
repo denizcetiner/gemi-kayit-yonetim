@@ -69,7 +69,7 @@
 <a href="~/Admin/AddUser">Yeni kullanıcı ekle</a><br />
 
 <div class="Users">
-<label>Kullanıcı adı</label><label>Kullanıcı rolü</label><label></label><label></label>
+<label class="h">Kullanıcı adı</label><label class="h">Rolü</label><label></label><label></label>
 @foreach(gemi.Entities.Roles role in (List<gemi.Entities.Roles>)ViewBag.roles)
 {
     if (role.role != "admin")

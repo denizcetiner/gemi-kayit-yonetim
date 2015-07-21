@@ -94,11 +94,7 @@ textarea
     margin:10px auto;
 }
 
-.context
-{
-    display:inline-block;
-    vertical-align:top;
-}
+
 .footer
 {
     height:100px;
@@ -156,7 +152,6 @@ select
     border:solid greenyellow 1px;
 }
 
-
 .Users label
 {
     display:inline-block;
@@ -164,31 +159,9 @@ select
     text-align:center;
 }
 
-.body table
-{
-    margin:auto;
-}
-
-.context p
-{
-    padding:7px;
-    border-radius:10px;
-}
-
-.body
-{
-    display:flex;
-    margin-top:19px;
-
-}
-
-.context 
-{
-    margin-left:19px;
-}
-
 .photo {
     display:inline-block;
+    margin-bottom:40px;
 }
 
 .photos {
@@ -198,8 +171,6 @@ select
 .banner, .currency, .forecast, .profile, .sidebar, .context {
     background-color:rgba(0,255,255,0.80);
 }
-
-
 
 /*Record styles*/
 
@@ -239,7 +210,6 @@ select
 
 /*Sidebar styles*/
 
-
 .option
 {
     font-size:16px;
@@ -261,6 +231,10 @@ select
 }
 .sidebar
 {
+    width:15%;
+    /*border:solid black 1px;*/
+    display:inline-block;
+    min-height:500px;
     line-height:12px;
 }
         
@@ -269,7 +243,6 @@ select
     border-radius:5px;
     width:100%;
 }
-        
         
 .sidebar a
 {
@@ -309,4 +282,62 @@ select
 .ui-datepicker-next 
 {
     float:right;
+}
+
+/*Layout*/
+
+.body table
+{
+    margin:auto;
+}
+
+.context p
+{
+    padding:7px;
+    border-radius:10px;
+}
+
+.body
+{
+    display:flex;
+    margin-top:19px;
+    font-size:20px;
+    min-height:100%;
+    /*padding-bottom:100px;*/
+}
+
+.context 
+{
+    width:83%;
+    display:inline-block;
+    /*border:solid black 1px;*/
+    padding:0;
+    text-align:center;
+    min-height:600px;
+    margin-left:19px;
+    vertical-align:top;
+}
+
+html
+{
+    height:100%;
+    background-image:url(/Content/wana_bhum-9308663-container_ship-8-140842.jpg);
+    background-size:auto;
+    background-attachment:fixed;
+}
+
+.Users label
+{
+    height:30px;
+    vertical-align:bottom;
+}
+
+.Users .h
+{
+    font-weight:bold;
+}
+
+.info td
+{
+    width:50%;
 }

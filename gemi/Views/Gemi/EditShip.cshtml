@@ -33,12 +33,12 @@
     
 </script>
 
-<h2>EditShip</h2>
+<h2>Gemi kaydı düzenleme</h2>
 
 <form method="post" action="/Gemi/EditShip" enctype="multipart/form-data">
 <table id="EditShipTable">
         <tr><th><label>Eski Değerler</label></th><th><label>Yeni Değerler</label></th></tr>
-        <tr><td><label>Referans Id:@Model.refId</label></td><td><input type="text" name="ref_id" value="@Model.refId"/></td></tr>
+        <tr><td><label>Referans Id:@Model.refId</label></td><td><input type="text" readonly="readonly" name="ref_id" value="@Model.refId"/></td></tr>
         <tr><td><label>Gemi adı:@(ViewBag.tanimlar[Model.shipId])</label></td>
         <td><select name="ship_id">
         

@@ -103,11 +103,13 @@ namespace gemi.DAL
         /// <returns>Kayıt varsa true, yok ise false döndürür.</returns>
         public bool CheckDuplicateUrl(string ship_ref_id, string filename, string path)
         {
+            //path = path.Replace(@"\",@"\\");
+
             string query = "select count(*) image_url from photos where (ship_id=@ship_id and image_url=@image_url)";
 
             MySqlCommand cmd = new MySqlCommand(query,con);
             cmd.Parameters.AddWithValue("@ship_id",ship_ref_id);
-            cmd.Parameters.AddWithValue("@image_url",path+filename);
+            cmd.Parameters.AddWithValue("@image_url",path+ship_ref_id+"_"+filename);
 
             Open();
             bool result = Convert.ToBoolean((Convert.ToInt32(cmd.ExecuteScalar()) != 0));

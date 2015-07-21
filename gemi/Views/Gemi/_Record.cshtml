@@ -1,0 +1,13 @@
+﻿@model gemi.Entities.Ship
+
+<div class="record">
+<p class="record-content">Referans no: @Model.refId , Gemi adı: @ViewBag.tanimlar[Model.shipId] , Hareket zamanı: @Model.time.ToString().Remove(10) </p><br />
+@if (Model.description != null)
+{
+    /*<div class="desc">Açıklama:</div>*/
+    <p class="record-content">@Model.description</p><br />
+}
+    
+<a class="record-content" href="/Gemi/GetShip?ref_id=@Model.refId"><button>Gör </button></a>
+<a class="record-content" href="/Gemi/EditShip?ref_id=@Model.refId" ><button>Düzenle</button></a><br />
+</div>

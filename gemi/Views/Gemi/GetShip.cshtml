@@ -17,17 +17,17 @@
 
 </style>
 
-<h2>GetShip</h2>
+<h2>Gemi kaydı görüntüleme</h2>
 
     <div>
         <div>
             <table class="info">
             <tr><td><label>Referans id:</label></td><td><label>@ViewBag.Ship.refId</label></td></tr>
-            <tr><td><label>Gemi adı:</label></td><td><label>@ViewBag.Ship.shipId</label></td></tr>
+            <tr><td><label>Gemi adı:</label></td><td><label>@ViewBag.tanimlar[ViewBag.Ship.shipId]</label></td></tr>
             <tr><td><label>Geliş tarihi:</label></td><td><label>@ViewBag.Ship.time</label></td></tr>
             </table>
             <div>Açıklama:</div>
-            <div>@ViewBag.Ship.description</div>
+            <p style="background-color:yellow;border-radius:10px;display:inline-block;">@ViewBag.Ship.description</p>
 
         </div>
         <div class="photos">

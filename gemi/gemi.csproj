@@ -263,6 +263,7 @@
     <Content Include="Views\Admin\AddUser.cshtml" />
     <Content Include="Views\Name\EditName.cshtml" />
     <Content Include="Views\Search\GetShipsByNameAndDate.cshtml" />
+    <Content Include="Views\Gemi\_Record.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

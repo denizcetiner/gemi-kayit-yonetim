@@ -27,6 +27,7 @@ namespace gemi.Controllers
         [HttpGet]
         public ActionResult GetShipsByName()
         {
+            ViewBag.header = "İsim ile arama sonuçları";
             return View("SearchName");
         }
 
@@ -45,12 +46,14 @@ namespace gemi.Controllers
         [HttpGet]
         public ActionResult GetShipsByDate()
         {
+            ViewBag.header = "Tarih ile arama sonuçları";
             return View("SearchDate");
         }
 
         [HttpGet]
         public ActionResult GetShipsByNameAndDate()
         {
+
             return View("SearchNameDate");
         }
 

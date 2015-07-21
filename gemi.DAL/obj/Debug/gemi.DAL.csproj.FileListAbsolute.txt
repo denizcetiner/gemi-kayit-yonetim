@@ -22,3 +22,11 @@ C:\Users\stajer\Desktop\gemi-kayit-yonetim\gemi.DAL\bin\Debug\gemi.Entities.pdb
 C:\Users\stajer\Desktop\gemi-kayit-yonetim\gemi.DAL\obj\Debug\gemi.DAL.csprojResolveAssemblyReference.cache
 C:\Users\stajer\Desktop\gemi-kayit-yonetim\gemi.DAL\obj\Debug\gemi.DAL.dll
 C:\Users\stajer\Desktop\gemi-kayit-yonetim\gemi.DAL\obj\Debug\gemi.DAL.pdb
+C:\Users\stajer\Documents\GitHub\gemi-kayit-yonetim\gemi.DAL\bin\Debug\gemi.DAL.dll
+C:\Users\stajer\Documents\GitHub\gemi-kayit-yonetim\gemi.DAL\bin\Debug\gemi.DAL.pdb
+C:\Users\stajer\Documents\GitHub\gemi-kayit-yonetim\gemi.DAL\bin\Debug\gemi.Entities.dll
+C:\Users\stajer\Documents\GitHub\gemi-kayit-yonetim\gemi.DAL\bin\Debug\MySql.Data.dll
+C:\Users\stajer\Documents\GitHub\gemi-kayit-yonetim\gemi.DAL\bin\Debug\gemi.Entities.pdb
+C:\Users\stajer\Documents\GitHub\gemi-kayit-yonetim\gemi.DAL\obj\Debug\gemi.DAL.csprojResolveAssemblyReference.cache
+C:\Users\stajer\Documents\GitHub\gemi-kayit-yonetim\gemi.DAL\obj\Debug\gemi.DAL.dll
+C:\Users\stajer\Documents\GitHub\gemi-kayit-yonetim\gemi.DAL\obj\Debug\gemi.DAL.pdb

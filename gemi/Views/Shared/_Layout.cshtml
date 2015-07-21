@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html style="height:100%;background-image:url(/Content/wana_bhum-9308663-container_ship-8-140842.jpg);background-size:auto" onload="noBack();">
+<html onload="noBack();">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
@@ -41,12 +41,7 @@
             vertical-align:top;
         }
         
-        .body
-        {
-            font-size:20px;
-            min-height:100%;
-            padding-bottom:100px;
-        }
+        
         
         
     </style>
@@ -74,10 +69,10 @@
     <div style="clear:both"></div>
     
     <div class="body">
-    <div class="sidebar" style="width:15%;border:solid black 1px;display:inline-block;min-height:500px;">
+    <div class="sidebar">
         @{Html.RenderAction("SideBar","Home");}
     </div>
-    <div class="context" style="width:83%;display:inline-block;border:solid black 1px;padding:0;text-align:center;min-height:500px;">
+    <div class="context">
         @RenderBody()
     </div>
     </div>

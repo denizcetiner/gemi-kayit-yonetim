@@ -2,7 +2,10 @@
     ViewBag.Title = "SearchResults";
 }
 
-<h2>SearchResults</h2>
+@if (ViewBag.header != null)
+{
+<h2>@ViewBag.header</h2>
+}
 <div class="ships">
 @if(Model.Count==0)
 {

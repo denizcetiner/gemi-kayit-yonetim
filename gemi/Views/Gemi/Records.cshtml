@@ -20,15 +20,5 @@
 
 @foreach (gemi.Entities.Ship i in Model)
 {
-    <div class="record">
-    <p class="record-content">Referans no: @i.refId , Gemi adı: @ViewBag.tanimlar[i.shipId] , Hareket zamanı: @i.time.ToString().Remove(10) </p><br />
-    @if (i.description != null)
-    {
-        /*<div class="desc">Açıklama:</div>*/
-        <p class="record-content">@i.description</p><br />
-    }
-    
-    <a class="record-content" href="/Gemi/GetShip?ref_id=@i.refId"><button>Gör </button></a>
-    <a class="record-content" href="/Gemi/EditShip?ref_id=@i.refId" ><button>Düzenle</button></a><br />
-    </div>
+    Html.RenderPartial("_Record", i);
 }
