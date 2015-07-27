@@ -7,8 +7,26 @@ using gemi.Entities;
 
 namespace gemi.DAL
 {
-    public class RolesData : Data
+    public sealed class RolesData : Data
     {
+        private static volatile RolesData _rolesData;
+        private static object locker = new object();
+
+        public static RolesData GetRolesData()
+        {
+            if (_rolesData == null)
+            {
+                lock (locker)
+                {
+                    if (_rolesData == null)
+                    {
+                        _rolesData = new RolesData();
+                    }
+                }
+            }
+            return _rolesData;
+        }
+
 
         /// <summary>
         /// Kullanıcı rollerinin tutulduğu veritabanından, parametre olarak gönderilmiş kullanıcı adına

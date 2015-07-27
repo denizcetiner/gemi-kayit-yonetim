@@ -37,7 +37,7 @@ namespace gemi.Controllers
             PasswordMethods pass = new PasswordMethods();
             user.password = pass.Hash(password);
 
-            UserData userData = new UserData();
+            UserData userData = UserData.GetUserData();
             if (Request.IsAuthenticated)
             {
                 TempData["Message"] = "Zaten giriş yapmışsınız";
@@ -63,7 +63,7 @@ namespace gemi.Controllers
                         }
                     }
 
-                    RolesData rolesData = new RolesData();
+                    RolesData rolesData = RolesData.GetRolesData();
                     string role = rolesData.GetRole(user.username);
 
                     System.Web.Security.FormsAuthenticationTicket ticket = new System.Web.Security.FormsAuthenticationTicket(
@@ -115,7 +115,7 @@ namespace gemi.Controllers
                 if(newpass1==newpass2)
                 {
                     PasswordMethods pass = new PasswordMethods();
-                    UserData userData = new UserData();
+                    UserData userData = UserData.GetUserData();
                     User user = new User();
                     user.username = User.Identity.Name;
                     user.password = pass.Hash(oldpass);

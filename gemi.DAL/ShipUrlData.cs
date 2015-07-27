@@ -9,7 +9,23 @@ namespace gemi.DAL
 {
     public class ShipUrlData : gemi.DAL.Data
     {
+        private static volatile ShipUrlData _shipUrlData;
+        private static object locker = new object();
 
+        public static ShipUrlData GetShipUrlData()
+        {
+            if (_shipUrlData == null)
+            {
+                lock (locker)
+                {
+                    if (_shipUrlData == null)
+                    {
+                        _shipUrlData = new ShipUrlData();
+                    }
+                }
+            }
+            return _shipUrlData;
+        }
         /// <summary>
         /// Bir referans ID'si adına eklenmiş fotoğrafların bilgilerini liste olarak döndürür.
         /// </summary>

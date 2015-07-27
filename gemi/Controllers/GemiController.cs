@@ -29,7 +29,7 @@ namespace gemi.Controllers
         [HttpGet]
         public ActionResult GetShip(string ref_id)
         {
-            ShipData shipData = new ShipData();
+            ShipData shipData = ShipData.GetShipData();
             Ship ship = new Ship();
             ship = shipData.GetShip(ref_id);
 
@@ -40,10 +40,10 @@ namespace gemi.Controllers
             }
             else
             {
-                TanimData tanimData = new TanimData();
+                TanimData tanimData = TanimData.GetTanimData();
                 Dictionary<int,string> tanimlar =  tanimData.GetTanimlar();
                 ViewBag.tanimlar = tanimlar;
-                ShipUrlData shipUrlData = new ShipUrlData();
+                ShipUrlData shipUrlData = ShipUrlData.GetShipUrlData();
                 List<ShipUrl> shipPhotos = shipUrlData.GetPhotos(ref_id);
                 ViewBag.Photos = shipPhotos;
                 ViewBag.Ship = ship;
@@ -56,12 +56,12 @@ namespace gemi.Controllers
         {
             if (Request.IsAuthenticated)
             {
-                UserData userData = new UserData();
-                RolesData rolesData = new RolesData();
+                UserData userData = UserData.GetUserData();
+                RolesData rolesData = RolesData.GetRolesData();
     
                 if (User.IsInRole("admin") || (User.IsInRole("superuser")))
                 {
-                    TanimData tanimData = new TanimData();
+                    TanimData tanimData = TanimData.GetTanimData();
                     ViewBag.Tanimlar = tanimData.GetTanimlar();
                     return View();
                 }
@@ -84,7 +84,7 @@ namespace gemi.Controllers
             
             if (Request.IsAuthenticated && (User.IsInRole("superuser") || User.IsInRole("admin")))
             {
-                ShipData shipData = new ShipData();
+                ShipData shipData = ShipData.GetShipData();
                 if (!shipData.CheckIfExists(ref_id))
                 {
                     UpdateUploadShip(ref_id, ship_id, description, time, files, "upload");
@@ -108,7 +108,7 @@ namespace gemi.Controllers
         [HttpGet]
         public ActionResult EditShip(string ref_id)
         {
-            ShipData shipData = new ShipData();
+            ShipData shipData = ShipData.GetShipData();
 
             string createdBy = shipData.GetCreatedBy(ref_id);
 
@@ -117,11 +117,11 @@ namespace gemi.Controllers
 
                 Ship ship = new Ship();
                 ship = shipData.GetShip(ref_id);
-                ShipUrlData shipUrlData = new ShipUrlData();
+                ShipUrlData shipUrlData = ShipUrlData.GetShipUrlData();
                 List<ShipUrl> shipPhotos = shipUrlData.GetPhotos(ref_id);
                 ViewBag.Photos = shipPhotos;
 
-                TanimData tanimData = new TanimData();
+                TanimData tanimData = TanimData.GetTanimData();
                 ViewBag.tanimlar = tanimData.GetTanimlar();
 
                 return View(ship);
@@ -158,8 +158,8 @@ namespace gemi.Controllers
             ship.createdDatetime = DateTime.Now;
 
             //System.IO.Directory.CreateDirectory(Server.MapPath("~/Content/images"));
-            ShipUrlData shipUrlData = new ShipUrlData();
-            ShipData shipData = new ShipData();
+            ShipUrlData shipUrlData = ShipUrlData.GetShipUrlData();
+            ShipData shipData = ShipData.GetShipData();
 
             ImageResize resizer = new ImageResize();
             FileMethods filer = new FileMethods();
@@ -219,11 +219,11 @@ namespace gemi.Controllers
         [HttpPost]
         public ActionResult DeletePicture(int photo_id, string ref_id)
         {
-            ShipData shipData = new ShipData();
+            ShipData shipData = ShipData.GetShipData();
 
             if (User.Identity.Name == shipData.GetCreatedBy(ref_id))
             {
-                ShipUrlData shipUrlData = new ShipUrlData();
+                ShipUrlData shipUrlData = ShipUrlData.GetShipUrlData();
 
                 FileMethods filer = new FileMethods();
                 filer.DeleteFile(shipUrlData.GetFilePath(photo_id));
@@ -250,8 +250,8 @@ namespace gemi.Controllers
         [HttpGet]
         public ActionResult Records()
         {
-            ShipData shipData = new ShipData();
-            TanimData tanimData = new TanimData();
+            ShipData shipData = ShipData.GetShipData();
+            TanimData tanimData = TanimData.GetTanimData();
             Dictionary<int, string> tanimlar = tanimData.GetTanimlar();
             ViewBag.tanimlar = tanimlar;
             List<Ship> Records = shipData.GetRecords(User.Identity.Name);

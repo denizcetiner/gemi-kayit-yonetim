@@ -39,8 +39,8 @@ namespace gemi.Controllers
         [OutputCache(NoStore = true, Duration = 0, VaryByParam = "*")]
         public ActionResult UserPanel()
         {
-            RolesData rolesData = new RolesData();
-            UserData userData = new UserData();
+            RolesData rolesData = RolesData.GetRolesData();
+            UserData userData = UserData.GetUserData();
             if (Request.IsAuthenticated)
             {
                 if (User.IsInRole("admin"))
@@ -82,12 +82,12 @@ namespace gemi.Controllers
         [HttpPost]
         public ActionResult AddUser(string username, string password, string role)
         {
-            RolesData rolesData = new RolesData();
+            RolesData rolesData = RolesData.GetRolesData();
             if (Request.IsAuthenticated)
             {
                 if(User.IsInRole("admin"))
                 {
-                    UserData userData = new UserData();
+                    UserData userData = UserData.GetUserData();
                     if (!userData.CheckIfExists(username))
                     {
                         User user = new Entities.User();
@@ -120,7 +120,7 @@ namespace gemi.Controllers
         [HttpPost]
         public ActionResult SetRole(string username, string role)
         {
-            RolesData rolesData = new RolesData();
+            RolesData rolesData = RolesData.GetRolesData();
             if (Request.IsAuthenticated)
             {
                 if(User.IsInRole("admin"))
@@ -143,13 +143,13 @@ namespace gemi.Controllers
         [HttpPost]
         public ActionResult RemoveUser(string username)
         {
-            RolesData rolesData = new RolesData();
+            RolesData rolesData = RolesData.GetRolesData();
             if (Request.IsAuthenticated)
             {
                 if (User.IsInRole("admin"))
                 {
                     rolesData.RemoveUser(username);
-                    UserData userData = new UserData();
+                    UserData userData = UserData.GetUserData();
                     userData.RemoveUser(username);
                     return View("Index");
                 }
@@ -168,12 +168,12 @@ namespace gemi.Controllers
         [HttpPost]
         public ActionResult ChangePassword(string username, string password)
         {
-            RolesData rolesData = new RolesData();
+            RolesData rolesData = RolesData.GetRolesData();
             if (Request.IsAuthenticated)
             {
                 if(User.IsInRole("admin"))
                 {
-                    UserData userData = new UserData();
+                    UserData userData = UserData.GetUserData();
                     userData.ChangePassword(username, password);
                     return View("Index");
                 }
@@ -192,12 +192,12 @@ namespace gemi.Controllers
         [HttpGet]
         public ActionResult EditUser(string username)
         {
-            RolesData rolesData = new RolesData();
+            RolesData rolesData = RolesData.GetRolesData();
             if (Request.IsAuthenticated)
             {
                 if(User.IsInRole("admin"))
                 {
-                    UserData userData = new UserData();
+                    UserData userData = UserData.GetUserData();
                     ViewBag.role = rolesData.GetRole(username);
                     ViewBag.username = username;
                     return View();
@@ -217,12 +217,12 @@ namespace gemi.Controllers
         [HttpPost]
         public ActionResult EditUser(string oldname, string newname = "",string password = "", string role = "")
         {
-            RolesData rolesData = new RolesData();
+            RolesData rolesData = RolesData.GetRolesData();
             if (Request.IsAuthenticated)
             {
                 if (User.IsInRole("admin"))
                 {
-                    UserData userData = new UserData();
+                    UserData userData = UserData.GetUserData();
                     PasswordMethods pass = new PasswordMethods();
                     if (password != "")
                     {

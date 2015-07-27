@@ -9,7 +9,23 @@ namespace gemi.DAL
 {
     public class TanimData : gemi.DAL.Data
     {
+        private static volatile TanimData _tanimData;
+        private static object locker = new object();
 
+        public static TanimData GetTanimData()
+        {
+            if (_tanimData == null)
+            {
+                lock (locker)
+                {
+                    if (_tanimData == null)
+                    {
+                        _tanimData = new TanimData();
+                    }
+                }
+            }
+            return _tanimData;
+        }
         /// <summary>
         /// Tanımları, ID'leri ile birlikte bir sözlük olarak döndürür.
         /// </summary>

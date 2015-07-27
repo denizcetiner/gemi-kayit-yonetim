@@ -10,6 +10,24 @@ namespace gemi.DAL
 {
     public class UserData : gemi.DAL.Data
     {
+        private static volatile UserData _userData;
+        private static object locker = new object();
+
+        public static UserData GetUserData()
+        {
+            if (_userData == null)
+            {
+                lock (locker)
+                {
+                    if (_userData == null)
+                    {
+                        _userData = new UserData();
+                    }
+                }
+            }
+            return _userData;
+        }
+
         /*public bool CheckUserRole(string username, string role)
         {
             string query = "select role from user where username=@username";

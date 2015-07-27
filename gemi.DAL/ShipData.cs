@@ -10,7 +10,23 @@ namespace gemi.DAL
 {
     public class ShipData : gemi.DAL.Data
     {
+        private static volatile ShipData _shipData;
+        private static object locker = new object();
 
+        public static ShipData GetShipData()
+        {
+            if (_shipData == null)
+            {
+                lock (locker)
+                {
+                    if (_shipData == null)
+                    {
+                        _shipData = new ShipData();
+                    }
+                }
+            }
+            return _shipData;
+        }
         /// <summary>
         /// Gemi kayıtları veritabanına yeni bir kayıt ekler.
         /// </summary>
