@@ -34,8 +34,8 @@ namespace gemi.Controllers
         [HttpPost]
         public ActionResult GetShipsByName(string ship_name)
         {
-            ShipData shipData = new ShipData();
-            TanimData tanimData = new TanimData();
+            ShipData shipData = ShipData.GetShipData();
+            TanimData tanimData = TanimData.GetTanimData();
             Dictionary<int, string> tanimlar = tanimData.GetTanimlar(); //id,string dict
             int ship_id = tanimlar.FirstOrDefault(x => x.Value == ship_name).Key;
             ViewBag.tanimlar = tanimlar;
@@ -60,8 +60,8 @@ namespace gemi.Controllers
         [HttpPost]
         public ActionResult GetShipsByDate(string begin, string end)
         {
-            ShipData shipData = new ShipData();
-            TanimData tanimData = new TanimData();
+            ShipData shipData = ShipData.GetShipData();
+            TanimData tanimData = TanimData.GetTanimData();
             Dictionary<int, string> tanimlar = tanimData.GetTanimlar(); //id,string dict
             ViewBag.tanimlar = tanimlar;
             List<Ship> ships = shipData.GetShipsBetweenDate(Convert.ToDateTime(begin + ",00:00:00").Date, Convert.ToDateTime(end + ",00:00:00").Date);
@@ -72,8 +72,8 @@ namespace gemi.Controllers
         [HttpPost]
         public ActionResult GetShipsByNameAndDate(string ship_name, string begin, string end)
         {
-            ShipData shipData = new ShipData();
-            TanimData tanimData = new TanimData();
+            ShipData shipData = ShipData.GetShipData();
+            TanimData tanimData = TanimData.GetTanimData();
             Dictionary<int, string> tanimlar = tanimData.GetTanimlar();
             int ship_id = tanimlar.FirstOrDefault(x => x.Value == ship_name).Key;
             ViewBag.tanimlar = tanimlar;

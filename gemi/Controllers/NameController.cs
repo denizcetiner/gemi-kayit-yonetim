@@ -20,7 +20,7 @@ namespace gemi.Controllers
             {
                 if (User.IsInRole("admin"))
                 {
-                    TanimData tanimData = new TanimData();
+                    TanimData tanimData = TanimData.GetTanimData();
                     List<Tanimlar> tanimlar = tanimData.GetAllTanimlar();
                     ViewBag.tanimlar = tanimlar;
 
@@ -46,7 +46,7 @@ namespace gemi.Controllers
             {
                 if(User.IsInRole("admin"))
                 {
-                    TanimData tanimData = new TanimData();
+                    TanimData tanimData = TanimData.GetTanimData();
                     Dictionary<int,string> tanimlar = tanimData.GetTanimlar();
                     ViewBag.tanimlar = tanimlar;
                     return View();
@@ -71,7 +71,7 @@ namespace gemi.Controllers
             {
                 if (User.IsInRole("admin"))
                 {
-                    TanimData tanimData = new TanimData();
+                    TanimData tanimData = TanimData.GetTanimData();
                     if (!tanimData.CheckIfExists(shipname))
                     {
                         tanimData.TanimEkle(shipname);
@@ -104,7 +104,7 @@ namespace gemi.Controllers
             {
                 if (User.IsInRole("admin"))
                 {
-                    TanimData tanimData = new TanimData();
+                    TanimData tanimData = TanimData.GetTanimData();
                     Dictionary<int,string> tanimlar = tanimData.GetTanimlar();
                     return View(tanimlar);
                 }
@@ -176,9 +176,9 @@ namespace gemi.Controllers
                 if(User.IsInRole("admin"))
                 {
                 FileMethods filer = new FileMethods();
-                TanimData tanimData = new TanimData();
-                ShipData shipData = new ShipData();
-                ShipUrlData shipUrlData = new ShipUrlData();
+                TanimData tanimData = TanimData.GetTanimData();
+                ShipData shipData = ShipData.GetShipData();
+                ShipUrlData shipUrlData = ShipUrlData.GetShipUrlData();
                 tanimData.DeleteTanimById(tanim_id);
                 
                 List<string> references = shipData.GetShipReferencesOfName(tanim_id);
@@ -226,7 +226,7 @@ namespace gemi.Controllers
         {
             if (Request.IsAuthenticated && User.IsInRole("admin"))
             {
-                TanimData tanimData = new TanimData();
+                TanimData tanimData = TanimData.GetTanimData();
                 Tanimlar tanim = new Tanimlar();
                 tanim.tanimId = tanim_id;
                 tanim.tanim = tanimData.getTanim(tanim_id);
@@ -242,7 +242,7 @@ namespace gemi.Controllers
         {
             if (Request.IsAuthenticated && User.IsInRole("admin"))
             {
-                TanimData tanimData = new TanimData();
+                TanimData tanimData = TanimData.GetTanimData();
                 if (!tanimData.CheckIfExists(newname))
                 {
                     tanimData.EditName(tanim_id, oldname, newname);
